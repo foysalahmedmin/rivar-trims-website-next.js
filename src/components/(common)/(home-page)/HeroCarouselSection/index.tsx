@@ -1,0 +1,322 @@
+// components/HeroCarouselTailwind.tsx
+"use client";
+
+import { Button } from "@/components/ui/Button";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNextTrigger,
+  CarouselPagination,
+  CarouselPreviousTrigger,
+} from "@/components/ui/Carousel";
+import {
+  ArrowRight,
+  Award,
+  CheckCircle,
+  ChevronLeft,
+  ChevronRight,
+  Clock,
+  Factory,
+  Globe,
+  Package,
+  Shield,
+  Users,
+} from "lucide-react";
+import { ReactNode, useState } from "react";
+
+type HeroFeature = {
+  icon: ReactNode;
+  text: string;
+};
+
+export type HeroSlide = {
+  id: number;
+  title: string;
+  subtitle: string;
+  description: string;
+  backgroundImage: string;
+  ctaText: string;
+  ctaLink: string;
+  overlayColor: string;
+  textColor: string;
+  features?: HeroFeature[];
+};
+
+const heroSlides: HeroSlide[] = [
+  {
+    id: 1,
+    title: "Premium Garments Accessories & Trims",
+    subtitle: "Leading Manufacturer Since 1998",
+    description:
+      "High-quality zippers, buttons, labels, and specialty trims for fashion industry with ISO 9001 certification",
+    backgroundImage:
+      "https://images.unsplash.com/photo-1441986300917-64674bd600d8?q=80&w=2070",
+    ctaText: "View Products",
+    ctaLink: "/products",
+    overlayColor: "from-blue-900/80 via-blue-800/40 to-transparent",
+    textColor: "text-white",
+    features: [
+      { icon: <CheckCircle className="h-4 w-4" />, text: "ISO 9001 Certified" },
+      { icon: <Clock className="h-4 w-4" />, text: "Quick Turnaround" },
+      { icon: <Users className="h-4 w-4" />, text: "Dedicated Support" },
+      { icon: <Package className="h-4 w-4" />, text: "Global Shipping" },
+    ],
+  },
+  {
+    id: 2,
+    title: "Custom Metal Trims & Embellishments",
+    subtitle: "Bespoke Manufacturing Solutions",
+    description:
+      "Designer-approved metal accessories, buttons, rivets, and specialty trims for luxury collections",
+    backgroundImage:
+      "https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?q=80&w=2070",
+    ctaText: "Request Samples",
+    ctaLink: "/samples",
+    overlayColor: "from-amber-900/80 via-amber-800/40 to-transparent",
+    textColor: "text-white",
+    features: [
+      { icon: <Factory className="h-4 w-4" />, text: "45,000 Sq Ft Facility" },
+      { icon: <Globe className="h-4 w-4" />, text: "Global Supply Chain" },
+      { icon: <Award className="h-4 w-4" />, text: "Award Winning" },
+      { icon: <Shield className="h-4 w-4" />, text: "Quality Guaranteed" },
+    ],
+  },
+  {
+    id: 3,
+    title: "Sustainable Eco-Friendly Trims",
+    subtitle: "Green Manufacturing Initiative",
+    description:
+      "Eco-conscious accessories made from recycled materials with minimal environmental footprint",
+    backgroundImage:
+      "https://images.unsplash.com/photo-1612817288484-6f91600674a?q=80&w=2070",
+    ctaText: "Learn About Sustainability",
+    ctaLink: "/sustainability",
+    overlayColor: "from-emerald-900/80 via-emerald-800/40 to-transparent",
+    textColor: "text-white",
+    features: [
+      { icon: <CheckCircle className="h-4 w-4" />, text: "Recycled Materials" },
+      { icon: <Clock className="h-4 w-4" />, text: "Energy Efficient" },
+      { icon: <Users className="h-4 w-4" />, text: "Ethical Production" },
+      { icon: <Package className="h-4 w-4" />, text: "Green Packaging" },
+    ],
+  },
+  {
+    id: 4,
+    title: "High-Tech Production Facility",
+    subtitle: "State-of-the-Art Manufacturing",
+    description:
+      "ISO 9001 certified facility with advanced automation for precision and consistency in bulk production",
+    backgroundImage:
+      "https://images.unsplash.com/photo-1581094794329-c8112a89af12?q=80&w=2070",
+    ctaText: "Schedule Factory Tour",
+    ctaLink: "/factory-tour",
+    overlayColor: "from-violet-900/80 via-violet-800/40 to-transparent",
+    textColor: "text-white",
+    features: [
+      { icon: <Factory className="h-4 w-4" />, text: "Automated Lines" },
+      { icon: <Globe className="h-4 w-4" />, text: "Export Worldwide" },
+      { icon: <Award className="h-4 w-4" />, text: "Industry Leader" },
+      { icon: <Shield className="h-4 w-4" />, text: "25+ Years Experience" },
+    ],
+  },
+];
+
+const HeroCarouselSection = () => {
+  const [activeSlide, setActiveSlide] = useState(0);
+
+  return (
+    <div className="relative h-screen max-h-[800px] w-full overflow-hidden">
+      <Carousel
+        autoplay
+        opts={{
+          loop: true,
+          duration: 40,
+        }}
+        setApi={(api) => {
+          // Update active slide when carousel changes
+          api?.on("select", () => {
+            setActiveSlide(api.selectedScrollSnap());
+          });
+        }}
+        className="h-full"
+      >
+        <CarouselContent className="h-full">
+          {heroSlides?.map((slide, index) => (
+            <CarouselItem key={slide.id} className="relative h-full">
+              {/* Background Image Container */}
+              <div className="absolute inset-0 overflow-hidden">
+                <div
+                  className={`absolute inset-0 bg-cover bg-center transition-all duration-[5000ms] ease-linear ${
+                    activeSlide === index ? "scale-110" : "scale-100"
+                  }`}
+                  style={{
+                    backgroundImage: `url('${slide.backgroundImage}')`,
+                  }}
+                />
+                {/* Gradient Overlay */}
+                <div
+                  className={`absolute inset-0 bg-gradient-to-r ${slide.overlayColor}`}
+                />
+              </div>
+
+              {/* Content Container */}
+              <div className="relative z-10 flex h-full items-center">
+                <div className="container mx-auto px-4 py-6 sm:px-6 md:py-24 lg:px-8">
+                  <div className="max-w-3xl">
+                    {/* Animated Badge */}
+                    <div
+                      className={`mb-8 inline-flex items-center rounded-full border bg-white/10 px-4 py-2 backdrop-blur-sm transition-all duration-500 ${
+                        activeSlide === index
+                          ? "translate-y-0 opacity-100"
+                          : "translate-y-4 opacity-0"
+                      }`}
+                    >
+                      <span className="text-sm font-semibold text-white">
+                        {slide.subtitle}
+                      </span>
+                    </div>
+
+                    {/* Animated Title */}
+                    <h1
+                      className={`text-4xl font-bold sm:text-5xl md:text-6xl lg:text-7xl ${slide.textColor} mb-6 leading-tight transition-all delay-300 duration-700 ${
+                        activeSlide === index
+                          ? "translate-y-0 opacity-100"
+                          : "translate-y-8 opacity-0"
+                      }`}
+                    >
+                      {slide.title}
+                    </h1>
+
+                    {/* Animated Description */}
+                    <p
+                      className={`text-lg md:text-xl ${slide.textColor} mb-8 max-w-2xl opacity-90 transition-all delay-500 duration-700 ${
+                        activeSlide === index
+                          ? "translate-y-0 opacity-100"
+                          : "translate-y-8 opacity-0"
+                      }`}
+                    >
+                      {slide.description}
+                    </p>
+
+                    {/* Features List */}
+                    <div className="mb-8 transition-all delay-700 duration-700">
+                      <div
+                        className={`flex flex-wrap gap-3 transition-all duration-500 ${
+                          activeSlide === index
+                            ? "translate-y-0 opacity-100"
+                            : "translate-y-8 opacity-0"
+                        }`}
+                      >
+                        {slide?.features?.map((feature, idx) => (
+                          <div
+                            key={idx}
+                            className="flex items-center gap-2 rounded-lg border border-white/10 bg-white/5 px-3 py-2 backdrop-blur-sm"
+                          >
+                            <div className="text-blue-300">{feature.icon}</div>
+                            <span className="text-sm text-white/90">
+                              {feature.text}
+                            </span>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+
+                    {/* Animated CTA Buttons */}
+                    <div
+                      className={`flex flex-col gap-4 transition-all delay-1000 duration-700 sm:flex-row ${
+                        activeSlide === index
+                          ? "translate-y-0 opacity-100"
+                          : "translate-y-8 opacity-0"
+                      }`}
+                    >
+                      <Button
+                        size="lg"
+                        className="group rounded-lg bg-white px-8 py-6 text-base font-semibold text-gray-900 transition-all duration-300 hover:scale-105 hover:bg-gray-100 hover:shadow-2xl"
+                      >
+                        <span className="flex items-center">
+                          {slide.ctaText}
+                          <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
+                        </span>
+                      </Button>
+                      <Button
+                        size="lg"
+                        variant="outline"
+                        className="group rounded-lg border-2 border-white px-8 py-6 text-base font-semibold text-white backdrop-blur-sm transition-all duration-300 hover:bg-white/10"
+                      >
+                        <span className="flex items-center">
+                          Contact Sales
+                          <ChevronRight className="ml-2 h-5 w-5 -translate-x-2 opacity-0 transition-all duration-300 group-hover:translate-x-0 group-hover:opacity-100" />
+                        </span>
+                      </Button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </CarouselItem>
+          ))}
+        </CarouselContent>
+
+        {/* Custom Pagination */}
+        <div className="absolute bottom-8 left-1/2 z-20 -translate-x-1/2 transform">
+          <CarouselPagination
+            className="bottom-0"
+            buttonProps={{
+              className:
+                "w-8 h-1.5 transition-all duration-300 hover:bg-white/80",
+              activeClassName: "bg-white w-12",
+            }}
+          />
+        </div>
+
+        {/* Navigation Buttons */}
+        <CarouselPreviousTrigger
+          className="left-4 border border-white/20 bg-white/10 text-white backdrop-blur-sm transition-transform duration-300 hover:scale-110 hover:bg-white/20 md:left-8"
+          shape="icon"
+        >
+          <ChevronLeft className="h-6 w-6" />
+        </CarouselPreviousTrigger>
+
+        <CarouselNextTrigger
+          className="right-4 border border-white/20 bg-white/10 text-white backdrop-blur-sm transition-transform duration-300 hover:scale-110 hover:bg-white/20 md:right-8"
+          shape="icon"
+        >
+          <ChevronRight className="h-6 w-6" />
+        </CarouselNextTrigger>
+
+        {/* Slide Counter */}
+        <div className="absolute right-8 bottom-8 z-20 hidden items-center space-x-3 lg:flex">
+          <div className="text-sm text-white">
+            <span className="text-2xl font-bold">
+              {String(activeSlide + 1).padStart(2, "0")}
+            </span>
+            <span className="mx-2 opacity-50">/</span>
+            <span className="opacity-70">
+              {String(heroSlides.length).padStart(2, "0")}
+            </span>
+          </div>
+          <div className="h-8 w-px bg-white/30"></div>
+          <div className="flex flex-col">
+            <span className="text-xs tracking-wider text-white/60 uppercase">
+              Slide
+            </span>
+            <span className="text-sm text-white">
+              {heroSlides[activeSlide]?.subtitle}
+            </span>
+          </div>
+        </div>
+      </Carousel>
+
+      {/* Scroll Down Indicator */}
+      <div className="absolute bottom-4 left-1/2 z-20 -translate-x-1/2 transform">
+        <div className="animate-bounce">
+          <div className="flex h-10 w-6 justify-center rounded-full border-2 border-white/30">
+            <div className="mt-2 h-3 w-1 animate-pulse rounded-full bg-white/70"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default HeroCarouselSection;

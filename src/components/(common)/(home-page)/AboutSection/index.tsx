@@ -15,7 +15,7 @@ const AboutSection = () => {
           <div className="order-2 self-stretch lg:order-1">
             <div className="relative h-full w-full">
               <img
-                src="/images/(home-page)/about.png"
+                src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=800"
                 alt="Team working together in modern office"
                 className="bg-muted size-full rounded-xl object-cover"
                 loading="lazy"
@@ -26,29 +26,28 @@ const AboutSection = () => {
           {/* Right Column - Content */}
           <div className="order-1 lg:order-2">
             <SectionTitle>
-              <Subtitle>Next Horizon</Subtitle>
-              <Title>Empowering Digital Growth with Smart Innovation</Title>
+              <Subtitle>Who We Are</Subtitle>
+              <Title>Global Standards, Local Craftsmanship.</Title>
               <Description>
                 <p>
-                  Rivar Trims is your trusted partner in building powerful
-                  digital solutions that fuel business growth. From top-tier web
-                  development and sleek, mobile app to scalable cloud
-                  technologies, we help brands of all sizes transform their
-                  online presence and achieve measurable success.
-                </p>
-                <br />
-                <p>
-                  Driven by a passion for innovation, a commitment to
-                  excellence, and an obsession with client success, Rivar Trims
-                  delivers tailor-made tech solutions that make a real impact.
-                </p>
-                <br />
-                <p>
-                  Let’s build what’s next together. Explore our services and
-                  discover what sets us apart in the digital world.
+                  Rivar Trims Ltd. is a strategic partner for global fashion
+                  brands. Based in Dhaka, we utilize cutting-edge technology to
+                  produce Oeko-Tex Standard 100 certified trims. We blend
+                  industrial precision with aesthetic excellence to ensure every
+                  label, tag, and patch adds value to your finished product.
                 </p>
               </Description>
             </SectionTitle>
+            <div className="mb-8 grid grid-cols-2 gap-4 md:mb-12">
+              <div className="border-primary border-l-4 px-2 md:px-4">
+                <h4 className="text-xl font-bold">Eco-Friendly</h4>
+                <p>Sustainable materials & inks</p>
+              </div>
+              <div className="border-primary border-l-4 px-2 md:px-4">
+                <h4 className="text-xl font-bold">Fast Delivery</h4>
+                <p>Sustainable materials & inks</p>
+              </div>
+            </div>
 
             {/* CTA Button */}
             <div className="flex flex-wrap items-center justify-start gap-4">

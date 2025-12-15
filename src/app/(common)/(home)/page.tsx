@@ -1,8 +1,7 @@
 import AboutSection from "@/components/(common)/(home-page)/AboutSection";
 import BlogsSection from "@/components/(common)/(home-page)/BlogsSection";
 import CallToActionSection from "@/components/(common)/(home-page)/CallToActionSection";
-import FAQSection from "@/components/(common)/(home-page)/FAQSection";
-import HeroSection from "@/components/(common)/(home-page)/HeroSection";
+import HeroCarouselSection from "@/components/(common)/(home-page)/HeroCarouselSection";
 import ProductsSection from "@/components/(common)/(home-page)/ProductsSection";
 
 export const metadata = {
@@ -14,7 +13,8 @@ export const metadata = {
 const HomePage = () => {
   return (
     <main className="scroll-smooth">
-      <HeroSection />
+      {/* <HeroSection /> */}
+      <HeroCarouselSection />
       {/* <QuickContactSection /> */}
       {/* <ServicesSection /> */}
       <ProductsSection />
