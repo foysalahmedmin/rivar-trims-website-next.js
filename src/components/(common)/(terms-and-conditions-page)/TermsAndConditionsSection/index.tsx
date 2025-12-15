@@ -1,8 +1,8 @@
 import {
-  Description,
-  SectionTitle,
-  Subtitle,
-  Title,
+    Description,
+    SectionTitle,
+    Subtitle,
+    Title,
 } from "@/components/ui/SectionTitle";
 
 type TSection = {

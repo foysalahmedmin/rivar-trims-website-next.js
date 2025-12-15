@@ -1,9 +1,9 @@
 import { Button } from "@/components/ui/Button";
 import {
-  Description,
-  SectionTitle,
-  Subtitle,
-  Title,
+    Description,
+    SectionTitle,
+    Subtitle,
+    Title,
 } from "@/components/ui/SectionTitle";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
@@ -53,7 +53,7 @@ const SplitFloatSection = ({
                 <div className="w-full">
                   <div className="prose prose-headings:font-normal dark:prose-invert w-full max-w-none">
                     <div
-                      className="text-foreground font-sans"
+                      className="text-foreground"
                       dangerouslySetInnerHTML={{ __html: description || "" }}
                     />
                   </div>

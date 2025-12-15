@@ -43,7 +43,7 @@ const SplitSection = ({
                   <div className="w-full">
                     <div className="prose prose-headings:font-normal dark:prose-invert w-full max-w-none">
                       <div
-                        className="text-foreground font-sans"
+                        className="text-foreground"
                         dangerouslySetInnerHTML={{ __html: description || "" }}
                       />
                     </div>

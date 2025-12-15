@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Outfit, Rubik_Glitch } from "next/font/google";
+import { Geist, Geist_Mono, Jost, Outfit, Rubik_Glitch } from "next/font/google";
 import React from "react";
 import "./globals.css";
 
@@ -29,6 +29,12 @@ const rubikGlitch = Rubik_Glitch({
   display: "swap",
 });
 
+const jost = Jost({
+  variable: "--font-jost",
+  subsets: ["latin"],
+  display: "swap",
+});
+
 export const metadata: Metadata = {
   title: "Rivar Trims",
   description: "Digital solutions.",
@@ -42,7 +48,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${outfit.variable} ${rubikGlitch.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${outfit.variable} ${rubikGlitch.variable} ${jost.variable} antialiased`}
       >
         {children}
       </body>
