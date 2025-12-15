@@ -1,4 +1,4 @@
-import { services } from "@/assets/data/services";
+import { products } from "@/assets/data/products";
 import { Button } from "@/components/ui/Button";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
@@ -7,7 +7,7 @@ import Link from "next/link";
 const menu = [
   {
     type: "link",
-    text: "About",
+    text: "About Us",
     href: "/about",
   },
   // {
@@ -17,8 +17,8 @@ const menu = [
   // },
   {
     type: "link",
-    text: "Services",
-    href: "/services",
+    text: "Products",
+    href: "/products",
   },
   // {
   //   type: "link",
@@ -40,11 +40,11 @@ const menu = [
   //   text: "History",
   //   href: "/history",
   // },
-  {
-    type: "link",
-    text: "Vision",
-    href: "/visions",
-  },
+  // {
+  //   type: "link",
+  //   text: "Vision",
+  //   href: "/visions",
+  // },
   {
     type: "link",
     text: "Contact",
@@ -133,9 +133,9 @@ const Footer = () => {
                   <span>+64 28 470 0533</span>
                 </Button>
               </Link> */}
-              <Link href="/services">
+              <Link href="/products">
                 <Button size="lg">
-                  <span>EXPLORE SERVICES</span>
+                  <span>EXPLORE PRODUCTS</span>
                 </Button>
               </Link>
               <Link href="/contact">
@@ -165,14 +165,14 @@ const Footer = () => {
             </ul>
           </div>
           <div className="lg:col-span-2">
-            <strong className="mb-4 block font-medium">Services</strong>
+            <strong className="mb-4 block font-medium">Products</strong>
             <ul className={cn("grid space-y-2 lg:grid-cols-2")}>
-              {services
-                .map((service) => {
+              {products
+                .map((product) => {
                   return {
                     type: "link",
-                    text: service?.title,
-                    href: `/services/${service?._id}`,
+                    text: product?.title,
+                    href: `/services/${product?._id}`,
                   };
                 })
                 .map((item, index) => (

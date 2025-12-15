@@ -21,9 +21,9 @@ const CallToActionSection = () => {
             </Description>
           </SectionTitle>
           <div className="inline-flex flex-wrap items-center justify-center gap-4">
-            <Link href="/services">
+            <Link href="/products">
               <Button asChild={true} size="lg">
-                <span>Explore Our Services</span>
+                <span>Explore Our Products</span>
               </Button>
             </Link>
             <Link href="/contact">

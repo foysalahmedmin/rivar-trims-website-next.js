@@ -18,9 +18,9 @@ const FollowUpSection = () => {
             </Title>
           </SectionTitle>
           <div className="flex flex-wrap items-center gap-6">
-            <Link href="/services">
+            <Link href="/products">
               <Button asChild={true} size="lg">
-                <span>Explore Services</span>
+                <span>Explore Products</span>
               </Button>
             </Link>
             <Link href="/contact">

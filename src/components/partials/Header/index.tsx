@@ -23,9 +23,8 @@ type HeaderProps = {
 // Constants
 const ALL_PAGE_NAV_LINKS: NavLink[] = [
   { href: "/", name: "Home" },
-  { href: "/services", name: "Services" },
-  { href: "/about", name: "About" },
-  { href: "/pricing", name: "Pricing" },
+  // { href: "/services", name: "Services" },
+  { href: "/about", name: "About Us" },
   // { href: "/leaderships", name: "Leaderships" },
   // { href: "/projects", name: "Projects" },
   { href: "/products", name: "Products" },
@@ -34,9 +33,8 @@ const ALL_PAGE_NAV_LINKS: NavLink[] = [
 
 const HOME_PAGE_NAV_LINKS: NavLink[] = [
   { href: "#home", name: "Home" },
-  { href: "#services", name: "Services" },
-  { href: "#about", name: "About" },
-  { href: "/pricing", name: "Pricing" },
+  // { href: "#services", name: "Services" },
+  { href: "#about", name: "About Us" },
   // { href: "#leaderships", name: "Leaderships" },
   // { href: "#features", name: "Features" },
   // { href: "#projects", name: "Projects" },
@@ -46,11 +44,11 @@ const HOME_PAGE_NAV_LINKS: NavLink[] = [
 
 const VISIBLE_SECTIONS = [
   "home",
-  "services",
+  // "services",
   "about",
   // "leaderships",
-  "features",
-  "projects",
+  // "features",
+  // "projects",
   "products",
   "blogs",
 ];
