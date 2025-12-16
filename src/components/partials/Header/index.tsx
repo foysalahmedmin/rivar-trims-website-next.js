@@ -12,7 +12,7 @@ import { Button } from "@/components/ui/Button";
 import useScrollPosition from "@/hooks/ui/useScrollPosition";
 import { useVisibleSection } from "@/hooks/utils/useVisibleSection";
 import { cn } from "@/lib/utils";
-import { X } from "lucide-react";
+import { ChevronDown, X } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -178,7 +178,7 @@ const DesktopNavigation: React.FC<{
               <Link
                 href={link.href}
                 className={cn(
-                  "underline-effect foreground text-sm whitespace-nowrap uppercase transition-colors duration-200",
+                  "underline-effect foreground flex items-center gap-1 text-sm whitespace-nowrap uppercase transition-colors duration-200",
                   {
                     active:
                       visibleSection === "products" ||
@@ -187,6 +187,12 @@ const DesktopNavigation: React.FC<{
                 )}
               >
                 {link.name}
+                <ChevronDown
+                  className={cn(
+                    "text-muted-foreground h-4 w-4 transition-transform duration-200",
+                    isProductsHovered && "rotate-180",
+                  )}
+                />
               </Link>
               {/* Desktop Dropdown */}
               <div
@@ -278,7 +284,7 @@ const MobileNavigation: React.FC<{
   return (
     <div
       className={cn(
-        "bg-card fixed inset-0 z-50 flex flex-col overflow-y-auto transition-all duration-500",
+        "bg-card fixed inset-0 z-50 flex flex-col overflow-hidden transition-all duration-500",
         isOpen
           ? "visible translate-x-0 opacity-100"
           : "invisible translate-x-full opacity-0",
@@ -296,7 +302,7 @@ const MobileNavigation: React.FC<{
       </div>
 
       <nav
-        className="container my-auto flex w-full max-w-md flex-col gap-2 py-8"
+        className="container my-auto flex w-full max-w-md flex-1 flex-col gap-2 overflow-y-auto py-8"
         onClick={(e) => e.stopPropagation()}
       >
         <Accordion type="single" collapsible className="w-full">
