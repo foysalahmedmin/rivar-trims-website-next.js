@@ -3,6 +3,7 @@ import FollowUpSection from "@/components/sections/FollowUpSection";
 import PageHeaderSection from "@/components/sections/PageHeaderSection";
 import PartnersSection from "@/components/sections/PartnersSection";
 import SplitSection from "@/components/sections/SplitSection";
+import { SectionTitle, Subtitle, Title } from "@/components/ui/SectionTitle";
 
 const metrics = [
   {
@@ -31,21 +32,91 @@ const AboutPage = () => {
       <PageHeaderSection
         subtitle="About Us"
         title="Weaving Quality into Every Thread"
-        description="Rivar Trims combines decades of textile expertise with modern manufacturing technology. From our factory in Dhaka to global fashion hubs, we are united by a common mission: to deliver exquisite detailing that defines your brand."
+        description="Rivar Trims Limited, a concern of Mondol Group, combines decades of textile expertise with modern manufacturing technology. Established as a complete backward linkage solution, we are united by a common mission: to deliver exquisite detailing that defines your brand."
         image="/images/(about-page)/page-header.png"
         metrics={metrics}
       />
 
+      {/* Mission & Vision Section */}
+      <section className="py-16 md:py-24">
+        <div className="container">
+          <SectionTitle>
+            <Subtitle>Our Core Values</Subtitle>
+            <Title>Mission & Vision</Title>
+          </SectionTitle>
+          <div className="grid gap-8 md:grid-cols-2">
+            <div className="bg-card border-border rounded-lg border p-8 shadow-sm">
+              <h3 className="text-primary mb-4 text-2xl font-bold">
+                Our Mission
+              </h3>
+              <ul className="list-disc space-y-4 pl-5">
+                <li>
+                  To build up long term business relations with our valued
+                  clients by satisfying them with superior quality, competitive
+                  price and on time delivery of accessories products.
+                </li>
+                <li>
+                  To upgrade our technology and invest in human resources
+                  development on continuous basis.
+                </li>
+                <li>
+                  To explore new market for our products and make positive
+                  contribution to the country’s export earnings.
+                </li>
+              </ul>
+            </div>
+            <div className="bg-card border-border rounded-lg border p-8 shadow-sm">
+              <h3 className="text-primary mb-4 text-2xl font-bold">
+                Our Vision
+              </h3>
+              <ul className="list-disc space-y-4 pl-5">
+                <li>
+                  To become a world-class garments accessories manufacturer and
+                  supplier company preferred by the valued clients in the world
+                  market.
+                </li>
+                <li>
+                  To upgrade our technology and invest in human resources
+                  development on continuous basis.
+                </li>
+                <li>
+                  To explore new market for our products and make positive
+                  contribution to the country’s export earnings.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Message from Chairman */}
+      <SplitSection
+        title="Message from Chairman"
+        description={`<div>
+          <h3 class="text-xl font-bold mb-2">MD. ABUL KALAM AZAD</h3>
+          <p class="text-muted-foreground mb-4">Chairman, Rivar Trims Limited</p>
+          <div class="space-y-4 italic">
+            <p>
+              "We want to do business with honesty, integrity and sincerity. Customer’s satisfaction with quality products is our motto and we never want to compromise with quality. For the sake of quality, we are always ready to set up most modern machinery in our factory. We always believe in quality; we don’t want to provide low quality goods just to do business."
+            </p>
+            <p>
+              "We strongly believe that once we maintain quality, we feel confident in doing business. This is our strength and this differentiates us from others. We also believe in teamwork. Without combined efforts, nobody can achieve his or her goal."
+            </p>
+          </div>
+        </div>`}
+        image="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=800" // Placeholder for Chairman
+      />
+
       <SplitSection
         title="The Rivar Trims Difference"
-        description={`<div class="space-y-4">
+        description={`<div>
           <p>
             In a competitive global market, Rivar Trims stands out by blending local manufacturing cost-efficiencies 
             with world-class quality standards. We don't just supply trims; we deliver reliability, innovation, and compliance.
           </p>
 
           <p class="font-medium">Here’s what makes us different:</p>
-          <div class="grid gap-6">
+          <div class="grid gap-4">
             <div>
               <h3 class="font-semibold text-lg">Vertical Integration</h3>
               <p>

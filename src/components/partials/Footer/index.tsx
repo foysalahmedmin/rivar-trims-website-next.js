@@ -127,22 +127,30 @@ const Footer = () => {
                 priority
               />
             </Link>
-            <div className="flex flex-wrap gap-4">
-              {/* <Link target="_blank" href="tel:+64284700533">
-                <Button size="lg">
-                  <span>+64 28 470 0533</span>
-                </Button>
-              </Link> */}
-              <Link href="/products">
-                <Button size="lg">
-                  <span>EXPLORE PRODUCTS</span>
-                </Button>
-              </Link>
-              <Link href="/contact">
-                <Button size="lg" variant="outline">
-                  <span>CONTACT US</span>
-                </Button>
-              </Link>
+            <div className="flex flex-col gap-4">
+              <div className="text-muted-foreground space-y-1">
+                <p className="text-foreground font-semibold">Head Office</p>
+                <p>House-08 (Lift-2), Road-04/A, Sector-15/G, Uttara, Dhaka-1230, Bangladesh</p>
+              </div>
+              <div className="text-muted-foreground space-y-1">
+                 <p className="text-foreground font-semibold">Contact</p>
+                 <p>+88 01923 205096</p>
+                 <p>+88 01920 411806</p>
+                 <p>info@rivartrims.com</p>
+              </div>
+
+              <div className="flex flex-wrap gap-4 mt-2">
+                 <Link href="/products">
+                    <Button size="lg">
+                      <span>EXPLORE PRODUCTS</span>
+                    </Button>
+                  </Link>
+                  <Link href="/contact">
+                    <Button size="lg" variant="outline">
+                      <span>CONTACT US</span>
+                    </Button>
+                  </Link>
+              </div>
             </div>
           </div>
           <div className="hidden lg:block">

@@ -1,9 +1,9 @@
 import { Button } from "@/components/ui/Button";
 import {
-  Description,
-  SectionTitle,
-  Subtitle,
-  Title,
+    Description,
+    SectionTitle,
+    Subtitle,
+    Title,
 } from "@/components/ui/SectionTitle";
 import Link from "next/link";
 
@@ -30,11 +30,14 @@ const AboutSection = () => {
               <Title>Global Standards, Local Craftsmanship.</Title>
               <Description>
                 <p>
-                  Rivar Trims Ltd. is a strategic partner for global fashion
-                  brands. Based in Dhaka, we utilize cutting-edge technology to
-                  produce Oeko-Tex Standard 100 certified trims. We blend
-                  industrial precision with aesthetic excellence to ensure every
-                  label, tag, and patch adds value to your finished product.
+                  Rivar Trims Limited is a proud concern of Mondol Group, one of the leading conglomerates in the Bangladesh Garment Industry. 
+                  Established to serve as a complete backward linkage solution, we specialize in high-quality garment accessories including 
+                  woven labels, printed labels, heat transfers, and packaging solutions.
+                </p>
+                <p className="mt-4">
+                  With a commitment to integrity, teamwork, and excellence, we strive to satisfy our valued clients with 
+                  superior quality, competitive pricing, and on-time delivery. As a sister concern of Montrims Ltd., 
+                  we leverage decades of industry expertise to meet global standards.
                 </p>
               </Description>
             </SectionTitle>

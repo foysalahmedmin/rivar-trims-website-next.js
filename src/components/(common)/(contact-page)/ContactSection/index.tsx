@@ -57,7 +57,7 @@ const ContactSection = () => {
                   Head Office
                 </h4>
                 <p className="text-foreground font-semibold">
-                  Holding -53, Block-A, Dharangartek, Turag, Dhaka-1230,
+                  House-08 (Lift-2), Road-04/A, Sector-15/G, Uttara, Dhaka-1230,
                   Bangladesh.
                 </p>
               </div>
@@ -65,16 +65,17 @@ const ContactSection = () => {
                 <h4 className="text-muted-foreground mb-1 text-sm font-bold uppercase">
                   Phone (Sales)
                 </h4>
-                <p className="text-primary text-xl font-bold">
-                  +88 01961 413784
-                </p>
+                <div className="text-primary text-xl font-bold">
+                  <p>+88 01923 205096</p>
+                  <p>+88 01920 411806</p>
+                </div>
               </div>
               <div>
                 <h4 className="text-muted-foreground mb-1 text-sm font-bold uppercase">
                   Email
                 </h4>
                 <p className="text-foreground font-semibold">
-                  info@rivartrimsltd.com
+                  info@rivartrims.com
                 </p>
               </div>
             </div>

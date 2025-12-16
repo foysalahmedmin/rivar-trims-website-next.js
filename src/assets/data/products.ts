@@ -1,8 +1,6 @@
-import { LucideIcon, Package, Printer, ScanLine, Shirt, Tag, Box } from "lucide-react";
-
 export type TProduct = {
   _id: string;
-  icon: LucideIcon;
+  icon?: string;
   title: string;
   description: string;
   thumbnail: string;
@@ -16,171 +14,185 @@ export type TProduct = {
 
 export const products: TProduct[] = [
   {
-    _id: "printed-label",
-    icon: Tag,
-    title: "Printed Label",
-    description: "Care & Composition Labels. Perfect fusion of durability and skin-friendly comfort.",
-    thumbnail: "https://images.unsplash.com/photo-1616609783935-71cb4659f13e?q=80&w=600",
-    link: "/products/printed-label",
+    _id: "woven-label",
+    title: "Woven Label",
+    description:
+      "High-definition damask, satin, and taffeta woven labels for superior brand identification.",
+    thumbnail: "https://images.unsplash.com/photo-1620799140408-ed5341cd2431?q=80&w=800",
+    link: "/products/woven-label",
     images: [
-      "https://images.unsplash.com/photo-1616609783935-71cb4659f13e?q=80&w=1200",
-      "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1200",
+      "https://images.unsplash.com/photo-1594223274512-ad4803739b7c?q=80&w=1200",
+       "https://images.unsplash.com/photo-1605647540924-852290f6b0d5?q=80&w=1200",
     ],
     details: {
-      title: "Printed Label",
+      title: "Premium Woven Labels",
       description: `
-        <div class="product-details">
-          <h3>High-Definition Printed Labels</h3>
-          <p>Our Printed Labels represent the perfect fusion of durability and skin-friendly comfort. Utilizing high-grade sustainable inks and premium fabric bases, we ensure that every care instruction and brand logo remains crisp and legible even after repeated industrial washes.</p>
-          
-          <h4>Key Features:</h4>
-          <ul>
-            <li><strong>Durability:</strong> Withstand rigors of supply chain and washing.</li>
-            <li><strong>Comfort:</strong> Soft touch against the skin, ideal for intimate wear.</li>
-            <li><strong>Compliance:</strong> Crucial for consumer information and regulatory compliance.</li>
-          </ul>
-        </div>
+        <p>Our woven labels are produced using state-of-the-art broadloom and needle loom technology. We offer a variety of finishes including:</p>
+        <ul>
+            <li>High Definition Damask</li>
+            <li>Satin and Reverse Satin</li>
+            <li>Taffeta</li>
+            <li>Ultrasonic, Laser, and Hot Cut edges</li>
+        </ul>
+        <p>Capable of reproducing fine details and complex logos, our labels ensure your brand stands out with a professional finish.</p>
+      `,
+    },
+  },
+  {
+    _id: "printed-label",
+    title: "Printed Label",
+    description:
+      "Soft and durable printed care labels on satin, cotton, and tyvek materials.",
+    thumbnail: "https://images.unsplash.com/photo-1544441893-675973e31985?q=80&w=800",
+    link: "/products/printed-label",
+    images: [
+      "https://images.unsplash.com/photo-1616604847460-61a7a58a7be7?q=80&w=1200",
+    ],
+    details: {
+      title: "Versatile Printed Labels",
+      description: `
+        <p>Perfect for wash care instructions and size labels. We use rotary and flexographic printing techniques to ensure clarity and wash fastness.</p>
+        <p>Materials available: Satin ribbon, Cotton tape, Polyester taffeta, and Tyvek.</p>
+      `,
+    },
+  },
+  {
+    _id: "heat-transfer-label",
+    title: "Heat Transfer Label",
+    description:
+      "Tag-less skin-friendly labels, perfect for activewear, lingerie, and infant clothing.",
+    thumbnail: "https://images.unsplash.com/photo-1562157873-818bc0726f68?q=80&w=800",
+    link: "/products/heat-transfer-label",
+    images: [
+       "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?q=80&w=800",
+    ],
+    details: {
+      title: "Tag-Free Comfort",
+      description: `
+        <p>Our Heat Transfer labels (HTL) provide a seamless, no-feel branding solution. Ideal for high-stretch fabrics.</p>
+        <p>Available in: Silicone, Water-based, Reflective, and Photo-print quality.</p>
+      `,
+    },
+  },
+  {
+    _id: "hang-tag",
+    title: "Hang Tag",
+    description:
+      "Custom designed hang tags using FSC certified paper and premium finishes.",
+    thumbnail: "https://images.unsplash.com/photo-1585802347318-7b44585c5750?q=80&w=800",
+    link: "/products/hang-tag",
+    images: [
+        "https://images.unsplash.com/photo-1629196914375-f7e48f477b6d?q=80&w=800",
+    ],
+    details: {
+      title: "Brand Identity Tags",
+      description: `
+        <p>Hang tags are the face of your retail presentation. We execute designs with foil stamping, embossing, UV coating, and unique die-cut shapes.</p>
+        <p>We adhere to sustainable practices, offering recycled paper and soy-based inks.</p>
       `,
     },
   },
   {
     _id: "offset-printing",
-    icon: Printer,
     title: "Offset Printing",
-    description: "Hang Tags & Inlays. Elevate your brand's unboxing experience with premium printing.",
-    thumbnail: "https://images.unsplash.com/photo-1595341888016-a392ef81b7de?q=80&w=600",
+    description:
+      "Photo cards, packaging inlays, and marketing materials with vibrant color accuracy.",
+    thumbnail: "https://images.unsplash.com/photo-1497211419994-142331908abd?q=80&w=800",
     link: "/products/offset-printing",
     images: [
-      "https://images.unsplash.com/photo-1595341888016-a392ef81b7de?q=80&w=1200",
-      "https://images.unsplash.com/photo-1586075010923-2dd4570fb338?q=80&w=1200",
+        "https://images.unsplash.com/photo-1567080596-3c0f86235123?q=80&w=800",
     ],
     details: {
-      title: "Offset Printing Solutions",
+      title: "Precision Offset Printing",
       description: `
-        <div class="product-details">
-          <h3>Premium Offset Printing</h3>
-          <p>Elevate your brand's unboxing experience with our premium Offset Printing solutions, covering hang tags, photo inlays, and paper bands. Using world-class Heidelberg machinery, we deliver vibrant color accuracy and sharp detailing.</p>
-          
-          <h4>Offerings:</h4>
-          <ul>
-            <li><strong>Materials:</strong> Wide range of paper stocks, including recycled and FSC-certified options.</li>
-            <li><strong>Finishes:</strong> UV coating, embossing, and foiling.</li>
-            <li><strong>Impact:</strong> Powerful marketing tools at the point of sale.</li>
-          </ul>
-        </div>
+        <p>High-volume printing solutions for packaging inserts, waist tags, and cardboard boxes. We ensure precise CMYK color matching for global brand consistency.</p>
       `,
     },
   },
   {
-    _id: "heat-transfer",
-    icon: ScanLine,
-    title: "Heat Transfer",
-    description: "Durable Logo Prints. Experience the tag-less revolution for performance wear.",
-    thumbnail: "https://images.unsplash.com/photo-1562157873-818bc0726f68?q=80&w=600",
-    link: "/products/heat-transfer",
+    _id: "packaging",
+    title: "Packaging",
+    description:
+      "Corrugated boxes, gift boxes, and rigid packaging solutions for retail.",
+    thumbnail: "https://images.unsplash.com/photo-1607082349566-187342175e2f?q=80&w=800",
+    link: "/products/packaging",
     images: [
-      "https://images.unsplash.com/photo-1562157873-818bc0726f68?q=80&w=1200",
-      "https://images.unsplash.com/photo-1576566588028-4147f3842f27?q=80&w=1200",
+        "https://images.unsplash.com/photo-1595246140625-573b715d11d3?q=80&w=800",
     ],
     details: {
-      title: "Heat Transfer Labels",
+      title: "Retail Ready Packaging",
       description: `
-        <div class="product-details">
-          <h3>Tag-less Revolution</h3>
-          <p>Designed for performance wear and seamless garments, these transfers eliminate the bulk and irritation of traditional sewn-in labels. Our transfers offer superior adhesion to various fabric types, including high-stretch synthetics.</p>
-          
-          <h4>Benefits:</h4>
-          <ul>
-            <li><strong>Comfort:</strong> No skin irritation.</li>
-            <li><strong>Durability:</strong> No cracking or fading.</li>
-            <li><strong>Versatility:</strong> Reflective safety logos or subtle branding.</li>
-          </ul>
-        </div>
+        <p>We produce sturdy and attractive packaging boxes. From e-commerce mailers to luxury rigid boxes, we have the structural design expertise to protect and present your product.</p>
       `,
     },
   },
   {
-    _id: "woven-label",
-    icon: Shirt,
-    title: "Woven Label",
-    description: "Classic Branding. The quintessential signature of quality apparel.",
-    thumbnail: "https://images.unsplash.com/photo-1594223274512-ad4803739b7c?q=80&w=600",
-    link: "/products/woven-label",
+    _id: "poly-bag",
+    title: "Poly Bag",
+    description:
+      "LDPE, PP, and biodegradable poly bags with up to 8-color rotogravure printing.",
+    thumbnail: "https://images.unsplash.com/photo-1622483767028-3f66f32aef97?q=80&w=800",
+    link: "/products/poly-bag",
     images: [
-      "https://images.unsplash.com/photo-1594223274512-ad4803739b7c?q=80&w=1200",
-      "https://images.unsplash.com/photo-1520986606214-8b456906c813?q=80&w=1200",
+         "https://images.unsplash.com/photo-1608779633602-d983eb052d80?q=80&w=800",
     ],
     details: {
-      title: "Woven Labels",
+      title: "Sustainable Polybags",
       description: `
-        <div class="product-details">
-          <h3>Signature of Quality</h3>
-          <p>We use high-definition looms to weave your logo directly into the fabric, creating a label that is not only elegant but incredibly durable. From damask to satin weaves, we offer a variety of textures and finishes.</p>
-          
-          <h4>Features:</h4>
-          <ul>
-            <li><strong>Quality:</strong> High-definition weaving.</li>
-            <li><strong>Comfort:</strong> Ultrasonic cutting for soft edges.</li>
-            <li><strong>Longevity:</strong> Designed to last the lifetime of the garment.</li>
-          </ul>
-        </div>
+        <p>Essential for garment protection. We offer standard clear bags, adhesive seal bags, and slider zipper bags.</p>
+        <p>Committed to the environment, we specialize in Recycled LDPE (GRS certified) and biodegradable options.</p>
       `,
     },
   },
   {
-    _id: "leather-patch",
-    icon: Package,
-    title: "PU & Leather Patch",
-    description: "Premium Denim Trims. Add a rugged, premium aesthetic to your denim.",
-    thumbnail: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=600",
-    link: "/products/leather-patch",
+     _id: "badges",
+    title: "Badges",
+    description:
+      "Embroidered, woven, and leather badges for denim, jackets, and uniforms.",
+    thumbnail: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=800",
+    link: "/products/badges",
     images: [
-      "https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=1200",
-      "https://images.unsplash.com/photo-1605518216938-7c31b7b14ad0?q=80&w=1200",
+        "https://images.unsplash.com/photo-1618331835717-801e976710b2?q=80&w=800",
     ],
     details: {
-      title: "PU & Genuine Leather Patches",
+      title: "Custom Badges & Patches",
       description: `
-        <div class="product-details">
-          <h3>Rugged Aesthetic</h3>
-          <p>Add a rugged, premium aesthetic to your denim and outerwear with our PU and Genuine Leather Patches. We offer a diverse range of finishes, including embossed, debossed, and printed options.</p>
-          
-          <h4>Options:</h4>
-          <ul>
-            <li><strong>Material:</strong> Genuine leather or vegan-friendly PU.</li>
-            <li><strong>Finishes:</strong> Embossed, debossed, printed.</li>
-            <li><strong>Usage:</strong> Perfect for jeans, jackets, and heavy-duty bags.</li>
-          </ul>
-        </div>
+        <p>Add dimension to your garments with our range of patches. Includes genuine leather, faux leather (PU), embroidered patches with merrow edges, and rubber (PVC/Silicone) badges.</p>
       `,
     },
   },
-  {
-    _id: "carton",
-    icon: Box,
-    title: "Semi Auto Carton",
-    description: "Sustainable Packaging. Robust cartons tailored to your shipping requirements.",
-    thumbnail: "https://images.unsplash.com/photo-1585802347318-7b44585c5750?q=80&w=600",
-    link: "/products/carton",
+    {
+     _id: "tapes-belts",
+    title: "Tapes & Belts",
+    description:
+      "Elastic tapes, drawstrings, and twill tapes for functional and decorative use.",
+    thumbnail: "https://images.unsplash.com/photo-1520986606214-8b456906c813?q=80&w=800",
+    link: "/products/tapes-belts",
     images: [
-      "https://images.unsplash.com/photo-1585802347318-7b44585c5750?q=80&w=1200",
-      "https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?q=80&w=1200",
+        "https://images.unsplash.com/photo-1517153192946-4cb4dd6d929b?q=80&w=800",
     ],
     details: {
-      title: "Packaging Solutions",
+      title: "Industrial Tapes & Webbings",
       description: `
-        <div class="product-details">
-          <h3>Robust & Sustainable</h3>
-          <p>Our packaging solutions extend beyond the garment itself to include robust Semi-Auto Cartons. We manufacture 3-ply, 5-ply, and 7-ply corrugated cartons tailored to your shipping requirements.</p>
-          
-          <h4>Highlights:</h4>
-          <ul>
-            <li><strong>Customization:</strong> High-quality flexographic printing.</li>
-            <li><strong>Sustainability:</strong> Recycled paper pulp and eco-friendly adhesives.</li>
-            <li><strong>Strength:</strong> Engineered to withstand stacking and handling.</li>
-          </ul>
-        </div>
+        <p>Woven and knitted elastics, jacquard waistbands, cotton twill tapes, and drawcords. We supply functional trims that meet rigorous durability tests.</p>
       `,
     },
   },
+   {
+     _id: "other-accessories",
+    title: "Other Accessories",
+    description:
+      "Safety pins, clips, tissue paper, and finishing accessories.",
+    thumbnail: "https://images.unsplash.com/photo-1584622412234-ac442c5567b4?q=80&w=800",
+    link: "/products/other-accessories",
+    images: [
+        "https://images.unsplash.com/photo-1611080626919-7cf5a9dbab5b?q=80&w=800",
+    ],
+    details: {
+      title: "Garment Finishing Accessories",
+      description: `
+        <p>The final touches. We supply plastic clips, collar stays, butterfly keepers, and branded tissue paper to ensure your garment arrives in perfect condition.</p>
+      `,
+    },
+  }
 ];

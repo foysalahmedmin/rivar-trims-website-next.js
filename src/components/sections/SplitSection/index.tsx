@@ -41,7 +41,7 @@ const SplitSection = ({
               {description && (
                 <Description>
                   <div className="w-full">
-                    <div className="prose prose-headings:font-normal dark:prose-invert w-full max-w-none">
+                    <div className="prose prose-headings:font-normal prose-headings:mt-0 dark:prose-invert w-full max-w-none">
                       <div
                         className="text-foreground"
                         dangerouslySetInnerHTML={{ __html: description || "" }}

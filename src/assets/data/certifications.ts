@@ -12,12 +12,17 @@ export const certifications = [
   },
   {
     _id: "bws",
-    title: "Better Work Standards",
-    image: "https://betterwork.org/wp-content/uploads/2019/06/Better-Work-Logo_Standard_RGB-1.png",
+    title: "BSCI Certified",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Amfori_BSCI_Logo.svg/1200px-Amfori_BSCI_Logo.svg.png",
   },
   {
     _id: "sedex",
     title: "Sedex Members",
     image: "https://tse4.mm.bing.net/th?id=OIP.S3JdFjC8_3Jz_4Jz_4Jz_4H&pid=Api",
+  },
+   {
+    _id: "grs",
+    title: "Global Recycled Standard",
+    image: "https://cdn.shopify.com/s/files/1/0550/1960/2085/files/GRS_logo.png",
   }
 ];
