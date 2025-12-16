@@ -24,7 +24,7 @@ export const generateStaticParams = async () => {
 const BlogsDetailsPage = async ({ params }: Props) => {
   const { id } = await params;
   const blog = blogs.find((blog) => blog._id === id);
-  const { title, description, thumbnail, details } = blog || {};
+  const { title, description, thumbnail, content } = blog || {};
 
   return (
     <main>
@@ -41,7 +41,7 @@ const BlogsDetailsPage = async ({ params }: Props) => {
               <div className="prose prose-headings:font-normal dark:prose-invert w-full max-w-none">
                 <article
                   className="text-foreground font-sans"
-                  dangerouslySetInnerHTML={{ __html: details || "" }}
+                  dangerouslySetInnerHTML={{ __html: content || "" }}
                 />
               </div>
             </div>

@@ -2,17 +2,17 @@ import { projects } from "@/assets/data/projects";
 import { sectors } from "@/assets/data/sectors";
 import ProjectsTabSection from "@/components/(common)/(projects-page)/ProjectsTabSection";
 import {
-  Description,
-  SectionTitle,
-  Subtitle,
-  Title,
+    Description,
+    SectionTitle,
+    Subtitle,
+    Title,
 } from "@/components/ui/SectionTitle";
 import {
-  Tabs,
-  TabsContent,
-  TabsItem,
-  TabsList,
-  TabsTrigger,
+    Tabs,
+    TabsContent,
+    TabsItem,
+    TabsList,
+    TabsTrigger,
 } from "@/components/ui/Tabs";
 
 export const metadata = {
@@ -55,7 +55,7 @@ const ProjectsPage = () => {
                 {sectors?.map((sector) => {
                   const filtered_projects =
                     projects?.filter(
-                      (project) => project?.sector === sector._id,
+                      (project) => project?.category.toLowerCase() === sector._id,
                     ) || [];
                   return (
                     <TabsItem key={sector._id} value={sector._id}>

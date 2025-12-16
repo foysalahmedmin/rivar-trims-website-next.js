@@ -8,9 +8,9 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 
 interface NewsEventDetailsPageProps {
-  params: {
+  params: Promise<{
     id: string;
-  };
+  }>;
 }
 
 export async function generateStaticParams() {
@@ -20,7 +20,7 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: NewsEventDetailsPageProps) {
-  const { id } = params;
+  const { id } = await params;
   const item = newsEvents.find((n) => n._id === id);
 
   if (!item) {
@@ -35,8 +35,8 @@ export async function generateMetadata({ params }: NewsEventDetailsPageProps) {
   };
 }
 
-const NewsEventDetailsPage = ({ params }: NewsEventDetailsPageProps) => {
-  const { id } = params;
+const NewsEventDetailsPage = async ({ params }: NewsEventDetailsPageProps) => {
+  const { id } = await params;
   const item = newsEvents.find((n) => n._id === id);
 
   if (!item) {
