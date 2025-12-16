@@ -1,10 +1,18 @@
 "use client";
 
+import { products } from "@/assets/data/products";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/Accordion";
 import { ActiveLink } from "@/components/ui/ActiveLink";
 import { Button } from "@/components/ui/Button";
 import useScrollPosition from "@/hooks/ui/useScrollPosition";
 import { useVisibleSection } from "@/hooks/utils/useVisibleSection";
 import { cn } from "@/lib/utils";
+import { X } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -28,6 +36,7 @@ const ALL_PAGE_NAV_LINKS: NavLink[] = [
   // { href: "/leaderships", name: "Leaderships" },
   // { href: "/projects", name: "Projects" },
   { href: "/products", name: "Products" },
+  { href: "/news-events", name: "News & Events" },
   { href: "/blogs", name: "Blogs" },
 ] as const;
 
@@ -39,6 +48,7 @@ const HOME_PAGE_NAV_LINKS: NavLink[] = [
   // { href: "#features", name: "Features" },
   // { href: "#projects", name: "Projects" },
   { href: "#products", name: "Products" },
+  { href: "#news-events", name: "News & Events" },
   { href: "#blogs", name: "Blogs" },
 ] as const;
 
@@ -50,6 +60,7 @@ const VISIBLE_SECTIONS = [
   // "features",
   // "projects",
   "products",
+  "news-events",
   "blogs",
 ];
 
@@ -149,17 +160,81 @@ const NavItem: React.FC<{
 const DesktopNavigation: React.FC<{
   navLinks: NavLink[];
   visibleSection?: string;
-}> = ({ navLinks, visibleSection }) => (
-  <nav className="hidden flex-1 items-center justify-center gap-4 px-0 lg:flex lg:gap-6 lg:px-16">
-    {navLinks.map((link, index) => (
-      <NavItem
-        key={`${link.href}-${index}`}
-        link={link}
-        visibleSection={visibleSection}
-      />
-    ))}
-  </nav>
-);
+}> = ({ navLinks, visibleSection }) => {
+  const params = usePathname();
+  const [isProductsHovered, setIsProductsHovered] = useState(false);
+
+  return (
+    <nav className="hidden flex-1 items-center justify-center gap-4 px-0 lg:flex lg:gap-6 lg:px-16">
+      {navLinks.map((link, index) => {
+        if (link.name === "Products") {
+          return (
+            <div
+              key={`${link.href}-${index}`}
+              className="relative"
+              onMouseEnter={() => setIsProductsHovered(true)}
+              onMouseLeave={() => setIsProductsHovered(false)}
+            >
+              <Link
+                href={link.href}
+                className={cn(
+                  "underline-effect foreground text-sm whitespace-nowrap uppercase transition-colors duration-200",
+                  {
+                    active:
+                      visibleSection === "products" ||
+                      params.startsWith("/products"),
+                  },
+                )}
+              >
+                {link.name}
+              </Link>
+              {/* Desktop Dropdown */}
+              <div
+                className={cn(
+                  "bg-card border-border absolute top-full -left-1/2 mt-4 grid w-[600px] -translate-x-1/4 grid-cols-2 gap-4 rounded-lg border p-4 shadow-xl transition-all duration-300",
+                  isProductsHovered
+                    ? "visible translate-y-0 opacity-100"
+                    : "pointer-events-none invisible translate-y-4 opacity-0",
+                )}
+              >
+                {products.map((product) => (
+                  <Link
+                    key={product._id}
+                    href={product.link}
+                    className="hover:bg-muted flex items-center gap-3 rounded-md p-2 transition-colors"
+                  >
+                    <div className="relative h-10 w-10 shrink-0 overflow-hidden rounded-md">
+                      <Image
+                        src={product.thumbnail}
+                        alt={product.title}
+                        fill
+                        className="object-cover"
+                      />
+                    </div>
+                    <div>
+                      <h4 className="text-sm font-medium">{product.title}</h4>
+                      <p className="text-muted-foreground line-clamp-1 text-xs">
+                        {product.description}
+                      </p>
+                    </div>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          );
+        }
+
+        return (
+          <NavItem
+            key={`${link.href}-${index}`}
+            link={link}
+            visibleSection={visibleSection}
+          />
+        );
+      })}
+    </nav>
+  );
+};
 
 const MobileMenuButton: React.FC<{
   isOpen: boolean;
@@ -197,38 +272,125 @@ const MobileNavigation: React.FC<{
   visibleSection?: string;
   isOpen: boolean;
   onClose: () => void;
-}> = ({ navLinks, visibleSection, isOpen, onClose }) => (
-  <div
-    className={cn(
-      "bg-card fixed inset-0 z-40 flex flex-col items-center justify-center transition-all duration-500",
-      isOpen
-        ? "visible translate-x-0 opacity-100"
-        : "invisible translate-x-full opacity-0",
-    )}
-    onClick={onClose}
-  >
-    <nav
-      className="flex flex-col items-center gap-6"
-      onClick={(e) => e.stopPropagation()}
-    >
-      {[...navLinks, { href: "/contact", name: "Contact Us" }].map(
-        (link, index) => (
-          <NavItem
-            key={`mobile-${link.href}-${index}`}
-            link={link}
-            visibleSection={visibleSection}
-            onClick={onClose}
-          />
-        ),
+}> = ({ navLinks, visibleSection, isOpen, onClose }) => {
+  const params = usePathname();
+
+  return (
+    <div
+      className={cn(
+        "bg-card fixed inset-0 z-50 flex flex-col overflow-y-auto transition-all duration-500",
+        isOpen
+          ? "visible translate-x-0 opacity-100"
+          : "invisible translate-x-full opacity-0",
       )}
-    </nav>
-  </div>
-);
+    >
+      <div className="container flex items-center justify-between py-4">
+        <Logo />
+        <button
+          onClick={onClose}
+          className="hover:bg-muted rounded-md p-2 transition-colors focus:outline-none"
+          aria-label="Close menu"
+        >
+          <X className="size-8" />
+        </button>
+      </div>
+
+      <nav
+        className="container my-auto flex w-full max-w-md flex-col gap-2 py-8"
+        onClick={(e) => e.stopPropagation()}
+      >
+        <Accordion type="single" collapsible className="w-full">
+          {navLinks.map((link, index) => {
+            // Mobile Products Accordion
+            if (link.name === "Products") {
+              return (
+                <AccordionItem
+                  key={`mobile-${link.href}-${index}`}
+                  value="products-accordion"
+                  className="border-b-0"
+                >
+                  <AccordionTrigger
+                    value="products-accordion"
+                    className="py-2 hover:no-underline"
+                  >
+                    <span
+                      className={cn(
+                        "text-2xl font-medium uppercase",
+                        (visibleSection === "products" ||
+                          params.startsWith("/products")) &&
+                          "text-primary",
+                      )}
+                    >
+                      {link.name}
+                    </span>
+                  </AccordionTrigger>
+                  <AccordionContent value="products-accordion">
+                    <div className="flex flex-col gap-4 pt-2 pl-4">
+                      <Link
+                        href="/products"
+                        className="text-primary text-sm font-semibold uppercase"
+                        onClick={onClose}
+                      >
+                        View All Products
+                      </Link>
+                      {products.map((product) => (
+                        <Link
+                          key={product._id}
+                          href={product.link}
+                          className="text-muted-foreground hover:text-primary text-sm transition-colors"
+                          onClick={onClose}
+                        >
+                          {product.title}
+                        </Link>
+                      ))}
+                    </div>
+                  </AccordionContent>
+                </AccordionItem>
+              );
+            }
+
+            // Standard Mobile Links
+            return (
+              <div key={`mobile-${link.href}-${index}`} className="w-full py-2">
+                <Link
+                  href={link.href}
+                  className={cn(
+                    "hover:text-primary block text-2xl font-medium uppercase transition-colors",
+                    visibleSection === link.href.replace("#", "") ||
+                      (link.href !== "/" && params.startsWith(link.href))
+                      ? "text-primary"
+                      : "text-foreground",
+                  )}
+                  onClick={onClose}
+                >
+                  {link.name}
+                </Link>
+              </div>
+            );
+          })}
+        </Accordion>
+
+        <div className="mt-6 w-full py-2">
+          <Link
+            href="/contact"
+            className={cn(
+              "hover:text-primary block text-2xl font-medium uppercase transition-colors",
+              params === "/contact" ? "text-primary" : "text-foreground",
+            )}
+            onClick={onClose}
+          >
+            Contact Us
+          </Link>
+        </div>
+      </nav>
+    </div>
+  );
+};
 
 const ContactButton: React.FC = () => (
   <Link className="hidden lg:inline-block" href="/contact">
-    <Button className="foreground" asChild={true} variant="outline">
-      <span>CONTACT</span>
+    <Button asChild={true}>
+      <span>GET A QUOTE</span>
     </Button>
   </Link>
 );

@@ -3,25 +3,25 @@
 
 import { Button } from "@/components/ui/Button";
 import {
-    Carousel,
-    CarouselContent,
-    CarouselItem,
-    CarouselNextTrigger,
-    CarouselPagination,
-    CarouselPreviousTrigger,
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNextTrigger,
+  CarouselPagination,
+  CarouselPreviousTrigger,
 } from "@/components/ui/Carousel";
 import {
-    ArrowRight,
-    Award,
-    CheckCircle,
-    ChevronLeft,
-    ChevronRight,
-    Clock,
-    Factory,
-    Globe,
-    Package,
-    Shield,
-    Users,
+  ArrowRight,
+  Award,
+  CheckCircle,
+  ChevronLeft,
+  ChevronRight,
+  Clock,
+  Factory,
+  Globe,
+  Package,
+  Shield,
+  Users,
 } from "lucide-react";
 import Link from "next/link";
 import { ReactNode, useState } from "react";
@@ -58,7 +58,10 @@ const heroSlides: HeroSlide[] = [
     overlayColor: "from-red-900/80 via-red-800/40 to-transparent",
     textColor: "text-white",
     features: [
-      { icon: <CheckCircle className="h-4 w-4" />, text: "Oeko-Tex 100 Certified" },
+      {
+        icon: <CheckCircle className="h-4 w-4" />,
+        text: "Oeko-Tex 100 Certified",
+      },
       { icon: <Clock className="h-4 w-4" />, text: "Automated Production" },
       { icon: <Users className="h-4 w-4" />, text: "Serving 100+ Brands" },
       { icon: <Package className="h-4 w-4" />, text: "Export Worldwide" },
@@ -78,7 +81,10 @@ const heroSlides: HeroSlide[] = [
     textColor: "text-white",
     features: [
       { icon: <Factory className="h-4 w-4" />, text: "Recycled Materials" },
-      { icon: <Globe className="h-4 w-4" />, text: "Carbon Footprint Reduction" },
+      {
+        icon: <Globe className="h-4 w-4" />,
+        text: "Carbon Footprint Reduction",
+      },
       { icon: <Award className="h-4 w-4" />, text: "Global Standards" },
       { icon: <Shield className="h-4 w-4" />, text: "100% Quality Check" },
     ],
@@ -108,7 +114,7 @@ const HeroCarouselSection = () => {
   const [activeSlide, setActiveSlide] = useState(0);
 
   return (
-    <div className="relative w-full overflow-hidden">
+    <div id="home" className="relative w-full overflow-hidden">
       <Carousel
         autoplay
         opts={{
@@ -146,7 +152,7 @@ const HeroCarouselSection = () => {
 
               {/* Content Container */}
               <div className="relative z-10 flex h-full items-center">
-                <div className="container mx-auto px-4 py-6 sm:px-6 md:py-24 lg:px-8">
+                <div className="container mx-auto px-4 py-20 sm:px-6 md:py-24 lg:px-8">
                   <div className="max-w-3xl">
                     {/* Animated Badge */}
                     <div
