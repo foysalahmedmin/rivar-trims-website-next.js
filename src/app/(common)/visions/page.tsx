@@ -1,23 +1,23 @@
-import { points } from "@/assets/data/visions";
+import { visions } from "@/assets/data/visions";
 import ValuesSection from "@/components/(common)/(visions-page)/ValuesSection";
 import FollowUpSection from "@/components/sections/FollowUpSection";
 import PageHeaderSection from "@/components/sections/PageHeaderSection";
-import SplitStickySection from "@/components/sections/SplitStickySection";
 import { SectionTitle, Subtitle, Title } from "@/components/ui/SectionTitle";
+import { cn } from "@/lib/utils";
 
 export const metadata = {
   title: "Visions | Rivar Trims",
   description:
-    "Rivar Trims | We believe in the power of collaboration, creativity, and technology to solve complex problems. Our team of dedicated strategists, designers, developers, and marketers is committed to creating solutions that help businesses grow, engage users, and stay competitive in a rapidly evolving digital landscape.",
+    "Rivar Trims | Unifying strategy, creativity, and sustainability to deliver exceptional garment accessories.",
 };
 
 const VisionsPage = async () => {
   return (
     <main>
       <PageHeaderSection
-        subtitle="Driving Digital Excellence"
+        subtitle="Driving Manufacturing Excellence"
         title="Our Vision"
-        description="We believe in the power of collaboration, creativity, and technology to solve complex problems. Our team of dedicated strategists, designers, developers, and marketers is committed to creating solutions that help businesses grow, engage users, and stay competitive in a rapidly evolving digital landscape."
+        description="We believe in the power of precision, innovation, and sustainability. Our team is committed to creating trim solutions that enhance your brand value while adhering to the highest global standards."
         image="/images/(visions-page)/page-header.png"
       />
       <section className="bg-muted intersection-fade-in py-16 md:py-24">
@@ -25,20 +25,34 @@ const VisionsPage = async () => {
           <SectionTitle>
             <Subtitle>Our Vision</Subtitle>
             <Title>
-              To unify strategy, creativity, and technology into seamless
-              digital solutions that fuel sustainable business growth.
+              To lead the global trims industry with sustainable innovation and uncompromising quality.
             </Title>
           </SectionTitle>
         </div>
       </section>
-      <SplitStickySection image={points?.thumbnail} contents={points?.list} />
+
+      {/* Visions Grid replacing SplitStickySection */}
+      <section className="py-16 md:py-24">
+        <div className="container">
+          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+            {visions.map((vision) => {
+              const Icon = vision.icon;
+              return (
+                <div key={vision._id} className="bg-card hover:border-primary border-border group rounded-xl border p-8 transition-colors duration-300">
+                  <div className="bg-primary/10 group-hover:bg-primary text-primary group-hover:text-primary-foreground mb-6 flex h-14 w-14 items-center justify-center rounded-lg transition-colors duration-300">
+                     <Icon className="h-7 w-7" />
+                  </div>
+                  <h3 className="mb-3 text-xl font-bold">{vision.title}</h3>
+                  <p className="text-muted-foreground leading-relaxed">{vision.description}</p>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
       <ValuesSection />
-      <PageHeaderSection
-        subtitle="Our Core Values"
-        title="Innovation. Reliability. Collaboration. Transparency. Growth."
-        description="These values shape how we approach every project and client relationship. Whether building high-performance web platforms, launching impactful campaigns, or streamlining business systems, we prioritize excellence, open communication, and long-term success for our partners."
-        image="/images/(visions-page)/core-values.png"
-      />
+      
       {/* <LeadershipsSection /> */}
       <FollowUpSection />
     </main>

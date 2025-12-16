@@ -7,7 +7,7 @@ const TestimonialsSection = () => {
     <section id="testimonials" className="intersection-fade-in py-16 md:py-24">
       <div className="container max-w-6xl">
         <SectionTitle variant="center">
-          <Title>Trusted by Homeowners</Title>
+          <Title>Trusted by Global Brands</Title>
         </SectionTitle>
 
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
@@ -42,21 +42,26 @@ const TestimonialsSection = () => {
                     <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
                   </svg>
                   <p className="text-muted-foreground relative z-10 pl-4 italic">
-                    &ldquo;{testimonial?.quote}&rdquo;
+                    &ldquo;{testimonial?.review}&rdquo;
                   </p>
                 </div>
 
                 {/* Author info */}
                 <div className="mt-auto flex items-center border-t pt-4">
                   <div className="mr-4 flex-shrink-0">
-                    <div className="bg-muted h-12 w-12 rounded-full border-2" />
+                    <div className="bg-muted flex h-12 w-12 items-center justify-center rounded-full border-2 text-xl font-bold">
+                       {testimonial?.name.charAt(0)}
+                    </div>
                   </div>
                   <div>
                     <strong className="block font-semibold">
-                      {testimonial?.author}
+                      {testimonial?.name}
                     </strong>
                     <span className="text-muted-foreground text-sm">
-                      {testimonial?.date}
+                      {testimonial?.designation}
+                    </span>
+                    <span className="text-muted-foreground block text-xs">
+                       {testimonial?.company}
                     </span>
                   </div>
                 </div>
