@@ -5,7 +5,7 @@ import FollowUpSection from "@/components/sections/FollowUpSection";
 export const metadata = {
   title: "Privacy Policy | Rivar Trims",
   description:
-    "Rivar Trims | Our privacy policy outlines how we collect, use, and protect your personal information. We're committed to ensuring your privacy and security in our digital world.",
+    "Rivar Trims | We are committed to protecting your business data and intellectual property. Learn how we handle your information and designs.",
 };
 
 const PrivacyPolicyPage = () => {

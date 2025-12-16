@@ -1,3 +1,4 @@
+
 import {
     Description,
     SectionTitle,
@@ -12,83 +13,70 @@ type TSection = {
 
 const sections: TSection[] = [
   {
-    title: "1. Purpose",
-    description: `This Privacy Policy explains how we collect, use, store, and share your personal information in accordance with the <strong>Privacy Act 2020 (NZ)</strong>.`,
+    title: "1. Policy Overview",
+    description: `Rivar Trims complies with all international industrial standards regarding data protection. This policy outlines how we handle information collected from our clients, suppliers, and website visitors.`,
   },
   {
-    title: "2. What We Collect",
+    title: "2. Information We Collect",
     description: `
-      <p>We may collect the following information:</p>
+      <p>We collect information necessary to process your orders and inquiries, including:</p>
       <ul>
-        <li>Name and contact details (email, phone, etc.)</li>
-        <li>Billing and payment details</li>
-        <li>Technical data (IP address, browser type, access logs)</li>
-        <li>Usage data (pages visited, services used)</li>
-        <li>Any content or files you upload to our services</li>
+        <li>Company details (Name, Address, Registration Number)</li>
+        <li>Contact person details (Name, Email, Phone Number)</li>
+        <li>Order specifications (Designs, Artwork, Tech Packs)</li>
+        <li>Shipping and billing information</li>
       </ul>
     `,
   },
   {
-    title: "3. How We Collect Your Information",
+    title: "3. Use of Your Information",
     description: `
+      <p>Your information is used for the following purposes:</p>
       <ul>
-        <li>When you fill out forms or create an account</li>
-        <li>When you contact us or use our services</li>
-        <li>Automatically through cookies and analytics tools</li>
+        <li>Processing sample requests and bulk orders</li>
+        <li>Creating quotations and invoices</li>
+        <li>Arranging potential shipping and logistics</li>
+        <li>Communicating production updates</li>
+        <li>Legal and regulatory compliance</li>
       </ul>
     `,
   },
   {
-    title: "4. Why We Collect Your Information",
+    title: "4. Protection of Designs & IP",
+    description: `We understand the sensitivity of pre-release fashion designs. All artwork, tech packs, and samples submitted to us are treated as strictly confidential. We do not share your designs with third parties without your explicit consent.`,
+  },
+  {
+    title: "5. Data Security",
+    description: `We implement appropriate technical and organizational measures to protect your data against unauthorized access, alteration, or destruction. Our internal systems are secured and access is restricted to authorized personnel only.`,
+  },
+  {
+    title: "6. Sharing of Information",
     description: `
+      <p>We do not sell your personal data. We may share necessary details with:</p>
       <ul>
-        <li>To provide and improve our services</li>
-        <li>To communicate with you (service alerts, updates)</li>
-        <li>To process payments and invoices</li>
-        <li>For legal compliance (e.g., tax reporting, dispute resolution)</li>
-        <li>To prevent fraud or misuse</li>
+        <li>Logistics partners (for shipping goods)</li>
+        <li>Payment processors (for banking transactions)</li>
+        <li>Government authorities (customs and tax compliance)</li>
       </ul>
     `,
   },
   {
-    title: "5. Storage and Security",
-    description: `We take reasonable steps to protect your personal data from unauthorized access, loss, or misuse. Data is stored on secure servers with limited access controls.`,
-  },
-  {
-    title: "6. Disclosure of Information",
-    description: `
-      <p>We do not sell your data. We may share information with:</p>
-      <ul>
-        <li>Trusted service providers (e.g., payment processors, hosting providers)</li>
-        <li>Law enforcement or regulators if legally required</li>
-        <li>Partners involved in delivering services to you (under confidentiality)</li>
-      </ul>
-    `,
-  },
-  {
-    title: "7. Cookies & Analytics",
-    description: `We use cookies and tracking tools (e.g., Google Analytics) to improve user experience and measure performance. You can disable cookies in your browser settings.`,
+    title: "7. Cookies",
+    description: `Our website uses standard cookies to enhance user experience and analyze traffic. You can choose to disable cookies through your browser settings, though this may affect site functionality.`,
   },
   {
     title: "8. Your Rights",
     description: `
-      <p>Under the <strong>Privacy Act 2020</strong>, you have the right to:</p>
-      <ul>
-        <li>Access the personal information we hold about you</li>
-        <li>Request correction of your personal information</li>
-        <li>Withdraw consent (where applicable)</li>
-        <li>Lodge a complaint with the <strong>Privacy Commissioner</strong></li>
-      </ul>
-      <p>To exercise your rights, please contact us via the website.</p>
+      <p>You have the right to request access to the personal data we hold about you and to ask for corrections if it is inaccurate. Please contact our administrative team for any such requests.</p>
     `,
   },
   {
-    title: "9. International Transfers",
-    description: `Some of your data may be stored or processed overseas (e.g., by global cloud services). We ensure all providers follow reasonable data protection standards.`,
+    title: "9. Updates to Policy",
+    description: `We reserve the right to modify this privacy policy at any time. Changes will be posted on this page with an updated revision date.`,
   },
   {
-    title: "10. Updates to This Policy",
-    description: `We may update this policy from time to time. The latest version will always be posted on our website.`,
+    title: "10. Contact Us",
+    description: `For any privacy-related concerns, please contact us at info@rivartrims.com or visit our office in Dhaka, Bangladesh.`,
   },
 ];
 
@@ -102,10 +90,10 @@ const PrivacyPolicySection = () => {
           <Description>
             <ul className="flex flex-col flex-wrap gap-x-2 md:flex-row md:items-center">
               <li>
-                <strong>Business Name: </strong>Rivar Trims Limited
+                <strong>Company: </strong>Rivar Trims Limited
               </li>
               <li>
-                <strong>NZBN: </strong>9429052881626
+                <strong>Location: </strong>Dhaka, Bangladesh
               </li>
               <li>
                 <strong>Website: </strong>

@@ -8,9 +8,9 @@ import CertificationsSection from "@/components/sections/CertificationsSection";
 import PartnersSection from "@/components/sections/PartnersSection";
 
 export const metadata = {
-  title: "Home | Rivar Trims",
+  title: "Rivar Trims - Global Quality, Local Excellence",
   description:
-    "Rivar Trims | Digital Transformation Agency in Silicon Valley. We build digital experiences that are not just functional, but meaningful. We approach every project with a blend of strategic insight and technical craftsmanship, striving to understand not just what a client wants, but why they want it.",
+    "Rivar Trims is a leading manufacturer of high-quality garment accessories and packaging solutions. We supply woven labels, heat transfers, and sustainable trims to global fashion brands.",
 };
 
 const HomePage = () => {

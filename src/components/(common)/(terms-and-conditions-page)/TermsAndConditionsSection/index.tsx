@@ -1,3 +1,4 @@
+
 import {
     Description,
     SectionTitle,
@@ -13,177 +14,108 @@ type TSection = {
 const sections: TSection[] = [
   {
     title: "1. Introduction",
-    description: `These Terms and Conditions (“Terms”) govern your access to and use of the Rivar Trims website and services. By accessing this Site, you agree to comply with and be bound by these Terms and all applicable laws and regulations of New Zealand. If you do not agree, do not use our services.`,
+    description: `These Terms and Conditions (“Terms”) govern your purchase of products and use of services from Rivar Trims. By placing an order with us, you agree to comply with and be bound by these Terms. If you do not agree, strictly do not proceed with any orders.`,
   },
   {
     title: "2. Definitions",
     description: `
       <ul>
-        <li><strong>“We”, “Us”, “Our”</strong> – Rivar Trims Limited.</li>
-        <li><strong>“You”, “User”, “Client”</strong> – Any person or entity using our services.</li>
-        <li><strong>“Services”</strong> – Web development, digital solutions, hosting, and related technology services.</li>
-        <li><strong>“Site”</strong> – <a href="https://rivartrims.com/" target="_blank" style="text-decoration-line:none;color:rgb(66,133,244)">https://rivartrims.com/</a></li>
+        <li><strong>“Seller”, “We”, “Us”</strong> – Rivar Trims Limited.</li>
+        <li><strong>“Buyer”, “Client”</strong> – The entity purchasing goods from us.</li>
+        <li><strong>“Goods”</strong> – Garment accessories including but not limited to woven labels, heat transfers, hang tags, and packaging items.</li>
+        <li><strong>“Order”</strong> – A confirmed request for the supply of Goods.</li>
       </ul>
     `,
   },
   {
-    title: "3. Compliance with New Zealand Law",
+    title: "3. General Conditions",
     description: `
-      <p>We operate in accordance with the laws of New Zealand. These Terms are subject to the following Acts:</p>
+      <p>We operate as a business-to-business (B2B) manufacturer. By placing an order, you confirm that you are purchasing goods for commercial purposes.</p>
       <ul>
-        <li><strong>Consumer Guarantees Act 1993 (CGA)</strong></li>
-        <li><strong>Fair Trading Act 1986 (FTA)</strong></li>
-        <li><strong>Privacy Act 2020</strong></li>
-        <li><strong>Unsolicited Electronic Messages Act 2007</strong></li>
-        <li><strong>Electronic Transactions Act 2002</strong></li>
-      </ul>
-      <p>Nothing in these Terms excludes your rights under these laws unless you're using our services for business purposes, in which case certain exclusions apply (see clause 15).</p>
-    `,
-  },
-  {
-    title: "4. Eligibility",
-    description: `To use our services, you must be at least 18 years of age or have legal consent from a guardian.`,
-  },
-  {
-    title: "5. Account and Security",
-    description: `You are responsible for protecting your account credentials and must notify us of any unauthorized access.`,
-  },
-  {
-    title: "6. Use of Services",
-    description: `
-      <p>You agree not to misuse our services or engage in any unlawful activity, including:</p>
-      <ul>
-        <li>Misleading or deceptive conduct (FTA)</li>
-        <li>Uploading or distributing harmful code or spam (Unsolicited Electronic Messages Act)</li>
-        <li>Violating intellectual property rights</li>
+        <li>We reserve the right to refuse service to anyone for any reason at any time.</li>
+        <li>You understand that your content (excluding credit card information) may be transferred unencrypted and involve transmissions over various networks.</li>
       </ul>
     `,
   },
   {
-    title: "7. Fees and Payment",
+    title: "4. Quotations and Orders",
+    description: `All quotations are valid for 30 days unless otherwise stated. An order is only binding once confirmed in writing by Rivar Trims. We reserve the right to correct any accidental errors in pricing or specifications on quotations and invoices.`,
+  },
+  {
+    title: "5. Pricing and Payment",
     description: `
       <ul>
-        <li>Fees will be clearly stated in your order or service agreement.</li>
-        <li>All payments must be made by the due date.</li>
-        <li>Late fees may be charged per the NZ High Court judgment rate + 3%.</li>
+        <li>Prices are subject to change without notice due to fluctuations in raw material costs or currency exchange rates.</li>
+        <li>Payment terms are as agreed in the Proforma Invoice (typically T/T or L/C).</li>
+        <li>The Buyer is responsible for all banking charges and applicable taxes/duties in their country.</li>
       </ul>
     `,
   },
   {
-    title: "8. Trial Periods",
-    description: `Trial access is optional and ends automatically unless a paid service is initiated.`,
+    title: "6. Production and Lead Times",
+    description: `
+      <p>Lead times provided are estimates only and are not guaranteed.</p>
+      <ul>
+        <li>Sampling: Typically 3-7 business days.</li>
+        <li>Bulk Production: Typically 7-15 business days after sample approval.</li>
+      </ul>
+      <p>We are not liable for delays caused by force majeure events, shipping delays, or customs clearance issues.</p>
+    `,
   },
   {
-    title: "9. Service Levels (Uptime and Maintenance)",
-    description: `We aim to maintain 99.9% uptime. Planned maintenance will be communicated in advance.`,
-  },
-  {
-    title: "10. Data Ownership and Retention",
+    title: "7. Quality and Tolerances",
     description: `
       <ul>
-        <li>You retain ownership of your content and data.</li>
-        <li>Data will be deleted 30 days after cancellation unless required by law.</li>
-        <li>We retain anonymised analytics in compliance with the Privacy Act 2020.</li>
+        <li>We manufacture goods according to the approved samples.</li>
+        <li>Due to the nature of textile manufacturing, minor variations in color, size, and weaving texture (within industry standard tolerances) may occur and do not constitute defects.</li>
+        <li>Color matching is done based on Pantone (TCX/TPX) standards or physical swatches provided by the client.</li>
       </ul>
     `,
   },
   {
-    title: "11. Intellectual Property",
-    description: `We retain all rights to the software, content, and materials provided unless stated otherwise in writing.`,
-  },
-  {
-    title: "12. Software Licenses",
-    description: `Software provided by us is licensed, not sold. Reverse engineering is strictly prohibited.`,
-  },
-  {
-    title: "13. Acceptable Use Policy",
-    description: `
-      <p>You may not use our services for:</p>
-      <ul>
-        <li>Hosting illegal or harmful content</li>
-        <li>Engaging in phishing, spamming, or network attacks</li>
-        <li>Violating New Zealand’s cybercrime or anti-spam laws</li>
-      </ul>
-    `,
-  },
-  {
-    title: "14. Confidentiality",
-    description: `Both parties agree to keep non-public information confidential unless required by law.`,
-  },
-  {
-    title: "15. Privacy",
-    description: `We comply with the <strong>Privacy Act 2020</strong>. Your personal data will be collected, stored, and processed responsibly.<br>By using our services, you agree to the practices described in our [Privacy Policy].`,
-  },
-  {
-    title: "16. Consumer Rights",
+    title: "8. Shipping and Delivery",
     description: `
       <ul>
-        <li><strong>For Consumers:</strong> You are protected under the <strong>Consumer Guarantees Act 1993</strong>.</li>
-        <li><strong>For Business Clients:</strong> You agree that the CGA does not apply, as permitted under section 43(2).</li>
+        <li>Unless otherwise agreed (e.g., FOB, CIF), goods are shipped Ex-Works (EXW) from our factory in Dhaka.</li>
+        <li>Risk of loss passes to the Buyer upon delivery to the carrier.</li>
+        <li>The Buyer is responsible for ensuring the goods comply with import regulations in the destination country.</li>
       </ul>
     `,
   },
   {
-    title: "17. Subcontractors and Third Parties",
-    description: `We may use verified partners to deliver parts of our services. You agree we are not liable for their independent actions unless otherwise stated.`,
+    title: "9. Intellectual Property",
+    description: `The Buyer warrants that they hold the necessary intellectual property rights (trademarks, copyrights) for all designs and logos submitted for production. Rivar Trims assumes no liability for IP infringement claims arising from the production of goods as per Buyer's specifications.`,
   },
   {
-    title: "18. Portfolio and Publicity",
-    description: `We may use your business name and logo in our portfolio unless you request otherwise.`,
-  },
-  {
-    title: "19. Export Controls",
-    description: `You agree to comply with all New Zealand export control laws. Services may not be used in violation of international sanctions.`,
-  },
-  {
-    title: "20. Indemnity",
-    description: `You agree to indemnify Rivar Trims Limited for any loss arising from your breach of these Terms or misuse of the services.`,
-  },
-  {
-    title: "21. Warranties and Disclaimers",
-    description: `We will provide services with reasonable care and skill.<br>We do not guarantee uninterrupted service. All services are provided “as is,” subject to applicable consumer protection laws.`,
-  },
-  {
-    title: "22. Limitation of Liability",
+    title: "10. Inspection and Claims",
     description: `
+      <p>The Buyer must inspect the goods upon receipt.</p>
       <ul>
-        <li>Liability is limited to the amount paid by you in the preceding 12 months.</li>
-        <li>We are not liable for indirect or consequential losses, subject to the CGA and FTA.</li>
+        <li>Any claims for defects or shortages must be made in writing within 7 days of delivery.</li>
+        <li>Failure to notify us within this period constitutes acceptance of the goods.</li>
+        <li>In case of a valid defect claim, our liability is limited to repairing or replacing the defective goods.</li>
       </ul>
     `,
   },
   {
-    title: "23. Termination",
-    description: `
-      <ul>
-        <li>Either party may terminate this agreement at any time, subject to 14 days’ notice.</li>
-        <li>We reserve the right to suspend services if you breach these Terms.</li>
-      </ul>
-    `,
+    title: "11. Confidentiality",
+    description: `Both parties agree to keep all proprietary information, including pricing, designs, and technical specifications, confidential and not to disclose it to third parties without consent.`,
   },
   {
-    title: "24. Effects of Termination",
-    description: `Upon termination, you must cease using our services and delete all confidential materials.`,
+    title: "12. Limitation of Liability",
+    description: `Rivar Trims shall not be liable for any indirect, incidental, or consequential damages (including loss of profit) arising from the use or inability to use our products. Our total liability shall not exceed the invoice value of the defective goods.`,
   },
   {
-    title: "25. Force Majeure",
-    description: `We are not liable for delays or failures caused by events outside our control (e.g. natural disasters, cyberattacks, strikes).`,
+    title: "13. Force Majeure",
+    description: `We are not liable for failure to perform our obligations due to events beyond our reasonable control, such as natural disasters, strikes, political unrest, or supply chain disruptions.`,
   },
   {
-    title: "26. Dispute Resolution",
-    description: `We encourage direct resolution of disputes. If unresolved, disputes may be submitted to arbitration under the Arbitration Act 1996.`,
+    title: "14. Governing Law",
+    description: `These Terms shall be governed by and construed in accordance with the laws of Bangladesh. Any disputes arising shall be subject to the exclusive jurisdiction of the courts in Dhaka.`,
   },
   {
-    title: "27. Notices",
-    description: `Notices must be delivered in writing via email or electronic notification through the Site.`,
-  },
-  {
-    title: "28. Entire Agreement",
-    description: `These Terms represent the entire agreement between you and Rivar Trims Limited, superseding any previous terms or understandings.`,
-  },
-  {
-    title: "29. Severability",
-    description: `If any part of these Terms is deemed unenforceable, the remaining clauses will remain in effect.`,
+    title: "15. Contact Information",
+    description: `Questions about the Terms and Conditions should be sent to us at info@rivartrims.com.`,
   },
 ];
 
@@ -197,10 +129,10 @@ const TermsAndConditionsSection = () => {
           <Description>
             <ul className="flex flex-col flex-wrap gap-x-2 md:flex-row md:items-center">
               <li>
-                <strong>Business Name: </strong>Rivar Trims Limited
+                <strong>Company: </strong>Rivar Trims Limited
               </li>
               <li>
-                <strong>NZBN: </strong>9429052881626
+                <strong>Location: </strong>Dhaka, Bangladesh
               </li>
               <li>
                 <strong>Website: </strong>

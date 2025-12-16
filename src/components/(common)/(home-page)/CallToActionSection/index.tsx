@@ -14,10 +14,10 @@ const CallToActionSection = () => {
       <div className="bg-background/50 py-16 md:py-24">
         <div className="container text-center">
           <SectionTitle variant="center">
-            <Title>Build with us</Title>
+            <Title>Elevate Your Brand</Title>
             <Description>
-              We’re ready to help you take on your most challenging projects—and
-              turn great ideas into reality.
+              Partner with a world-class trims manufacturer to bring your fashion collections to life with 
+              exceptional quality and sustainable detailing.
             </Description>
           </SectionTitle>
           <div className="inline-flex flex-wrap items-center justify-center gap-4">

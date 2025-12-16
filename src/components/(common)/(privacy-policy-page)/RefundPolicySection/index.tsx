@@ -1,3 +1,4 @@
+
 import {
     Description,
     SectionTitle,
@@ -12,67 +13,60 @@ type TSection = {
 
 const sections: TSection[] = [
   {
-    title: "1. Our Promise",
-    description: `We comply with the <strong>Consumer Guarantees Act 1993 (NZ)</strong> and provide services with reasonable care and skill. If something goes wrong due to our fault, we will work to fix it.`,
+    title: "1. Return Policy Overview",
+    description: `At Rivar Trims, we are committed to delivering high-quality garment accessories. Due to the custom nature of our products (branded labels, tags, etc.), we generally cannot accept returns for change of mind. However, we stand behind the quality of our manufacturing.`,
   },
   {
-    title: "2. Refund Eligibility",
+    title: "2. Defective or Damaged Goods",
     description: `
-      <p>Refunds may be granted in the following situations:</p>
+      <p>If you receive goods that are defective or do not match the approved sample, you may be eligible for a replacement or refund.</p>
       <ul>
-        <li>You were charged in error</li>
-        <li>You cancel before service delivery begins</li>
-        <li>The service was not delivered as described or agreed</li>
-        <li>A service was significantly defective and cannot be resolved within a reasonable timeframe</li>
+        <li><strong>Inspection Period:</strong> You must inspect the goods within 7 days of delivery.</li>
+        <li><strong>Notification:</strong> Report any issues to us in writing, including photos of the defects and a detailed description.</li>
+        <li><strong>Verification:</strong> We will review the claim and may request physical samples of the defective items for testing.</li>
+      </ul>
+    `,
+  },
+  {
+    title: "3. Approved Replacements",
+    description: `If a manufacturing defect is confirmed, we will prioritize re-production of the affected items at no additional cost to you. This is our primary method of resolution to ensure your production lines keep moving.`,
+  },
+  {
+    title: "4. Refund Eligibility",
+    description: `
+      <p>Refunds are considered only if:</p>
+      <ul>
+        <li>We are unable to re-produce the goods within a reasonable timeframe.</li>
+        <li>The defect makes the goods completely unusable for their intended purpose.</li>
       </ul>
       <blockquote>
-        <p><strong>⚠️ Note</strong>: Refunds are not provided for change of mind, or if you've misused the service or failed to follow requirements.</p>
+        <p><strong>Note:</strong> Minor variations within industry standard tolerances for color or size are not considered defects and are not eligible for refunds.</p>
       </blockquote>
     `,
   },
   {
-    title: "3. How to Request a Refund",
+    title: "5. Order Cancellation",
     description: `
-      <p>To request a refund:</p>
       <ul>
-        <li>Email us through the contact form on our website</li>
-        <li>Include details: service, date of purchase, issue, and any relevant documentation</li>
-        <li>We will investigate and respond within <strong>5 business days</strong></li>
+        <li><strong>Before Production:</strong> If you cancel an order before production has started, a full refund may be issued, minus any costs incurred for sampling or raw material procurement.</li>
+        <li><strong>During Production:</strong> Once bulk production has commenced, orders cannot be cancelled or refunded as the goods are custom-made for your brand.</li>
       </ul>
     `,
   },
   {
-    title: "4. Cancellation Policy",
+    title: "6. Return Shipping",
+    description: `If a physical return of defective goods is required by us, Rivar Trims will cover the shipping costs. Do not return goods without prior authorization from our sales team.`,
+  },
+  {
+    title: "7. Contact Us",
     description: `
-      <h4>One-off Projects (e.g., website development):</h4>
-      <ul>
-        <li><strong>Before work starts:</strong> Full refund</li>
-        <li><strong>During project:</strong> Refund minus work already completed</li>
-        <li><strong>After delivery:</strong> No refund unless agreed issues remain unresolved</li>
-      </ul>
-      <h4>Subscription Services (e.g., hosting, ongoing support):</h4>
-      <ul>
-        <li><strong>Monthly plans:</strong> Can be cancelled anytime before the next billing date</li>
-        <li><strong>Annual plans:</strong> Can be cancelled with pro-rata refund only if service fails to meet agreed deliverables</li>
-      </ul>
+      <p>For any claims regarding quality or refunds, please contact your account manager directly or email us at info@rivartrims.com.</p>
     `,
   },
   {
-    title: "5. Processing Refunds",
-    description: `
-      <ul>
-        <li>Approved refunds will be processed to the original payment method</li>
-        <li>It may take 5–10 business days depending on your bank or provider</li>
-      </ul>
-    `,
-  },
-  {
-    title: "6. Contact",
-    description: `
-      <p>All refund or cancellation inquiries must be made through the contact page on 
-      <a href="https://rivartrims.com/" target="_blank" style="text-decoration-line:none;color:rgb(66,133,244)">https://rivartrims.com/</a></p>
-    `,
-  },
+     title: "Shipping Policy", // Keeping a section for Shipping if it was previously mixed or relevant, though title is Refund/Return
+     description: "Please note that all shipping timelines are estimates. We are not responsible for delays caused by customs clearance or third-party logistics providers."
+  }
 ];
 
 const RefundPolicySection = () => {
@@ -80,15 +74,15 @@ const RefundPolicySection = () => {
     <section className="bg-muted py-16 md:py-24">
       <div className="container">
         <SectionTitle>
-          <Subtitle>Refund & Cancellation</Subtitle>
-          <Title>Refund & Cancellation Policy</Title>
+          <Subtitle>Returns & Replacements</Subtitle>
+          <Title>Return & Refund Policy</Title>
           <Description>
             <ul className="flex flex-col flex-wrap gap-x-2 md:flex-row md:items-center">
               <li>
-                <strong>Business Name: </strong>Rivar Trims Limited
+                <strong>Company: </strong>Rivar Trims Limited
               </li>
               <li>
-                <strong>NZBN: </strong>9429052881626
+                <strong>Location: </strong>Dhaka, Bangladesh
               </li>
               <li>
                 <strong>Website: </strong>

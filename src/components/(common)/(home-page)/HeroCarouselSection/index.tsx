@@ -3,25 +3,25 @@
 
 import { Button } from "@/components/ui/Button";
 import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNextTrigger,
-  CarouselPagination,
-  CarouselPreviousTrigger,
+    Carousel,
+    CarouselContent,
+    CarouselItem,
+    CarouselNextTrigger,
+    CarouselPagination,
+    CarouselPreviousTrigger,
 } from "@/components/ui/Carousel";
 import {
-  ArrowRight,
-  Award,
-  CheckCircle,
-  ChevronLeft,
-  ChevronRight,
-  Clock,
-  Factory,
-  Globe,
-  Package,
-  Shield,
-  Users,
+    ArrowRight,
+    Award,
+    CheckCircle,
+    ChevronLeft,
+    ChevronRight,
+    Clock,
+    Factory,
+    Globe,
+    Package,
+    Shield,
+    Users,
 } from "lucide-react";
 import Link from "next/link";
 import { ReactNode, useState } from "react";
@@ -48,77 +48,58 @@ const heroSlides: HeroSlide[] = [
   {
     id: 1,
     title: "Premium Garments Accessories & Trims",
-    subtitle: "Leading Manufacturer Since 1998",
+    subtitle: "Leading Manufacturer Since 2017",
     description:
-      "High-quality zippers, buttons, labels, and specialty trims for fashion industry with ISO 9001 certification",
+      "High-quality woven labels, heat transfers, and sustainable packaging solutions for the global fashion industry.",
     backgroundImage:
-      "https://images.unsplash.com/photo-1441986300917-64674bd600d8?q=80&w=2070",
+      "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2600", // Factory/Textile texture
     ctaText: "View Products",
     ctaLink: "/products",
-    overlayColor: "from-blue-900/80 via-blue-800/40 to-transparent",
+    overlayColor: "from-red-900/80 via-red-800/40 to-transparent",
     textColor: "text-white",
     features: [
-      { icon: <CheckCircle className="h-4 w-4" />, text: "ISO 9001 Certified" },
-      { icon: <Clock className="h-4 w-4" />, text: "Quick Turnaround" },
-      { icon: <Users className="h-4 w-4" />, text: "Dedicated Support" },
-      { icon: <Package className="h-4 w-4" />, text: "Global Shipping" },
+      { icon: <CheckCircle className="h-4 w-4" />, text: "Oeko-Tex 100 Certified" },
+      { icon: <Clock className="h-4 w-4" />, text: "Automated Production" },
+      { icon: <Users className="h-4 w-4" />, text: "Serving 100+ Brands" },
+      { icon: <Package className="h-4 w-4" />, text: "Export Worldwide" },
     ],
   },
   {
     id: 2,
-    title: "Custom Metal Trims & Embellishments",
-    subtitle: "Bespoke Manufacturing Solutions",
+    title: "Eco-Friendly Packaging Solutions",
+    subtitle: "Sustainable Innovation",
     description:
-      "Designer-approved metal accessories, buttons, rivets, and specialty trims for luxury collections",
+      "Green packaging that tells your brand's story. From FSC-certified hang tags to biodegradable polybags.",
     backgroundImage:
-      "https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?q=80&w=2070",
-    ctaText: "View Products",
-    ctaLink: "/products",
-    overlayColor: "from-amber-900/80 via-amber-800/40 to-transparent",
+      "https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=2600", // Eco/Greenery/Fabric
+    ctaText: "Sustainability",
+    ctaLink: "/about",
+    overlayColor: "from-green-900/80 via-green-800/40 to-transparent",
     textColor: "text-white",
     features: [
-      { icon: <Factory className="h-4 w-4" />, text: "45,000 Sq Ft Facility" },
-      { icon: <Globe className="h-4 w-4" />, text: "Global Supply Chain" },
-      { icon: <Award className="h-4 w-4" />, text: "Award Winning" },
-      { icon: <Shield className="h-4 w-4" />, text: "Quality Guaranteed" },
+      { icon: <Factory className="h-4 w-4" />, text: "Recycled Materials" },
+      { icon: <Globe className="h-4 w-4" />, text: "Carbon Footprint Reduction" },
+      { icon: <Award className="h-4 w-4" />, text: "Global Standards" },
+      { icon: <Shield className="h-4 w-4" />, text: "100% Quality Check" },
     ],
   },
   {
     id: 3,
-    title: "Sustainable Eco-Friendly Trims",
-    subtitle: "Green Manufacturing Initiative",
+    title: "Innovative Heat Transfer Labels",
+    subtitle: "Tag-less Comfort",
     description:
-      "Eco-conscious accessories made from recycled materials with minimal environmental footprint",
+      "Next-generation heat transfers for activewear and intimate apparel. Durable, stretchable, and soft on skin.",
     backgroundImage:
-      "https://images.unsplash.com/photo-1612817288484-6f91600674a?q=80&w=2070",
-    ctaText: "View Products",
-    ctaLink: "/products",
-    overlayColor: "from-emerald-900/80 via-emerald-800/40 to-transparent",
+      "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=2600", // Sportswear/Model
+    ctaText: "Explore Technology",
+    ctaLink: "/services/heat-transfers",
+    overlayColor: "from-blue-900/80 via-blue-800/40 to-transparent",
     textColor: "text-white",
     features: [
-      { icon: <CheckCircle className="h-4 w-4" />, text: "Recycled Materials" },
-      { icon: <Clock className="h-4 w-4" />, text: "Energy Efficient" },
-      { icon: <Users className="h-4 w-4" />, text: "Ethical Production" },
-      { icon: <Package className="h-4 w-4" />, text: "Green Packaging" },
-    ],
-  },
-  {
-    id: 4,
-    title: "High-Tech Production Facility",
-    subtitle: "State-of-the-Art Manufacturing",
-    description:
-      "ISO 9001 certified facility with advanced automation for precision and consistency in bulk production",
-    backgroundImage:
-      "https://images.unsplash.com/photo-1581094794329-c8112a89af12?q=80&w=2070",
-    ctaText: "View Products",
-    ctaLink: "/products",
-    overlayColor: "from-violet-900/80 via-violet-800/40 to-transparent",
-    textColor: "text-white",
-    features: [
-      { icon: <Factory className="h-4 w-4" />, text: "Automated Lines" },
-      { icon: <Globe className="h-4 w-4" />, text: "Export Worldwide" },
-      { icon: <Award className="h-4 w-4" />, text: "Industry Leader" },
-      { icon: <Shield className="h-4 w-4" />, text: "25+ Years Experience" },
+      { icon: <CheckCircle className="h-4 w-4" />, text: "High Elasticity" },
+      { icon: <Clock className="h-4 w-4" />, text: "Rapid Application" },
+      { icon: <Users className="h-4 w-4" />, text: "Anti-Migration" },
+      { icon: <Package className="h-4 w-4" />, text: "Reflective Options" },
     ],
   },
 ];

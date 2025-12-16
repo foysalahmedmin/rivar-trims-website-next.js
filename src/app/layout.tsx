@@ -36,8 +36,8 @@ const jost = Jost({
 });
 
 export const metadata: Metadata = {
-  title: "Rivar Trims",
-  description: "Digital solutions.",
+  title: "Rivar Trims - Global Quality, Local Excellence",
+  description: "Premier Manufacturer of Garment Trims & Accessories.",
 };
 
 export default function RootLayout({

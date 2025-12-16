@@ -6,23 +6,23 @@ import SplitSection from "@/components/sections/SplitSection";
 
 const metrics = [
   {
-    title: "50+",
-    description: "Digital solutions delivered",
+    title: "100+",
+    description: "Global Brands Served",
   },
   {
-    title: "0.5+",
-    description: "Years of tech innovation",
+    title: "6+",
+    description: "Years of Excellence",
   },
   {
-    title: "10+",
-    description: "Digital experts",
+    title: "150+",
+    description: "Skilled Professionals",
   },
 ];
 
 export const metadata = {
   title: "About | Rivar Trims",
   description:
-    "Rivar Trims's leadership team combines decades of technology expertise with visionary digital strategy. From Silicon Valley veterans to creative pioneers, our leaders are united by a common mission: to transform businesses through cutting-edge digital solutions. Meet the minds powering our clients' digital evolution.",
+    "Learn about Rivar Trims, a premier garments accessories manufacturer. Discover our journey, our commitment to sustainability, and our state-of-the-art manufacturing capabilities in Dhaka.",
 };
 
 const AboutPage = () => {
@@ -30,8 +30,8 @@ const AboutPage = () => {
     <main>
       <PageHeaderSection
         subtitle="About Us"
-        title="Architects of the Digital Revolution"
-        description="Rivar Trims's leadership team combines decades of technology expertise with visionary digital strategy. From Silicon Valley veterans to creative pioneers, our leaders are united by a common mission: to transform businesses through cutting-edge digital solutions. Meet the minds powering our clients' digital evolution."
+        title="Weaving Quality into Every Thread"
+        description="Rivar Trims combines decades of textile expertise with modern manufacturing technology. From our factory in Dhaka to global fashion hubs, we are united by a common mission: to deliver exquisite detailing that defines your brand."
         image="/images/(about-page)/page-header.png"
         metrics={metrics}
       />
@@ -40,62 +40,56 @@ const AboutPage = () => {
         title="The Rivar Trims Difference"
         description={`<div class="space-y-4">
           <p>
-            In an era where digital agencies are abundant and skillsets overlap, Rivar Trims rises
-            above by delivering not just services—but results, relationships, and long-term value.
-            What sets us apart isn’t just how we code, but how we think, collaborate, and drive change.
+            In a competitive global market, Rivar Trims stands out by blending local manufacturing cost-efficiencies 
+            with world-class quality standards. We don't just supply trims; we deliver reliability, innovation, and compliance.
           </p>
 
           <p class="font-medium">Here’s what makes us different:</p>
           <div class="grid gap-6">
             <div>
-              <h3 class="font-semibold text-lg">Full-Stack Expertise</h3>
+              <h3 class="font-semibold text-lg">Vertical Integration</h3>
               <p>
-                We offer end-to-end capabilities across the entire technology stack. Whether it's
-                modern frontend interfaces with React and Next.js or backend systems powered by Node.js,
-                Express, and scalable NoSQL databases—we handle the complete product lifecycle.
+                From design to weaving, printing, and finishing—everything happens in-house. This gives us 
+                complete control over quality and lead times, ensuring your production schedule is never compromised.
               </p>
             </div>
 
             <div>
-              <h3 class="font-semibold text-lg">Agile Innovation</h3>
+              <h3 class="font-semibold text-lg">Speed to Market</h3>
               <p>
-                Our agile methodology allows us to iterate fast, respond to feedback, and adapt to
-                evolving business needs. We don't just build once—we refine continuously to deliver
-                market-ready solutions that evolve with you.
+                Our optimized production lines and 24/7 distinct shifts allow us to offer some of the 
+                fastest turnaround times in the industry for both sampling and bulk production.
               </p>
             </div>
 
             <div>
-              <h3 class="font-semibold text-lg">Results-Obsessed</h3>
+              <h3 class="font-semibold text-lg">Technical Expertise</h3>
               <p>
-                We measure success in metrics that matter to you: increased user engagement,
-                faster load times, lower churn, higher conversions, and tangible ROI.
-                Every decision is made with your KPIs in mind.
+                Our team of textile engineers and design specialists understand fabric behavior. We advise 
+                on the best trim solutions that won't shrink, fade, or irritate the skin.
               </p>
             </div>
 
             <div>
-              <h3 class="font-semibold text-lg">Transparent Collaboration</h3>
+              <h3 class="font-semibold text-lg">Global Compliance</h3>
               <p>
-                Our team works as an extension of yours. We believe in clear communication,
-                mutual respect, and shared accountability—ensuring that you’re informed
-                and empowered at every step of the journey.
+                We adhere to strict international standards including Oeko-Tex 100, ensuring our products are 
+                free from harmful substances and safe for global export to US and EU markets.
               </p>
             </div>
 
             <div>
-              <h3 class="font-semibold text-lg">Business-Driven Engineering</h3>
+              <h3 class="font-semibold text-lg">Sustainable Innovation</h3>
               <p>
-                We understand the business context behind every feature. We don’t just
-                write code—we engineer systems that solve business problems, enhance
-                customer experiences, and drive sustainable growth.
+                We are constantly innovating with biodegradable materials and recycled yarns to help your 
+                brand meet its sustainability goals without sacrificing aesthetics.
               </p>
             </div>
           </div>
 
           <p>
-            At Rivar Trims, our commitment goes beyond project completion. We strive to build
-            long-term relationships rooted in trust, performance, and innovation. That’s
+            At Rivar Trims, our commitment goes beyond the product. We strive to build
+            long-term partnerships rooted in trust, performance, and mutual growth. That’s
             the Rivar Trims difference.
           </p>
         </div>`}

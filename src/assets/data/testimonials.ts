@@ -1,30 +1,35 @@
 export type TTestimonial = {
   _id: string;
-  quote: string;
-  author: string;
-  date: string;
+  name: string;
+  designation: string;
+  review: string;
+  company: string;
+  avatar?: string;
 };
 
-export const testimonials = [
+export const testimonials: TTestimonial[] = [
   {
-    _id: "1",
-    quote:
-      "Choosing Rivar Trims for our renovation project was one of the best decisions we made. From start to finish, they were attentive, responsive, and incredibly skilled. Mr. Mijanur Rahman&rsquo;s leadership ensured that our project was a success in every way.",
-    author: "Kevin Wilson",
-    date: "21 Dec 2025",
+    _id: "t1",
+    name: "Sarah Johnson",
+    designation: "Sourcing Manager",
+    company: "Nordic Wear",
+    review:
+      "Rivar Trims has been our go-to partner for sustainable accessories. Their recycled woven labels are top-notch, and they perfectly matched our brand's eco-conscious values.",
   },
   {
-    _id: "2",
-    quote:
-      "Working with Rivar Trims has been an absolute pleasure! Their attention to detail and commitment to excellence truly sets them apart. Mr. Rahman&rsquo;s leadership ensures that every project is completed with the utmost professionalism and care.",
-    author: "Sarah Johnson",
-    date: "22 Jan 2025",
+    _id: "t2",
+    name: "Michael Chen",
+    designation: "Production Head",
+    company: "Urban Denim Co.",
+    review:
+      "Reliability is everything in this industry. Rivar Trims delivers on time, every time. Their leather patches added the perfect premium finish to our latest jeans collection.",
   },
   {
-    _id: "3",
-    quote:
-      "We are so grateful to Rivar Trims for their exceptional work on our commercial project. Their team&rsquo;s professionalism and expertise were ev_ident from day one. Mr. Rahman&rsquo;s leadership and dedication to excellence truly set them apart in the industry.",
-    author: "Johnathan P.",
-    date: "17 Feb 2025",
+    _id: "t3",
+    name: "Elena Rodriguez",
+    designation: "Lead Designer",
+    company: "Luxe Intimates",
+    review:
+      "We struggled to find heat transfers that were soft enough for our lingerie line until we found Rivar. Their 'soft-touch' transfers are incredible—barely there but crystal clear.",
   },
 ];

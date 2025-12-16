@@ -4,7 +4,7 @@ import FollowUpSection from "@/components/sections/FollowUpSection";
 export const metadata = {
   title: "Terms and Conditions | Rivar Trims",
   description:
-    "Rivar Trims | By using our services, you agree to the terms and conditions outlined in this document. We're dedicated to delivering exceptional digital experiences that make a difference in the digital world.",
+    "Rivar Trims | Official terms and conditions governing the purchase of garment accessories and trims. Please read carefully before placing an order.",
 };
 
 const TermsAndConditionsPage = () => {
