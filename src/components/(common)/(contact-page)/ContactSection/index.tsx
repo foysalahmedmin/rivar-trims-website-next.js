@@ -1,6 +1,5 @@
 "use client";
 
-import { services } from "@/assets/data/services";
 import { Button } from "@/components/ui/Button";
 import { FormControl } from "@/components/ui/FormControl";
 import useWeb3forms from "@web3forms/react";
@@ -46,98 +45,90 @@ const ContactSection = () => {
   return (
     <section className="intersection-fade-in py-16">
       <div className="container">
-        <div className="flex flex-col gap-8 md:flex-row-reverse md:gap-12">
-          <div className="space-y-8 md:flex-1 md:space-y-12">
-            <h2 className="text-4xl">How can we help? </h2>
+        <div className="mx-auto grid grid-cols-1 gap-12 md:grid-cols-2">
+          {/* Contact Details Card */}
+          <div className="bg-card border-primary rounded-lg border-t-4 p-8 shadow-xl md:order-2">
+            <h2 className="text-primary mb-6 text-3xl font-bold uppercase">
+              Our Details
+            </h2>
+            <div className="space-y-6 text-lg">
+              <div>
+                <h4 className="text-muted-foreground mb-1 text-sm font-bold uppercase">
+                  Head Office
+                </h4>
+                <p className="text-foreground font-semibold">
+                  Holding -53, Block-A, Dharangartek, Turag, Dhaka-1230,
+                  Bangladesh.
+                </p>
+              </div>
+              <div>
+                <h4 className="text-muted-foreground mb-1 text-sm font-bold uppercase">
+                  Phone (Sales)
+                </h4>
+                <p className="text-primary text-xl font-bold">
+                  +88 01961 413784
+                </p>
+              </div>
+              <div>
+                <h4 className="text-muted-foreground mb-1 text-sm font-bold uppercase">
+                  Email
+                </h4>
+                <p className="text-foreground font-semibold">
+                  info@rivartrimsltd.com
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Contact Form Card */}
+          <div className="bg-card md:order-1 border-primary rounded-lg border-t-4 p-8 shadow-xl">
+            <h2 className="text-primary mb-6 text-3xl font-bold uppercase">
+              Send Us A Message
+            </h2>
             {result && (
               <div
-                className={`rounded-md p-4 ${isSuccess ? "bg-green-100 text-green-800" : "bg-red-100 text-red-800"}`}
+                className={`mb-4 rounded-md p-4 ${isSuccess ? "bg-green-100 text-green-800" : "bg-red-100 text-red-800"}`}
               >
                 {result}
               </div>
             )}
-            <div>
-              <form onSubmit={handleSubmit(onSubmit)}>
-                <div className="grid grid-cols-1 gap-4 lg:grid-cols-2">
-                  <label className="w-full space-y-2 lg:col-span-2">
-                    <span className="block">Select Service</span>
-                    <FormControl as="select" {...register("service")}>
-                      <option value="">Select a service</option>
-                      {services?.map((service) => (
-                        <option key={service._id} value={service._id}>
-                          {service?.title}
-                        </option>
-                      ))}
-                    </FormControl>
-                  </label>
-                  <label className="w-full space-y-2">
-                    <span className="block">Country </span>
-                    <FormControl
-                      as="input"
-                      type="text"
-                      placeholder="Country"
-                      {...register("country")}
-                    />
-                  </label>
-                  <label className="w-full space-y-2">
-                    <span className="block">Region </span>
-                    <FormControl
-                      as="input"
-                      type="text"
-                      placeholder="Region"
-                      {...register("region")}
-                    />
-                  </label>
-                  <label className="w-full space-y-2 lg:col-span-2">
-                    <span className="block">Name </span>
-                    <FormControl
-                      as="input"
-                      type="text"
-                      placeholder="First Name"
-                      {...register("name")}
-                    />
-                  </label>
-                  <label className="w-full space-y-2">
-                    <span className="block">Phone Number </span>
-                    <FormControl
-                      as="input"
-                      type="tel"
-                      placeholder="Phone Number"
-                      {...register("phone")}
-                    />
-                  </label>
-                  <label className="w-full space-y-2">
-                    <span className="block">Email Address </span>
-                    <FormControl
-                      as="input"
-                      type="email"
-                      placeholder="Email Address"
-                      {...register("email")}
-                    />
-                  </label>
-                  <label className="w-full space-y-2 lg:col-span-2">
-                    <span className="block">Description </span>
-                    <FormControl
-                      as="textarea"
-                      className="primary h-auto py-2"
-                      placeholder="Description"
-                      rows={4}
-                      {...register("description")}
-                    />
-                  </label>
-                </div>
-                <div className="mt-6 w-full text-right md:mt-8">
-                  <Button
-                    className="primary px-12"
-                    size="lg"
-                    type="submit"
-                    disabled={isSubmitting}
-                  >
-                    <span>{isSubmitting ? "Sending..." : "SUBMIT"}</span>
-                  </Button>
-                </div>
-              </form>
-            </div>
+            <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
+              <FormControl
+                as="input"
+                type="text"
+                placeholder="Your Name"
+                className="border-input focus:border-primary w-full rounded-sm border p-3"
+                {...register("name", { required: true })}
+              />
+              <FormControl
+                as="input"
+                type="email"
+                placeholder="Your Email"
+                className="border-input focus:border-primary w-full rounded-sm border p-3"
+                {...register("email", { required: true })}
+              />
+              <FormControl
+                as="input"
+                type="tel"
+                placeholder="Phone Number"
+                className="border-input focus:border-primary w-full rounded-sm border p-3"
+                {...register("phone")}
+              />
+              <FormControl
+                as="textarea"
+                rows={4}
+                placeholder="Your Message / Query"
+                className="border-input focus:border-primary h-auto w-full rounded-sm border p-3"
+                {...register("message", { required: true })}
+              />
+              <Button
+                type="submit"
+                className="primary w-full"
+                disabled={isSubmitting}
+              >
+                {isSubmitting ? "Sending..." : "Send Message"}
+              </Button>
+            </form>
           </div>
         </div>
       </div>

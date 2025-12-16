@@ -2,7 +2,10 @@ import AboutSection from "@/components/(common)/(home-page)/AboutSection";
 import BlogsSection from "@/components/(common)/(home-page)/BlogsSection";
 import CallToActionSection from "@/components/(common)/(home-page)/CallToActionSection";
 import HeroCarouselSection from "@/components/(common)/(home-page)/HeroCarouselSection";
+import NewsEventsSection from "@/components/(common)/(home-page)/NewsEventsSection";
 import ProductsSection from "@/components/(common)/(home-page)/ProductsSection";
+import CertificationsSection from "@/components/sections/CertificationsSection";
+import PartnersSection from "@/components/sections/PartnersSection";
 
 export const metadata = {
   title: "Home | Rivar Trims",
@@ -25,6 +28,9 @@ const HomePage = () => {
       <BlogsSection />
       {/* <TestimonialsSection /> */}
       {/* <ClientsSection /> */}
+      <NewsEventsSection />
+      <CertificationsSection />
+      <PartnersSection />
       <CallToActionSection />
       {/* <FAQSection /> */}
     </main>

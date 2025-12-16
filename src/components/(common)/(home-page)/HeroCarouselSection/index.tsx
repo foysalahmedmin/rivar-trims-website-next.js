@@ -23,6 +23,7 @@ import {
   Shield,
   Users,
 } from "lucide-react";
+import Link from "next/link";
 import { ReactNode, useState } from "react";
 
 type HeroFeature = {
@@ -71,8 +72,8 @@ const heroSlides: HeroSlide[] = [
       "Designer-approved metal accessories, buttons, rivets, and specialty trims for luxury collections",
     backgroundImage:
       "https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?q=80&w=2070",
-    ctaText: "Request Samples",
-    ctaLink: "/samples",
+    ctaText: "View Products",
+    ctaLink: "/products",
     overlayColor: "from-amber-900/80 via-amber-800/40 to-transparent",
     textColor: "text-white",
     features: [
@@ -90,8 +91,8 @@ const heroSlides: HeroSlide[] = [
       "Eco-conscious accessories made from recycled materials with minimal environmental footprint",
     backgroundImage:
       "https://images.unsplash.com/photo-1612817288484-6f91600674a?q=80&w=2070",
-    ctaText: "Learn About Sustainability",
-    ctaLink: "/sustainability",
+    ctaText: "View Products",
+    ctaLink: "/products",
     overlayColor: "from-emerald-900/80 via-emerald-800/40 to-transparent",
     textColor: "text-white",
     features: [
@@ -109,8 +110,8 @@ const heroSlides: HeroSlide[] = [
       "ISO 9001 certified facility with advanced automation for precision and consistency in bulk production",
     backgroundImage:
       "https://images.unsplash.com/photo-1581094794329-c8112a89af12?q=80&w=2070",
-    ctaText: "Schedule Factory Tour",
-    ctaLink: "/factory-tour",
+    ctaText: "View Products",
+    ctaLink: "/products",
     overlayColor: "from-violet-900/80 via-violet-800/40 to-transparent",
     textColor: "text-white",
     features: [
@@ -126,7 +127,7 @@ const HeroCarouselSection = () => {
   const [activeSlide, setActiveSlide] = useState(0);
 
   return (
-    <div className="relative h-screen max-h-[800px] w-full overflow-hidden">
+    <div className="relative w-full overflow-hidden">
       <Carousel
         autoplay
         opts={{
@@ -139,11 +140,13 @@ const HeroCarouselSection = () => {
             setActiveSlide(api.selectedScrollSnap());
           });
         }}
-        className="h-full"
       >
-        <CarouselContent className="h-full">
+        <CarouselContent>
           {heroSlides?.map((slide, index) => (
-            <CarouselItem key={slide.id} className="relative h-full">
+            <CarouselItem
+              key={slide.id}
+              className="dark text-foreground relative max-h-[800px] min-h-screen"
+            >
               {/* Background Image Container */}
               <div className="absolute inset-0 overflow-hidden">
                 <div
@@ -230,25 +233,26 @@ const HeroCarouselSection = () => {
                           : "translate-y-8 opacity-0"
                       }`}
                     >
-                      <Button
-                        size="lg"
-                        className="group rounded-lg bg-white px-8 py-6 text-base font-semibold text-gray-900 transition-all duration-300 hover:scale-105 hover:bg-gray-100 hover:shadow-2xl"
-                      >
-                        <span className="flex items-center">
-                          {slide.ctaText}
-                          <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
-                        </span>
-                      </Button>
-                      <Button
-                        size="lg"
-                        variant="outline"
-                        className="group rounded-lg border-2 border-white px-8 py-6 text-base font-semibold text-white backdrop-blur-sm transition-all duration-300 hover:bg-white/10"
-                      >
-                        <span className="flex items-center">
-                          Contact Sales
-                          <ChevronRight className="ml-2 h-5 w-5 -translate-x-2 opacity-0 transition-all duration-300 group-hover:translate-x-0 group-hover:opacity-100" />
-                        </span>
-                      </Button>
+                      <Link href={slide.ctaLink || "#" + slide.ctaLink}>
+                        <Button
+                          size="lg"
+                          variant="default"
+                          className="bg-accent-foreground text-accent"
+                        >
+                          <span className="flex items-center">
+                            {slide.ctaText}
+                            <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
+                          </span>
+                        </Button>
+                      </Link>
+                      <Link href={"/contact"}>
+                        <Button size="lg" variant="outline" className="accent">
+                          <span className="flex items-center">
+                            Contact
+                            <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
+                          </span>
+                        </Button>
+                      </Link>
                     </div>
                   </div>
                 </div>

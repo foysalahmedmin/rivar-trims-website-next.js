@@ -1,6 +1,7 @@
+import CertificationsSection from "@/components/sections/CertificationsSection";
 import FollowUpSection from "@/components/sections/FollowUpSection";
 import PageHeaderSection from "@/components/sections/PageHeaderSection";
-import SplitFloatSection from "@/components/sections/SplitFloatSection";
+import PartnersSection from "@/components/sections/PartnersSection";
 import SplitSection from "@/components/sections/SplitSection";
 
 const metrics = [
@@ -34,62 +35,10 @@ const AboutPage = () => {
         image="/images/(about-page)/page-header.png"
         metrics={metrics}
       />
-      <SplitFloatSection
-        className="bg-muted"
-        title="Our Digital Philosophy"
-        description={`<div class="space-y-6">
-          <p>
-            At Rivar Trims, we believe that digital transformation is not simply about implementing
-            the latest tools—it’s about crafting solutions that align with human intent, business
-            values, and long-term growth. Our philosophy centers on purpose-driven innovation,
-            ensuring that technology works for people—not the other way around.
-          </p>
-
-          <p>
-            We approach every project with a blend of strategic insight and technical craftsmanship,
-            striving to understand not just what a client wants, but why they want it. This
-            perspective helps us build digital experiences that are not only functional,
-            but meaningful.
-          </p>
-
-          <p class="font-medium">Our digital solutions are built to:</p>
-          <ul class="list-disc space-y-2 pl-6">
-            <li>
-              <strong>Address core business pain points</strong> through real-time analytics and
-              actionable insights
-            </li>
-            <li>
-              <strong>Integrate seamlessly</strong> with your existing software, processes, and teams
-              without unnecessary complexity
-            </li>
-            <li>
-              <strong>Scale efficiently</strong> and remain adaptable in the face of rapid market and
-              technological change
-            </li>
-            <li>
-              <strong>Maximize ROI</strong> by automating repetitive tasks, optimizing performance, and
-              reducing operational overhead
-            </li>
-          </ul>
-
-          <p>
-            We serve a broad spectrum of clients—from lean startups navigating early product-market fit,
-            to enterprise organizations undergoing system-wide transformation. In all cases, we bring
-            the same commitment: to unlock technology’s full potential in the service of human and
-            organizational excellence.
-          </p>
-
-          <p>
-            Our philosophy isn’t just a mindset—it’s a methodology. One that combines thoughtful research,
-            iterative design, agile development, and measurable impact.
-          </p>
-        </div>`}
-        image="https://images.unsplash.com/photo-1617396900799-f4ec2b43c7ae?w=800&h=600&fit=crop"
-      />
 
       <SplitSection
         title="The Rivar Trims Difference"
-        description={`<div class="space-y-6">
+        description={`<div class="space-y-4">
           <p>
             In an era where digital agencies are abundant and skillsets overlap, Rivar Trims rises
             above by delivering not just services—but results, relationships, and long-term value.
@@ -152,6 +101,9 @@ const AboutPage = () => {
         </div>`}
         image="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=800&fit=crop"
       />
+
+      <CertificationsSection />
+      <PartnersSection />
 
       <FollowUpSection />
     </main>
