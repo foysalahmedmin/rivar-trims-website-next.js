@@ -30,3 +30,35 @@ export const visions: TVision[] = [
     icon: Leaf,
   },
 ];
+
+export type TValue = {
+  _id: string;
+  title: string;
+  description: string;
+  icon: LucideIcon;
+  link?: string;
+};
+
+export const values: TValue[] = [
+  {
+    _id: "val-innovation",
+    title: "Innovation",
+    description: "Embracing new technologies and methods to stay ahead in the dynamic fashion industry.",
+    icon: Lightbulb,
+    link: "/about",
+  },
+  {
+    _id: "val-integrity",
+    title: "Reliability",
+    description: "Consistent quality and timely delivery you can count on, every single time.",
+    icon: ShieldCheck,
+    link: "/about",
+  },
+  {
+    _id: "val-sustainability",
+    title: "Sustainability",
+    description: "Committing to eco-friendly practices that protect our planet for future generations.",
+    icon: Leaf,
+    link: "/about",
+  },
+];
