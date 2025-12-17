@@ -12,14 +12,14 @@ const ProductCard = ({ product, className }: ProductCardProps) => {
   return (
     <div
       className={cn(
-        "group bg-card intersection-fade-in relative h-80 w-full cursor-pointer overflow-hidden shadow-lg border-b-4 border-primary",
+        "group bg-card intersection-fade-in border-primary relative h-80 w-full cursor-pointer overflow-hidden rounded-xl border-b-4 shadow-lg",
         className,
       )}
     >
       <Link
         key={product?._id}
         href={"/products/" + product?._id}
-        className="size-full block"
+        className="block size-full"
       >
         <Image
           className="bg-muted size-full object-cover object-center transition-all duration-500 group-hover:scale-110"
@@ -28,9 +28,13 @@ const ProductCard = ({ product, className }: ProductCardProps) => {
           height={320}
           width={600}
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-primary/90 to-primary/80 opacity-95 flex flex-col justify-center items-center text-center p-6 translate-y-full transition-transform duration-400 ease-out group-hover:translate-y-0">
-          <h3 className="text-xl text-primary-foreground mb-2 uppercase font-bold">{product?.title}</h3>
-          <p className="text-primary-foreground text-xs">{product?.description}</p>
+        <div className="from-primary/90 to-primary/80 absolute inset-0 flex translate-y-full flex-col items-center justify-center bg-gradient-to-r p-6 text-center opacity-95 transition-transform duration-400 ease-out group-hover:translate-y-0">
+          <h3 className="text-primary-foreground mb-2 text-xl font-bold uppercase">
+            {product?.title}
+          </h3>
+          <p className="text-primary-foreground text-xs">
+            {product?.description}
+          </p>
         </div>
       </Link>
     </div>

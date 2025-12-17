@@ -1,6 +1,5 @@
 import { newsEvents } from "@/assets/data/news-events";
 import NewsEventCard from "@/components/cards/NewsEventCard";
-import { Button } from "@/components/ui/Button";
 import {
   Description,
   SectionTitle,
@@ -16,8 +15,8 @@ const NewsEventsSection = () => {
       className="intersection-fade-in bg-muted/30 py-16 md:py-24"
     >
       <div className="container">
-        <div className="mb-12 flex flex-col items-end justify-between gap-6 md:flex-row md:items-end">
-          <SectionTitle className="md:max-w-xl">
+        <div className="mb-6">
+          <SectionTitle>
             <Subtitle>Updates</Subtitle>
             <Title>News & Events</Title>
             <Description>
@@ -26,10 +25,11 @@ const NewsEventsSection = () => {
               exhibitions.
             </Description>
           </SectionTitle>
-          <Link href={"/news-events"} className="inline-block">
-            <Button asChild={true} size="lg" variant="outline">
-              <span>VIEW ALL NEWS</span>
-            </Button>
+          <Link
+            href={"/products"}
+            className="primary hover:text-primary underline-effect inline-block"
+          >
+            View All News & Events
           </Link>
         </div>
 
