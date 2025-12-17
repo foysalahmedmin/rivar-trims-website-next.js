@@ -1,5 +1,4 @@
 import AboutSection from "@/components/(common)/(home-page)/AboutSection";
-import BlogsSection from "@/components/(common)/(home-page)/BlogsSection";
 import CallToActionSection from "@/components/(common)/(home-page)/CallToActionSection";
 import HeroCarouselSection from "@/components/(common)/(home-page)/HeroCarouselSection";
 import NewsEventsSection from "@/components/(common)/(home-page)/NewsEventsSection";
@@ -25,7 +24,7 @@ const HomePage = () => {
       {/* <LeadershipsSection /> */}
       {/* <FeaturesSection /> */}
       {/* <ProjectsSection /> */}
-      <BlogsSection />
+      {/* <BlogsSection /> */}
       {/* <TestimonialsSection /> */}
       {/* <ClientsSection /> */}
       <NewsEventsSection />

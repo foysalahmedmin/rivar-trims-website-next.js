@@ -37,7 +37,8 @@ const ALL_PAGE_NAV_LINKS: NavLink[] = [
   // { href: "/projects", name: "Projects" },
   { href: "/products", name: "Products" },
   { href: "/news-events", name: "News & Events" },
-  { href: "/blogs", name: "Blogs" },
+  // { href: "/blogs", name: "Blogs" },
+  { href: "/contact", name: "Contact Us" },
 ] as const;
 
 const HOME_PAGE_NAV_LINKS: NavLink[] = [
@@ -49,7 +50,7 @@ const HOME_PAGE_NAV_LINKS: NavLink[] = [
   // { href: "#projects", name: "Projects" },
   { href: "#products", name: "Products" },
   { href: "#news-events", name: "News & Events" },
-  { href: "#blogs", name: "Blogs" },
+  { href: "/contact", name: "Contact Us" },
 ] as const;
 
 const VISIBLE_SECTIONS = [
@@ -61,7 +62,7 @@ const VISIBLE_SECTIONS = [
   // "projects",
   "products",
   "news-events",
-  "blogs",
+  // "blogs",
 ];
 
 // Custom hook for mobile menu
