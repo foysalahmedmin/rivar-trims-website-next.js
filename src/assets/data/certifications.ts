@@ -1,28 +1,26 @@
-
 export const certifications = [
   {
     _id: "oeko-tex",
     title: "Oeko-Tex Standard 100",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Oeko-Tex_Standard_100_logo.svg/1024px-Oeko-Tex_Standard_100_logo.svg.png", 
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Oeko-Tex_Standard_100_logo.svg/1024px-Oeko-Tex_Standard_100_logo.svg.png",
   },
   {
-    _id: "iso-9001",
-    title: "ISO 9001:2015",
-    image: "https://tse2.mm.bing.net/th?id=OIP.Ff9JfbR-xS5yBV-xQJz_awHaHa&pid=Api", 
+    _id: "fsc",
+    title: "FOREST STEWARDSHIP COUNCIL (FSC)",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/FSC_Logo.svg/1024px-FSC_Logo.svg.png",
   },
   {
-    _id: "bws",
-    title: "BSCI Certified",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Amfori_BSCI_Logo.svg/1200px-Amfori_BSCI_Logo.svg.png",
+    _id: "gots",
+    title: "Global Organic Textile Standard (GOTS)",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/GOTS-Logo.svg/1024px-GOTS-Logo.svg.png",
   },
   {
-    _id: "sedex",
-    title: "Sedex Members",
-    image: "https://tse4.mm.bing.net/th?id=OIP.S3JdFjC8_3Jz_4Jz_4Jz_4H&pid=Api",
-  },
-   {
-    _id: "grs",
+    _id: "global-recycled-standard",
     title: "Global Recycled Standard",
-    image: "https://cdn.shopify.com/s/files/1/0550/1960/2085/files/GRS_logo.png",
-  }
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Global_Recycled_Standard_logo.svg/1024px-Global_Recycled_Standard_logo.svg.png",
+  },
 ];

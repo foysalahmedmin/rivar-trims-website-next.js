@@ -1,3 +1,4 @@
+import BankingPartnersSection from "@/components/sections/BankingPartnersSection";
 import CertificationsSection from "@/components/sections/CertificationsSection";
 import FollowUpSection from "@/components/sections/FollowUpSection";
 import PageHeaderSection from "@/components/sections/PageHeaderSection";
@@ -178,6 +179,7 @@ const AboutPage = () => {
 
       <CertificationsSection />
       <PartnersSection />
+      <BankingPartnersSection />
 
       <FollowUpSection />
     </main>
