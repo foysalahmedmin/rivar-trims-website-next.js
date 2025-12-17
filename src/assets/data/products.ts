@@ -14,81 +14,28 @@ export type TProduct = {
 
 export const products: TProduct[] = [
   {
-    _id: "woven-label",
-    title: "Woven Label",
-    description:
-      "High-definition damask, satin, and taffeta woven labels for superior brand identification.",
-    thumbnail: "https://images.unsplash.com/photo-1620799140408-ed5341cd2431?q=80&w=800",
-    link: "/products/woven-label",
-    images: [
-      "https://images.unsplash.com/photo-1594223274512-ad4803739b7c?q=80&w=1200",
-       "https://images.unsplash.com/photo-1605647540924-852290f6b0d5?q=80&w=1200",
-    ],
-    details: {
-      title: "Premium Woven Labels",
-      description: `
-        <p>Our woven labels are produced using state-of-the-art broadloom and needle loom technology. We offer a variety of finishes including:</p>
-        <ul>
-            <li>High Definition Damask</li>
-            <li>Satin and Reverse Satin</li>
-            <li>Taffeta</li>
-            <li>Ultrasonic, Laser, and Hot Cut edges</li>
-        </ul>
-        <p>Capable of reproducing fine details and complex logos, our labels ensure your brand stands out with a professional finish.</p>
-      `,
-    },
-  },
-  {
     _id: "printed-label",
     title: "Printed Label",
     description:
-      "Soft and durable printed care labels on satin, cotton, and tyvek materials.",
-    thumbnail: "https://images.unsplash.com/photo-1544441893-675973e31985?q=80&w=800",
+      "High-quality care labels with apparel composition and care instructions to extend product life.",
+    thumbnail:
+      "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?q=80&w=800",
     link: "/products/printed-label",
     images: [
-      "https://images.unsplash.com/photo-1616604847460-61a7a58a7be7?q=80&w=1200",
+      "https://images.unsplash.com/photo-1629198720835-1c9c6d46e4c6?q=80&w=1200",
+      "https://images.unsplash.com/photo-1582555172866-f73bb13a2ad3?q=80&w=1200",
     ],
     details: {
-      title: "Versatile Printed Labels",
+      title: "Printed Care Labels",
       description: `
-        <p>Perfect for wash care instructions and size labels. We use rotary and flexographic printing techniques to ensure clarity and wash fastness.</p>
-        <p>Materials available: Satin ribbon, Cotton tape, Polyester taffeta, and Tyvek.</p>
-      `,
-    },
-  },
-  {
-    _id: "heat-transfer-label",
-    title: "Heat Transfer Label",
-    description:
-      "Tag-less skin-friendly labels, perfect for activewear, lingerie, and infant clothing.",
-    thumbnail: "https://images.unsplash.com/photo-1562157873-818bc0726f68?q=80&w=800",
-    link: "/products/heat-transfer-label",
-    images: [
-       "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?q=80&w=800",
-    ],
-    details: {
-      title: "Tag-Free Comfort",
-      description: `
-        <p>Our Heat Transfer labels (HTL) provide a seamless, no-feel branding solution. Ideal for high-stretch fabrics.</p>
-        <p>Available in: Silicone, Water-based, Reflective, and Photo-print quality.</p>
-      `,
-    },
-  },
-  {
-    _id: "hang-tag",
-    title: "Hang Tag",
-    description:
-      "Custom designed hang tags using FSC certified paper and premium finishes.",
-    thumbnail: "https://images.unsplash.com/photo-1585802347318-7b44585c5750?q=80&w=800",
-    link: "/products/hang-tag",
-    images: [
-        "https://images.unsplash.com/photo-1629196914375-f7e48f477b6d?q=80&w=800",
-    ],
-    details: {
-      title: "Brand Identity Tags",
-      description: `
-        <p>Hang tags are the face of your retail presentation. We execute designs with foil stamping, embossing, UV coating, and unique die-cut shapes.</p>
-        <p>We adhere to sustainable practices, offering recycled paper and soy-based inks.</p>
+        <p>Our high-quality care labels provide consumers with important apparel composition and care instructions to extend product life and drive satisfaction. We use advanced manufacturing technologies including:</p>
+        <ul>
+          <li>Flexo Printing</li>
+          <li>Ultrasonic Cutting & Folding</li>
+          <li>Flexo Block Printing</li>
+          <li>Auto Screen Print & Curing Machine</li>
+        </ul>
+        <p><strong>Daily Production Capacity:</strong> 10,00,000 pieces</p>
       `,
     },
   },
@@ -96,33 +43,223 @@ export const products: TProduct[] = [
     _id: "offset-printing",
     title: "Offset Printing",
     description:
-      "Photo cards, packaging inlays, and marketing materials with vibrant color accuracy.",
-    thumbnail: "https://images.unsplash.com/photo-1497211419994-142331908abd?q=80&w=800",
+      "Premium offset printing for hang tags, photo inlays, paper bands, and other quality printing solutions.",
+    thumbnail:
+      "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?q=80&w=800",
     link: "/products/offset-printing",
     images: [
-        "https://images.unsplash.com/photo-1567080596-3c0f86235123?q=80&w=800",
+      "https://images.unsplash.com/photo-1606229365485-93a3b8ee0385?q=80&w=1200",
+      "https://images.unsplash.com/photo-1609081219090-a6d81d3085bf?q=80&w=1200",
     ],
     details: {
-      title: "Precision Offset Printing",
+      title: "Offset Printing Services",
       description: `
-        <p>High-volume printing solutions for packaging inserts, waist tags, and cardboard boxes. We ensure precise CMYK color matching for global brand consistency.</p>
+        <p>We produce all kinds of hang tags, photo inlays, paper bands, and other quality printing using world-class Heidelberg machines. Our equipment includes:</p>
+        <ul>
+          <li>Offset Printing 5 Color Machine</li>
+          <li>Offset Printing 2 Color Machine</li>
+          <li>Offset Printing Single Color Machine</li>
+        </ul>
+        <p>Our state-of-the-art facility features:</p>
+        <ul>
+          <li>CTP (Computer to Plate) Technology</li>
+          <li>Film Output Machine</li>
+          <li>Lamination Services</li>
+          <li>Auto Die Cutting & Polar Cutting</li>
+          <li>UV Spot & Foil Printing</li>
+          <li>Digital Printing Capabilities</li>
+        </ul>
+        <p><strong>Daily Production Capacity:</strong> 8,00,000 pieces</p>
       `,
     },
   },
   {
-    _id: "packaging",
-    title: "Packaging",
+    _id: "heat-transfer",
+    title: "Heat Transfer",
     description:
-      "Corrugated boxes, gift boxes, and rigid packaging solutions for retail.",
-    thumbnail: "https://images.unsplash.com/photo-1607082349566-187342175e2f?q=80&w=800",
-    link: "/products/packaging",
+      "Durable, long-lasting heat transfer printing resistant to fading and cracking for various applications.",
+    thumbnail:
+      "https://images.unsplash.com/photo-1605721911519-3dfeb3be25e7?q=80&w=800",
+    link: "/products/heat-transfer",
     images: [
-        "https://images.unsplash.com/photo-1595246140625-573b715d11d3?q=80&w=800",
+      "https://images.unsplash.com/photo-1559056199-641a0ac8b55e?q=80&w=1200",
+      "https://images.unsplash.com/photo-1561361513-2d000d50ff0c?q=80&w=1200",
     ],
     details: {
-      title: "Retail Ready Packaging",
+      title: "Heat Transfer Printing",
       description: `
-        <p>We produce sturdy and attractive packaging boxes. From e-commerce mailers to luxury rigid boxes, we have the structural design expertise to protect and present your product.</p>
+        <p>The heat transfer printing process involves applying designs onto transfer paper using special inks, which are then heat-pressed onto fabric. This results in durable, long-lasting prints resistant to fading and cracking.</p>
+        <p>Our process includes:</p>
+        <ul>
+          <li>Special Ink Printing</li>
+          <li>Heat Pressing Technology</li>
+          <li>Vacuum Machine Woven Dryer</li>
+        </ul>
+        <p><strong>Daily Production Capacity:</strong></p>
+        <ul>
+          <li>Heat Seal Labels: 10,00,000 pieces</li>
+          <li>Photo Stickers/Prints: 50,000-1,00,000 pieces</li>
+        </ul>
+      `,
+    },
+  },
+  {
+    _id: "reflective-heat-seal",
+    title: "Reflective Heat Seal",
+    description:
+      "Retro-reflective heat transfer vinyl for safety and fashion applications, meeting EN471 standards.",
+    thumbnail:
+      "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?q=80&w=800",
+    link: "/products/reflective-heat-seal",
+    images: [
+      "https://images.unsplash.com/photo-1556305078-b9d678f7f5b5?q=80&w=1200",
+      "https://images.unsplash.com/photo-1582555172866-f73bb13a2ad3?q=80&w=1200",
+    ],
+    details: {
+      title: "Reflective Heat Seal Vinyl",
+      description: `
+        <p>ReflexCut reflective heat transfer vinyl is designed for transferring solid color logos, graphics, or text onto cotton and polyester fabrics. This technology provides increased visibility for safety applications while also being used in fashion for stunning light-reflective designs.</p>
+        <p>Key features:</p>
+        <ul>
+          <li>Uses retro-reflection technology</li>
+          <li>Meets EN471 safety standards</li>
+          <li>Suitable for both safety and fashion applications</li>
+          <li>Can be cut with plotter cutters or scissors</li>
+        </ul>
+        <p><strong>Daily Production Capacity:</strong> 2,00,000 pieces</p>
+      `,
+    },
+  },
+  {
+    _id: "woven-label",
+    title: "Woven Label",
+    description:
+      "High-quality computerized woven labels with laser ultrasonic cutting and various finishing options.",
+    thumbnail:
+      "https://images.unsplash.com/photo-1620799140408-ed5341cd2431?q=80&w=800",
+    link: "/products/woven-label",
+    images: [
+      "https://images.unsplash.com/photo-1594223274512-ad4803739b7c?q=80&w=1200",
+      "https://images.unsplash.com/photo-1605647540924-852290f6b0d5?q=80&w=1200",
+    ],
+    details: {
+      title: "Premium Woven Labels",
+      description: `
+        <p>Our woven labels are produced using state-of-the-art computerized woven label machines with various finishing options:</p>
+        <ul>
+          <li>Laser Ultrasonic Cutting, Folding & Slitting (soft edge)</li>
+          <li>Heat Cutting & Folding</li>
+          <li>High-definition damask, satin, and taffeta materials</li>
+        </ul>
+        <p>Capable of reproducing fine details and complex logos, our labels ensure your brand stands out with a professional finish.</p>
+        <p><strong>Daily Production Capacity:</strong> 5,00,000 pieces</p>
+      `,
+    },
+  },
+  {
+    _id: "satin-cotton-ribbon",
+    title: "Satin & Cotton Ribbon",
+    description:
+      "World-class Megaba brand ribbon knitting with mini continuous dyeing and automatic calendering.",
+    thumbnail:
+      "https://images.unsplash.com/photo-1563178975-8965e4e8f8b3?q=80&w=800",
+    link: "/products/satin-cotton-ribbon",
+    images: [
+      "https://images.unsplash.com/photo-1512428813834-c702c770a65f?q=80&w=1200",
+      "https://images.unsplash.com/photo-1526778548025-fa2f9a8754d8?q=80&w=1200",
+    ],
+    details: {
+      title: "Satin & Cotton Ribbons",
+      description: `
+        <p>We produce high-quality satin and cotton ribbons using world-class Megaba brand ribbon knitting machines with advanced manufacturing processes:</p>
+        <ul>
+          <li>Mini Continuous Dyeing in Light Colors</li>
+          <li>Automatic Calendering & Rolling</li>
+          <li>Premium yarn selection for superior finish</li>
+        </ul>
+        <p><strong>Daily Production Capacity:</strong> 1,00,000 yards</p>
+      `,
+    },
+  },
+  {
+    _id: "twill-tape",
+    title: "Twill Tape",
+    description:
+      "Essential narrow fabric tapes made from cotton, polyester, and synthetic yarns for fashion applications.",
+    thumbnail:
+      "https://images.unsplash.com/photo-1567401893416-a5dc5749c340?q=80&w=800",
+    link: "/products/twill-tape",
+    images: [
+      "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?q=80&w=1200",
+      "https://images.unsplash.com/photo-1551488831-00ddcb929696?q=80&w=1200",
+    ],
+    details: {
+      title: "Twill Tapes",
+      description: `
+        <p>Narrow fabric has become an essential part of today's fashion. We manufacture various tapes using cotton, polyester, and synthetic yarn based twill tape for diverse applications.</p>
+        <p>Our product range includes:</p>
+        <ul>
+          <li>Heringbone Tapes</li>
+          <li>Canvas Tapes</li>
+          <li>Narrow & Flat Tapes</li>
+          <li>Waist & Oxford Tapes</li>
+          <li>Striped Tapes</li>
+        </ul>
+        <p><strong>Daily Production Capacity:</strong> 2,00,000 yards</p>
+      `,
+    },
+  },
+  {
+    _id: "pu-leather-patch",
+    title: "PU & Leather Patch",
+    description:
+      "Genuine or faux leather patches for embellishing, reinforcing, or repairing clothing and accessories.",
+    thumbnail:
+      "https://images.unsplash.com/photo-1549648184-8c84d0f4c5c1?q=80&w=800",
+    link: "/products/pu-leather-patch",
+    images: [
+      "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?q=80&w=1200",
+      "https://images.unsplash.com/photo-1551488831-00ddcb929696?q=80&w=1200",
+    ],
+    details: {
+      title: "PU & Leather Patches",
+      description: `
+        <p>Leather patches are small pieces of leather, either genuine or faux, that are used to embellish, reinforce, or repair items like clothing, accessories, and bags. They add a durable and stylish element to products.</p>
+        <p>Features include:</p>
+        <ul>
+          <li>Embossed or Debossed Designs</li>
+          <li>Branding and Decorative Applications</li>
+          <li>Durable Construction</li>
+          <li>Customizable Shapes and Sizes</li>
+        </ul>
+        <p><strong>Daily Production Capacity:</strong> 1,00,000 pieces</p>
+      `,
+    },
+  },
+  {
+    _id: "thermal-print",
+    title: "Thermal Print",
+    description:
+      "Digital thermal printing for adhesive labels, barcode labels, and tracking labels using thermal paper technology.",
+    thumbnail:
+      "https://images.unsplash.com/photo-1587825140708-dfcf72c8e7a8?q=80&w=800",
+    link: "/products/thermal-print",
+    images: [
+      "https://images.unsplash.com/photo-1629198720835-1c9c6d46e4c6?q=80&w=1200",
+      "https://images.unsplash.com/photo-1606229365485-93a3b8ee0385?q=80&w=1200",
+    ],
+    details: {
+      title: "Thermal Printing Services",
+      description: `
+        <p>Thermal printing is a digital printing process that produces printed images by selectively heating coated thermochromic paper as it passes over the thermal printer.</p>
+        <p>Our thermal printing services include:</p>
+        <ul>
+          <li>Poly Adhesive Labels</li>
+          <li>Carton Adhesive Labels</li>
+          <li>Tracking Labels</li>
+          <li>Barcode Labels</li>
+        </ul>
+        <p><strong>Daily Production Capacity:</strong> 5,00,000 pieces</p>
       `,
     },
   },
@@ -130,69 +267,54 @@ export const products: TProduct[] = [
     _id: "poly-bag",
     title: "Poly Bag",
     description:
-      "LDPE, PP, and biodegradable poly bags with up to 8-color rotogravure printing.",
-    thumbnail: "https://images.unsplash.com/photo-1622483767028-3f66f32aef97?q=80&w=800",
+      "High-quality poly bags and sheets with precise measurement and quality printing for various applications.",
+    thumbnail:
+      "https://images.unsplash.com/photo-1547949003-9792a18a2601?q=80&w=800",
     link: "/products/poly-bag",
     images: [
-         "https://images.unsplash.com/photo-1608779633602-d983eb052d80?q=80&w=800",
+      "https://images.unsplash.com/photo-1606229365485-93a3b8ee0385?q=80&w=1200",
+      "https://images.unsplash.com/photo-1582555172866-f73bb13a2ad3?q=80&w=1200",
     ],
     details: {
-      title: "Sustainable Polybags",
+      title: "Poly Bags Manufacturing",
       description: `
-        <p>Essential for garment protection. We offer standard clear bags, adhesive seal bags, and slider zipper bags.</p>
-        <p>Committed to the environment, we specialize in Recycled LDPE (GRS certified) and biodegradable options.</p>
+        <p>Our poly bag unit is equipped with modern high-speed blowing machines from Taiwan, ensuring correct measurement and quality printing on poly bags and sheets.</p>
+        <p>Our product range includes:</p>
+        <ul>
+          <li>Blister, Individual, and Adhesive Bags</li>
+          <li>Hanger Bags with Flap and Gusset</li>
+          <li>Printed Poly Bags</li>
+          <li>LDPE, PP, Recycled & Bio-Degradable Bags</li>
+        </ul>
+        <p><strong>Daily Production Capacity:</strong> 100,000 pieces</p>
       `,
     },
   },
   {
-     _id: "badges",
-    title: "Badges",
+    _id: "semi-auto-carton",
+    title: "Semi Auto Carton",
     description:
-      "Embroidered, woven, and leather badges for denim, jackets, and uniforms.",
-    thumbnail: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=800",
-    link: "/products/badges",
+      "High-quality 7, 5 & 3 ply cartons using recycled and virgin paper from global sources with custom printing.",
+    thumbnail:
+      "https://images.unsplash.com/photo-1606851181061-bb7c81df91b1?q=80&w=800",
+    link: "/products/semi-auto-carton",
     images: [
-        "https://images.unsplash.com/photo-1618331835717-801e976710b2?q=80&w=800",
+      "https://images.unsplash.com/photo-1606229365485-93a3b8ee0385?q=80&w=1200",
+      "https://images.unsplash.com/photo-1606851181061-bb7c81df91b1?q=80&w=1200",
     ],
     details: {
-      title: "Custom Badges & Patches",
+      title: "Semi Automatic Carton Production",
       description: `
-        <p>Add dimension to your garments with our range of patches. Includes genuine leather, faux leather (PU), embroidered patches with merrow edges, and rubber (PVC/Silicone) badges.</p>
+        <p>We use recycled and virgin paper sourced from Europe, Australia, USA, Korea, Taiwan, Thailand, and Malaysia to ensure the highest quality carton products.</p>
+        <p>Our offerings include:</p>
+        <ul>
+          <li>7, 5 & 3 Ply Cartons</li>
+          <li>Customized Printing Options</li>
+          <li>Various Size Configurations</li>
+          <li>Quality Packaging Solutions</li>
+        </ul>
+        <p><strong>Daily Production Capacity:</strong> 10,000 pieces</p>
       `,
     },
   },
-    {
-     _id: "tapes-belts",
-    title: "Tapes & Belts",
-    description:
-      "Elastic tapes, drawstrings, and twill tapes for functional and decorative use.",
-    thumbnail: "https://images.unsplash.com/photo-1520986606214-8b456906c813?q=80&w=800",
-    link: "/products/tapes-belts",
-    images: [
-        "https://images.unsplash.com/photo-1517153192946-4cb4dd6d929b?q=80&w=800",
-    ],
-    details: {
-      title: "Industrial Tapes & Webbings",
-      description: `
-        <p>Woven and knitted elastics, jacquard waistbands, cotton twill tapes, and drawcords. We supply functional trims that meet rigorous durability tests.</p>
-      `,
-    },
-  },
-   {
-     _id: "other-accessories",
-    title: "Other Accessories",
-    description:
-      "Safety pins, clips, tissue paper, and finishing accessories.",
-    thumbnail: "https://images.unsplash.com/photo-1584622412234-ac442c5567b4?q=80&w=800",
-    link: "/products/other-accessories",
-    images: [
-        "https://images.unsplash.com/photo-1611080626919-7cf5a9dbab5b?q=80&w=800",
-    ],
-    details: {
-      title: "Garment Finishing Accessories",
-      description: `
-        <p>The final touches. We supply plastic clips, collar stays, butterfly keepers, and branded tissue paper to ensure your garment arrives in perfect condition.</p>
-      `,
-    },
-  }
 ];

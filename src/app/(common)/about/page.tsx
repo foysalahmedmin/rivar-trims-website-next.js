@@ -51,17 +51,18 @@ const AboutPage = () => {
               </h3>
               <ul className="list-disc space-y-4 pl-5">
                 <li>
-                  To build up long term business relations with our valued
-                  clients by satisfying them with superior quality, competitive
-                  price and on time delivery of accessories products.
+                  To manufacture world class products with outstanding quality.
                 </li>
                 <li>
-                  To upgrade our technology and invest in human resources
-                  development on continuous basis.
+                  To become a globally prominent RMG accessories supplier and
+                  manufacturer.
                 </li>
                 <li>
-                  To explore new market for our products and make positive
-                  contribution to the country’s export earnings.
+                  To insure customer a competitive advantage through outstanding
+                  product with values.
+                </li>
+                <li>
+                  To attain highest level of efficiency, Integrity & Honesty.
                 </li>
               </ul>
             </div>
@@ -71,17 +72,17 @@ const AboutPage = () => {
               </h3>
               <ul className="list-disc space-y-4 pl-5">
                 <li>
-                  To become a world-class garments accessories manufacturer and
-                  supplier company preferred by the valued clients in the world
-                  market.
+                  To manufacture internationally acceptable standard quality
+                  product,
                 </li>
                 <li>
-                  To upgrade our technology and invest in human resources
-                  development on continuous basis.
+                  To be globally customer focused through better quality
+                  services, latest technology with continuous innovation.
                 </li>
                 <li>
-                  To explore new market for our products and make positive
-                  contribution to the country’s export earnings.
+                  To be the company that best understands and satisfies the
+                  product Quality, Service and customized needs of fashion
+                  brands globally
                 </li>
               </ul>
             </div>
@@ -93,14 +94,22 @@ const AboutPage = () => {
       <SplitSection
         title="Message from Chairman"
         description={`<div>
-          <h3 class="text-xl font-bold mb-2">MD. ABUL KALAM AZAD</h3>
+          <h3 class="text-xl font-bold mb-2">ROBIUL AUAL</h3>
           <p class="text-muted-foreground mb-4">Chairman, Rivar Trims Limited</p>
           <div class="space-y-4 italic">
             <p>
-              "We want to do business with honesty, integrity and sincerity. Customer’s satisfaction with quality products is our motto and we never want to compromise with quality. For the sake of quality, we are always ready to set up most modern machinery in our factory. We always believe in quality; we don’t want to provide low quality goods just to do business."
+              "Thanks to all of our valued clients.We have started business at 2017 as a man ufacturer of heat seal label
+              and all kinds of offset items like hang tag, sewing tag, price tag, photo insert card photo box, sticker, etc.
+              We use latest , technologies and machinaries for production to maintain standard quality. We always
+              make best quality production don't compromise with quality.Secondly we always keep the commitment
+              about timely delivery because we trust that quality and delivery commitment is the main key to business.Day by day our business is growing by the grace of Allah and with the cooper ation of our valued
+              clients because we clients regarding our quality and service. Our price is also competitive which makes
+              our clients happy."
             </p>
             <p>
-              "We strongly believe that once we maintain quality, we feel confident in doing business. This is our strength and this differentiates us from others. We also believe in teamwork. Without combined efforts, nobody can achieve his or her goal."
+              "Hope we will get more response from market and we always welcome encouragenew
+              clients to start business with us for a smooth process of accessories order. We welcome you to be the
+              part of our business. "
             </p>
           </div>
         </div>`}
