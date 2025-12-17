@@ -10,7 +10,7 @@ const ServicesSection = () => {
         <div className="mb-6">
           <SectionTitle>
             <Subtitle>Our services</Subtitle>
-            <Title>
+            <Title isAnimation={true}>
               On-time delivery of powerful, cost-effective digital solutions
             </Title>
           </SectionTitle>

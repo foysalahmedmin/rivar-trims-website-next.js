@@ -1,3 +1,6 @@
+"use client";
+
+import { useIntersectionObserver } from "@/hooks/observers/useIntersectionObserver";
 import { cn } from "@/lib/utils";
 import { cva, type VariantProps } from "class-variance-authority";
 import {
@@ -39,16 +42,46 @@ const SectionTitle = forwardRef<ComponentRef<"div">, SectionTitleProps>(
 SectionTitle.displayName = "SectionTitle";
 
 // ---------- Title ----------
-type TitleProps = ComponentPropsWithoutRef<"h1">;
+type TitleProps = ComponentPropsWithoutRef<"h1"> & {
+  isAnimation?: boolean;
+};
 
 const Title = forwardRef<ComponentRef<"h1">, TitleProps>(
-  ({ className, ...props }, ref) => {
+  ({ className, isAnimation = true, children, ...props }, ref) => {
+    const { setRef } = useIntersectionObserver({
+      classNames: "animate-trigger",
+      isToggle: true,
+      isUnobservable: true,
+    });
+
+    const content =
+      isAnimation && typeof children === "string"
+        ? children.split(" ").map((word, index) => (
+            <span
+              key={index}
+              className="inline-block opacity-0 [.animate-trigger_&]:animate-[fadein_0.3s_ease-in-out_forwards]"
+              style={{ animationDelay: `${index * 0.15}s` }}
+            >
+              {word}&nbsp;
+            </span>
+          ))
+        : children;
+
     return (
       <h1
-        className={cn("text-4xl md:text-6xl", className)}
-        ref={ref}
+        className={cn("text-4xl font-bold md:text-6xl", className)}
+        ref={(node) => {
+          if (isAnimation) setRef(0)(node);
+          if (typeof ref === "function") {
+            ref(node);
+          } else if (ref) {
+            ref.current = node;
+          }
+        }}
         {...props}
-      />
+      >
+        {content}
+      </h1>
     );
   },
 );

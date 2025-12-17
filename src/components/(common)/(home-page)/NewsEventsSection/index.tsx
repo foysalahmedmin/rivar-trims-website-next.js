@@ -18,7 +18,7 @@ const NewsEventsSection = () => {
         <div className="mb-6">
           <SectionTitle>
             <Subtitle>Updates</Subtitle>
-            <Title>News & Events</Title>
+            <Title isAnimation={true}>News & Events</Title>
             <Description>
               Stay updated with the latest news, events, and media features from
               Rivar Trims. Discover our sustainable innovations and global

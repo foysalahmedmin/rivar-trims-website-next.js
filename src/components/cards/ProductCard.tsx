@@ -10,7 +10,7 @@ type ProductCardProps = {
 
 const ProductCard = ({ product, className }: ProductCardProps) => {
   return (
-    <div
+    <button
       className={cn(
         "group bg-card intersection-fade-in border-primary relative h-80 w-full cursor-pointer overflow-hidden rounded-xl border-b-4 shadow-lg",
         className,
@@ -28,7 +28,7 @@ const ProductCard = ({ product, className }: ProductCardProps) => {
           height={320}
           width={600}
         />
-        <div className="from-primary/90 to-primary/80 absolute inset-0 flex translate-y-full flex-col items-center justify-center bg-gradient-to-r p-6 text-center opacity-95 transition-transform duration-400 ease-out group-hover:translate-y-0">
+        <div className="from-primary/90 to-primary/80 absolute inset-0 flex translate-y-full flex-col items-center justify-center bg-gradient-to-r p-6 text-center opacity-95 transition-transform duration-400 ease-out group-hover:translate-y-0 group-focus:translate-y-0">
           <h3 className="text-primary-foreground mb-2 text-xl font-bold uppercase">
             {product?.title}
           </h3>
@@ -43,7 +43,7 @@ const ProductCard = ({ product, className }: ProductCardProps) => {
           </Link>
         </div>
       </div>
-    </div>
+    </button>
   );
 };
 

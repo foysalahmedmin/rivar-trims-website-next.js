@@ -1,9 +1,9 @@
 import { Button } from "@/components/ui/Button";
 import {
-    Description,
-    SectionTitle,
-    Subtitle,
-    Title,
+  Description,
+  SectionTitle,
+  Subtitle,
+  Title,
 } from "@/components/ui/SectionTitle";
 import Link from "next/link";
 
@@ -27,17 +27,24 @@ const AboutSection = () => {
           <div className="order-1 lg:order-2">
             <SectionTitle>
               <Subtitle>Who We Are</Subtitle>
-              <Title>Global Standards, Local Craftsmanship.</Title>
+              <Title isAnimation={true}>
+                Global Standards, Local Craftsmanship.
+              </Title>
               <Description>
                 <p>
-                  Rivar Trims Limited is a proud concern of Mondol Group, one of the leading conglomerates in the Bangladesh Garment Industry. 
-                  Established to serve as a complete backward linkage solution, we specialize in high-quality garment accessories including 
-                  woven labels, printed labels, heat transfers, and packaging solutions.
+                  Rivar Trims Limited is a proud concern of Mondol Group, one of
+                  the leading conglomerates in the Bangladesh Garment Industry.
+                  Established to serve as a complete backward linkage solution,
+                  we specialize in high-quality garment accessories including
+                  woven labels, printed labels, heat transfers, and packaging
+                  solutions.
                 </p>
                 <p className="mt-4">
-                  With a commitment to integrity, teamwork, and excellence, we strive to satisfy our valued clients with 
-                  superior quality, competitive pricing, and on-time delivery. As a sister concern of Montrims Ltd., 
-                  we leverage decades of industry expertise to meet global standards.
+                  With a commitment to integrity, teamwork, and excellence, we
+                  strive to satisfy our valued clients with superior quality,
+                  competitive pricing, and on-time delivery. As a sister concern
+                  of Montrims Ltd., we leverage decades of industry expertise to
+                  meet global standards.
                 </p>
               </Description>
             </SectionTitle>

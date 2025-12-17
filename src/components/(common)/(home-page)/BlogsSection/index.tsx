@@ -17,7 +17,7 @@ const BlogsSection = () => {
           <div className="space-y-8 md:space-y-12">
             <SectionTitle className="max-w-60">
               <Subtitle>Insights</Subtitle>
-              <Title>Blogs</Title>
+              <Title isAnimation={true}>Blogs</Title>
               <Description>
                 Our people are dedicated to finding solutions to every
                 challenge. That spirit makes for some great stories.

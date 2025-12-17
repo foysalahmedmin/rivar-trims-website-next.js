@@ -19,7 +19,7 @@ const LeadershipsSection = () => {
         <div className="grid grid-cols-1 items-center gap-8 md:gap-12 lg:grid-cols-3">
           <div className="space-y-8 md:space-y-12">
             <Subtitle>Leaderships</Subtitle>
-            <Title>Meet our leadership</Title>
+            <Title isAnimation={true}>Meet our leadership</Title>
             <Link href={"/leaderships"} className="inline-block">
               <Button
                 asChild={true}

@@ -93,10 +93,10 @@ const AboutPage = () => {
 
       {/* Message from Chairman */}
       <SplitSection
-        title="Message from Chairman"
+        title="Message from Managing Director"
         description={`<div>
           <h3 class="text-xl font-bold mb-2">ROBIUL AUAL</h3>
-          <p class="text-muted-foreground mb-4">Chairman, Rivar Trims Limited</p>
+          <p class="text-muted-foreground mb-4">Managing Director, Rivar Trims Limited</p>
           <div class="space-y-4 italic">
             <p>
               "Thanks to all of our valued clients.We have started business at 2017 as a man ufacturer of heat seal label

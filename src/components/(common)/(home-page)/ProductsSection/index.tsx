@@ -10,9 +10,7 @@ const ProductsSection = () => {
         <div className="mb-6">
           <SectionTitle>
             <Subtitle>Our Products</Subtitle>
-            <Title>
-              Global Quality, Local Excellence
-            </Title>
+            <Title isAnimation={true}>Global Quality, Local Excellence</Title>
           </SectionTitle>
           <Link
             href={"/products"}
@@ -23,9 +21,11 @@ const ProductsSection = () => {
         </div>
 
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-y-8 lg:grid-cols-3">
-          {products?.slice(0, 6).map((product) => (
-            <ProductCard key={product?._id} product={product} />
-          ))}
+          {products
+            ?.slice(0, 6)
+            .map((product) => (
+              <ProductCard key={product?._id} product={product} />
+            ))}
         </div>
       </div>
     </section>

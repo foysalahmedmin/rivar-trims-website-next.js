@@ -18,7 +18,7 @@ const ProjectsSection = () => {
         <div className="mb-6 sm:px-4 md:px-6 lg:ml-24">
           <SectionTitle className="">
             <Subtitle>Projects</Subtitle>
-            <Title>
+            <Title isAnimation={true}>
               Delivering our clients more project clarity, greater insight, and
               less chaos.
             </Title>
