@@ -4,18 +4,22 @@ import { products, TProduct } from "@/assets/data/products";
 import ProductCard from "@/components/cards/ProductCard";
 import { Button } from "@/components/ui/Button";
 import {
-    Carousel,
-    CarouselContent,
-    CarouselItem,
-    CarouselNextTrigger,
-    CarouselPreviousTrigger,
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNextTrigger,
+  CarouselPreviousTrigger,
 } from "@/components/ui/Carousel";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 
-const ProductDetailsClient = ({ product }: { product: Omit<TProduct, "icon"> }) => {
+const ProductDetailsClient = ({
+  product,
+}: {
+  product: Omit<TProduct, "icon">;
+}) => {
   const [activeImage, setActiveImage] = useState(product.thumbnail);
 
   return (
@@ -32,7 +36,7 @@ const ProductDetailsClient = ({ product }: { product: Omit<TProduct, "icon"> }) 
       </section>
 
       {/* Floating Card Container */}
-      <div className="container relative z-20 -mt-[150px] pb-12">
+      <div className="relative z-20 container -mt-[150px] pb-12">
         <div className="bg-card flex flex-col shadow-2xl md:flex-row">
           {/* Left Content */}
           <div className="flex w-full flex-col justify-center p-10 md:w-1/2">
@@ -46,9 +50,7 @@ const ProductDetailsClient = ({ product }: { product: Omit<TProduct, "icon"> }) 
               }}
             />
             <Link href="/contact">
-              <Button className="bg-primary text-primary-foreground hover:bg-primary/90 w-fit px-8 py-6 text-base font-bold uppercase">
-                Request Quote
-              </Button>
+              <Button asChild>Request Quote</Button>
             </Link>
           </div>
 
@@ -72,31 +74,35 @@ const ProductDetailsClient = ({ product }: { product: Omit<TProduct, "icon"> }) 
 
             {/* Thumbnails */}
             <div className="mt-8 flex justify-start gap-4">
-              {[product.thumbnail, ...product.images].slice(0, 3).map((img, idx) => (
-                <div
-                  key={idx}
-                  className={cn(
-                    "bg-muted h-20 w-20 cursor-pointer overflow-hidden border-2 transition-all duration-300 hover:scale-105",
-                    activeImage === img ? "border-primary" : "border-transparent",
-                  )}
-                  onClick={() => setActiveImage(img)}
-                >
-                  <Image
-                    src={img}
-                    alt={`Thumbnail ${idx + 1}`}
-                    width={80}
-                    height={80}
-                    className="size-full object-cover"
-                  />
-                </div>
-              ))}
+              {[product.thumbnail, ...product.images]
+                .slice(0, 3)
+                .map((img, idx) => (
+                  <div
+                    key={idx}
+                    className={cn(
+                      "bg-muted h-20 w-20 cursor-pointer overflow-hidden border-2 transition-all duration-300 hover:scale-105",
+                      activeImage === img
+                        ? "border-primary"
+                        : "border-transparent",
+                    )}
+                    onClick={() => setActiveImage(img)}
+                  >
+                    <Image
+                      src={img}
+                      alt={`Thumbnail ${idx + 1}`}
+                      width={80}
+                      height={80}
+                      className="size-full object-cover"
+                    />
+                  </div>
+                ))}
             </div>
           </div>
         </div>
 
         {/* Explore More Section */}
         <div className="mt-20 pb-20">
-          <h2 className="text-foreground border-primary mx-auto mb-8 inline-block border-b-2 pb-2 text-center text-2xl font-bold uppercase tracking-wide">
+          <h2 className="text-foreground border-primary mx-auto mb-8 inline-block border-b-2 pb-2 text-center text-2xl font-bold tracking-wide uppercase">
             Explore More Products
           </h2>
           <Carousel
@@ -120,8 +126,8 @@ const ProductDetailsClient = ({ product }: { product: Omit<TProduct, "icon"> }) 
                   </CarouselItem>
                 ))}
             </CarouselContent>
-            <CarouselPreviousTrigger className="bg-background/80 hover:bg-background absolute -left-4 top-1/2 -translate-y-1/2 border shadow-sm md:-left-12" />
-            <CarouselNextTrigger className="bg-background/80 hover:bg-background absolute -right-4 top-1/2 -translate-y-1/2 border shadow-sm md:-right-12" />
+            <CarouselPreviousTrigger className="bg-background/80 hover:bg-background absolute top-1/2 -left-4 -translate-y-1/2 border shadow-sm md:-left-12" />
+            <CarouselNextTrigger className="bg-background/80 hover:bg-background absolute top-1/2 -right-4 -translate-y-1/2 border shadow-sm md:-right-12" />
           </Carousel>
         </div>
       </div>

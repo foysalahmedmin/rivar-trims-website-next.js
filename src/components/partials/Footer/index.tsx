@@ -52,7 +52,7 @@ const menu = [
   // },
   {
     type: "link",
-    text: "Contact",
+    text: "Contact Us",
     href: "/contact",
   },
 ];
@@ -97,10 +97,15 @@ const links = [
   //   text: "History",
   //   href: "/history",
   // },
+  // {
+  //   type: "link",
+  //   text: "Vision",
+  //   href: "/visions",
+  // },
   {
     type: "link",
-    text: "Vision",
-    href: "/visions",
+    text: "Contact Us",
+    href: "/contact",
   },
 ];
 const socials = [
@@ -150,19 +155,6 @@ const Footer = () => {
                 <p>+88 01923 205096</p>
                 <p>+88 01920 411806</p>
                 <p>info@rivartrims.com</p>
-              </div>
-
-              <div className="mt-2 flex flex-wrap gap-4">
-                <Link href="/products">
-                  <Button size="lg">
-                    <span>EXPLORE PRODUCTS</span>
-                  </Button>
-                </Link>
-                <Link href="/contact">
-                  <Button size="lg" variant="outline">
-                    <span>CONTACT US</span>
-                  </Button>
-                </Link>
               </div>
             </div>
           </div>
