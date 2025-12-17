@@ -7,7 +7,6 @@ import {
   CarouselContent,
   CarouselItem,
   CarouselNextTrigger,
-  CarouselPagination,
   CarouselPreviousTrigger,
 } from "@/components/ui/Carousel";
 import {
@@ -55,7 +54,7 @@ const heroSlides: HeroSlide[] = [
       "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2600", // Factory/Textile texture
     ctaText: "View Products",
     ctaLink: "/products",
-    overlayColor: "from-red-900/80 via-red-800/40 to-transparent",
+    overlayColor: "from-red-900/80 via-red-600/40 to-transparent",
     textColor: "text-white",
     features: [
       {
@@ -77,7 +76,7 @@ const heroSlides: HeroSlide[] = [
       "https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=2600", // Eco/Greenery/Fabric
     ctaText: "Sustainability",
     ctaLink: "/about",
-    overlayColor: "from-green-900/80 via-green-800/40 to-transparent",
+    overlayColor: "from-green-900/80 via-green-600/40 to-transparent",
     textColor: "text-white",
     features: [
       { icon: <Factory className="h-4 w-4" />, text: "Recycled Materials" },
@@ -99,7 +98,7 @@ const heroSlides: HeroSlide[] = [
       "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=2600", // Sportswear/Model
     ctaText: "Explore Technology",
     ctaLink: "/services/heat-transfers",
-    overlayColor: "from-blue-900/80 via-blue-800/40 to-transparent",
+    overlayColor: "from-blue-900/80 via-blue-600/40 to-transparent",
     textColor: "text-white",
     features: [
       { icon: <CheckCircle className="h-4 w-4" />, text: "High Elasticity" },
@@ -132,7 +131,7 @@ const HeroCarouselSection = () => {
           {heroSlides?.map((slide, index) => (
             <CarouselItem
               key={slide.id}
-              className="dark text-foreground relative max-h-[800px] min-h-screen"
+              className="dark text-foreground relative min-h-[44rem]"
             >
               {/* Background Image Container */}
               <div className="absolute inset-0 overflow-hidden">
@@ -152,11 +151,11 @@ const HeroCarouselSection = () => {
 
               {/* Content Container */}
               <div className="relative z-10 flex h-full items-center">
-                <div className="container mx-auto px-4 py-20 sm:px-6 md:py-24 lg:px-8">
+                <div className="container mx-auto px-4 py-16 sm:px-6 lg:px-6">
                   <div className="max-w-3xl">
                     {/* Animated Badge */}
                     <div
-                      className={`mb-8 inline-flex items-center rounded-full border bg-white/10 px-4 py-2 backdrop-blur-sm transition-all duration-500 ${
+                      className={`mb-6 inline-flex items-center rounded-full border bg-white/10 px-4 py-2 backdrop-blur-sm transition-all duration-500 ${
                         activeSlide === index
                           ? "translate-y-0 opacity-100"
                           : "translate-y-4 opacity-0"
@@ -169,10 +168,10 @@ const HeroCarouselSection = () => {
 
                     {/* Animated Title */}
                     <h1
-                      className={`text-4xl font-bold sm:text-5xl md:text-6xl lg:text-7xl ${slide.textColor} mb-6 leading-tight transition-all delay-300 duration-700 ${
+                      className={`text-4xl leading-1.5 font-bold md:text-6xl ${slide.textColor} mb-6 leading-tight transition-all delay-300 duration-700 ${
                         activeSlide === index
                           ? "translate-y-0 opacity-100"
-                          : "translate-y-8 opacity-0"
+                          : "translate-y-6 opacity-0"
                       }`}
                     >
                       {slide.title}
@@ -180,22 +179,22 @@ const HeroCarouselSection = () => {
 
                     {/* Animated Description */}
                     <p
-                      className={`text-lg md:text-xl ${slide.textColor} mb-8 max-w-2xl opacity-90 transition-all delay-500 duration-700 ${
+                      className={`md:text-lg ${slide.textColor} mb-6 max-w-2xl opacity-90 transition-all delay-500 duration-700 ${
                         activeSlide === index
                           ? "translate-y-0 opacity-100"
-                          : "translate-y-8 opacity-0"
+                          : "translate-y-6 opacity-0"
                       }`}
                     >
                       {slide.description}
                     </p>
 
                     {/* Features List */}
-                    <div className="mb-8 transition-all delay-700 duration-700">
+                    <div className="mb-6 transition-all delay-700 duration-700">
                       <div
                         className={`flex flex-wrap gap-3 transition-all duration-500 ${
                           activeSlide === index
                             ? "translate-y-0 opacity-100"
-                            : "translate-y-8 opacity-0"
+                            : "translate-y-6 opacity-0"
                         }`}
                       >
                         {slide?.features?.map((feature, idx) => (
@@ -217,7 +216,7 @@ const HeroCarouselSection = () => {
                       className={`flex flex-col gap-4 transition-all delay-1000 duration-700 sm:flex-row ${
                         activeSlide === index
                           ? "translate-y-0 opacity-100"
-                          : "translate-y-8 opacity-0"
+                          : "translate-y-6 opacity-0"
                       }`}
                     >
                       <Link href={slide.ctaLink || "#" + slide.ctaLink}>
@@ -248,35 +247,23 @@ const HeroCarouselSection = () => {
           ))}
         </CarouselContent>
 
-        {/* Custom Pagination */}
-        <div className="absolute bottom-8 left-1/2 z-20 -translate-x-1/2 transform">
-          <CarouselPagination
-            className="bottom-0"
-            buttonProps={{
-              className:
-                "w-8 h-1.5 transition-all duration-300 hover:bg-white/80",
-              activeClassName: "bg-white w-12",
-            }}
-          />
-        </div>
-
         {/* Navigation Buttons */}
         <CarouselPreviousTrigger
-          className="left-4 border border-white/20 bg-white/10 text-white backdrop-blur-sm transition-transform duration-300 hover:scale-110 hover:bg-white/20 md:left-8"
+          className="left-4 border border-white/20 bg-white/10 text-white backdrop-blur-sm transition-transform duration-300 hover:scale-110 hover:bg-white/20 md:left-6"
           shape="icon"
         >
           <ChevronLeft className="h-6 w-6" />
         </CarouselPreviousTrigger>
 
         <CarouselNextTrigger
-          className="right-4 border border-white/20 bg-white/10 text-white backdrop-blur-sm transition-transform duration-300 hover:scale-110 hover:bg-white/20 md:right-8"
+          className="right-4 border border-white/20 bg-white/10 text-white backdrop-blur-sm transition-transform duration-300 hover:scale-110 hover:bg-white/20 md:right-6"
           shape="icon"
         >
           <ChevronRight className="h-6 w-6" />
         </CarouselNextTrigger>
 
         {/* Slide Counter */}
-        <div className="absolute right-8 bottom-8 z-20 hidden items-center space-x-3 lg:flex">
+        <div className="absolute right-6 bottom-6 z-20 hidden items-center space-x-3 lg:flex">
           <div className="text-sm text-white">
             <span className="text-2xl font-bold">
               {String(activeSlide + 1).padStart(2, "0")}
@@ -286,7 +273,7 @@ const HeroCarouselSection = () => {
               {String(heroSlides.length).padStart(2, "0")}
             </span>
           </div>
-          <div className="h-8 w-px bg-white/30"></div>
+          <div className="h-6 w-px bg-white/30"></div>
           <div className="flex flex-col">
             <span className="text-xs tracking-wider text-white/60 uppercase">
               Slide

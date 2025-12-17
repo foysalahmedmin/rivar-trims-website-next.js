@@ -16,9 +16,9 @@ const ProductCard = ({ product, className }: ProductCardProps) => {
         className,
       )}
     >
-      <Link
+      <div
         key={product?._id}
-        href={"/products/" + product?._id}
+        // href={"/products/" + product?._id}
         className="block size-full"
       >
         <Image
@@ -32,11 +32,17 @@ const ProductCard = ({ product, className }: ProductCardProps) => {
           <h3 className="text-primary-foreground mb-2 text-xl font-bold uppercase">
             {product?.title}
           </h3>
-          <p className="text-primary-foreground text-xs">
+          <p className="text-primary-foreground mb-4 text-xs">
             {product?.description}
           </p>
+          <Link
+            href={"/products/" + product?._id}
+            className="bg-accent text-accent-foreground rounded-full px-4 py-1"
+          >
+            View Details
+          </Link>
         </div>
-      </Link>
+      </div>
     </div>
   );
 };

@@ -198,34 +198,36 @@ const DesktopNavigation: React.FC<{
               {/* Desktop Dropdown */}
               <div
                 className={cn(
-                  "bg-card border-border absolute top-full -left-1/2 mt-4 grid w-[600px] -translate-x-1/4 grid-cols-2 gap-4 rounded-lg border p-4 shadow-xl transition-all duration-300",
+                  "absolute top-full -left-1/2 -translate-x-1/4 gap-4 rounded-lg transition-all duration-300",
                   isProductsHovered
                     ? "visible translate-y-0 opacity-100"
                     : "pointer-events-none invisible translate-y-4 opacity-0",
                 )}
               >
-                {products.map((product) => (
-                  <Link
-                    key={product._id}
-                    href={product.link}
-                    className="hover:bg-muted flex items-center gap-3 rounded-md p-2 transition-colors"
-                  >
-                    <div className="relative h-10 w-10 shrink-0 overflow-hidden rounded-md">
-                      <Image
-                        src={product.thumbnail}
-                        alt={product.title}
-                        fill
-                        className="object-cover"
-                      />
-                    </div>
-                    <div>
-                      <h4 className="text-sm font-medium">{product.title}</h4>
-                      <p className="text-muted-foreground line-clamp-1 text-xs">
-                        {product.description}
-                      </p>
-                    </div>
-                  </Link>
-                ))}
+                <div className="bg-card border-border mt-4 grid w-[600px] grid-cols-2 gap-4 rounded-lg border p-4 shadow-xl">
+                  {products.map((product) => (
+                    <Link
+                      key={product._id}
+                      href={product.link}
+                      className="hover:bg-muted hover:border-primary flex items-center gap-3 rounded-md border-l-4 border-transparent p-2 transition-colors"
+                    >
+                      <div className="relative h-10 w-10 shrink-0 overflow-hidden rounded-md">
+                        <Image
+                          src={product.thumbnail}
+                          alt={product.title}
+                          fill
+                          className="object-cover"
+                        />
+                      </div>
+                      <div>
+                        <h4 className="text-sm font-medium">{product.title}</h4>
+                        <p className="text-muted-foreground line-clamp-1 text-xs">
+                          {product.description}
+                        </p>
+                      </div>
+                    </Link>
+                  ))}
+                </div>
               </div>
             </div>
           );
@@ -416,17 +418,18 @@ const Header: React.FC<HeaderProps> = ({ className }) => {
   // Header styling based on scroll and page
   const headerClassName = cn(
     "text-foreground top-0 right-0 left-0 z-50 h-20 bg-transparent backdrop-blur-xs transition-all duration-300 ease-in-out",
+    "bg-card sticky",
     {
-      fixed: isHomePage,
-      dark: scrollTop <= 80 && isHomePage,
-      "bg-card sticky": !isHomePage,
-      "bg-background/95 shadow-sm": scrollTop > 80 && isHomePage,
-      "bg-background/95": isMobileMenuOpen && isHomePage,
-      "-translate-y-full":
-        scrollDirection === "down" && scrollTop > 80 && isHomePage,
-      "translate-y-0":
-        (scrollDirection === "up" && isHomePage) ||
-        (scrollTop <= 80 && isHomePage),
+      // "bg-card sticky": !isHomePage,
+      // fixed: isHomePage,
+      // dark: scrollTop <= 80 && isHomePage,
+      // "bg-background/95 shadow-sm": scrollTop > 80 && isHomePage,
+      // "bg-background/95": isMobileMenuOpen && isHomePage,
+      // "-translate-y-full":
+      //   scrollDirection === "down" && scrollTop > 80 && isHomePage,
+      // "translate-y-0":
+      //   (scrollDirection === "up" && isHomePage) ||
+      //   (scrollTop <= 80 && isHomePage),
     },
     className,
   );
