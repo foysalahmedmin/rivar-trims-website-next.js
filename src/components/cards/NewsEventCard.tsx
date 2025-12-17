@@ -12,7 +12,7 @@ const NewsEventCard = ({ item, className }: NewsEventCardProps) => {
   return (
     <div
       className={cn(
-        "group bg-card h-full intersection-fade-in overflow-hidden rounded-xl border shadow-sm transition-all duration-300 hover:shadow-md",
+        "group bg-card intersection-fade-in h-full overflow-hidden rounded-xl border shadow-sm transition-all duration-300 hover:shadow-md",
         className,
       )}
     >
@@ -25,7 +25,7 @@ const NewsEventCard = ({ item, className }: NewsEventCardProps) => {
             className="object-cover transition-transform duration-500 group-hover:scale-105"
           />
           <div className="absolute top-4 left-4">
-            <div className="bg-background/90 text-foreground px-2 py-0.5 font-semibold">
+            <div className="bg-background/90 text-foreground rounded px-2 py-0.5 font-semibold">
               {item.category}
             </div>
           </div>

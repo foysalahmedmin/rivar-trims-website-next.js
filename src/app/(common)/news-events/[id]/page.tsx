@@ -97,8 +97,10 @@ const NewsEventDetailsPage = async ({ params }: NewsEventDetailsPageProps) => {
                 <Button variant="outline">&larr; Back to News</Button>
               </Link>
               <div className="flex gap-2">
-                <div className="bg-muted px-2 py-0.5">{item.category}</div>
-                <div className="bg-muted px-2 py-0.5">{item.date}</div>
+                <div className="bg-muted rounded px-2 py-0.5">
+                  {item.category}
+                </div>
+                <div className="bg-muted rounded px-2 py-0.5">{item.date}</div>
               </div>
             </div>
           </div>
