@@ -40,19 +40,6 @@ const ProjectCard = ({ project, className }: ProjectCardProps) => {
 
       <div className="space-y-6 md:pr-12">
         <div className="space-y-2">
-          {project.tags?.length ? (
-            <div className="text-muted-foreground flex flex-wrap items-center divide-x text-sm">
-              {project.tags.map((tag, index) => (
-                <span
-                  key={index}
-                  className="px-2 capitalize first:pl-0 last:pr-0"
-                >
-                  {tag}
-                </span>
-              ))}
-            </div>
-          ) : null}
-
           <h3 className="pb-1 text-3xl font-semibold">
             <Link
               href={`/projects/${project?._id}`}

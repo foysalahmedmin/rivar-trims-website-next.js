@@ -46,16 +46,6 @@ const SingleProjectSection = ({
               </div>
               <div className="text-muted-foreground hover:text-primary flex h-full origin-right translate-x-full items-center rounded-tl-xl rounded-br-xl bg-white px-4 transition-all duration-700 ease-in-out group-hover/trigger:translate-x-0 group-hover/trigger:rounded-br-none">
                 <div>
-                  <div>
-                    {project?.tags?.map((tag, index) => (
-                      <strong
-                        key={index}
-                        className="text-muted-foreground inline-block px-2 text-xs font-normal capitalize first:pl-0 last:pr-0"
-                      >
-                        {tag}
-                      </strong>
-                    ))}
-                  </div>
                   <h3 className="hover-effect primary hover:text-primary">
                     {project?.title}
                   </h3>

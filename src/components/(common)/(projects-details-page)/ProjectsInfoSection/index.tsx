@@ -2,7 +2,7 @@ import type { TProject } from "@/assets/data/projects";
 import { Description, SectionTitle, Title } from "@/components/ui/SectionTitle";
 
 const ProjectInfoSection = ({ project }: { project?: TProject }) => {
-  const { title, description, client, sector, location } = project || {};
+  const { title, description, client } = project || {};
   return (
     <section className="intersection-fade-in py-16 md:py-24">
       <div className="container">
@@ -12,18 +12,6 @@ const ProjectInfoSection = ({ project }: { project?: TProject }) => {
               <div className="space-y-2">
                 <h3 className="">Client</h3>
                 <p className="text-3xl">{client}</p>
-              </div>
-            )}
-            {sector && (
-              <div className="space-y-2">
-                <h3 className="">Sector</h3>
-                <p className="text-3xl">{sector}</p>
-              </div>
-            )}
-            {location && (
-              <div className="space-y-2">
-                <h3 className="">Location</h3>
-                <p className="text-3xl">{location}</p>
               </div>
             )}
           </div>
