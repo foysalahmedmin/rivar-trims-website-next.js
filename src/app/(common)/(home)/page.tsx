@@ -3,6 +3,7 @@ import CallToActionSection from "@/components/(common)/(home-page)/CallToActionS
 import HeroCarouselSection from "@/components/(common)/(home-page)/HeroCarouselSection";
 import NewsEventsSection from "@/components/(common)/(home-page)/NewsEventsSection";
 import ProductsSection from "@/components/(common)/(home-page)/ProductsSection";
+import StatsSection from "@/components/(common)/(home-page)/StatsSection";
 import CertificationsSection from "@/components/sections/CertificationsSection";
 import PartnersSection from "@/components/sections/PartnersSection";
 
@@ -21,6 +22,7 @@ const HomePage = () => {
       {/* <ServicesSection /> */}
       <ProductsSection />
       <AboutSection />
+      <StatsSection />
       {/* <LeadershipsSection /> */}
       {/* <FeaturesSection /> */}
       {/* <ProjectsSection /> */}
