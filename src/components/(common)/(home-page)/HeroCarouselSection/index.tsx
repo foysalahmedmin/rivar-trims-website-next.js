@@ -49,9 +49,9 @@ const heroSlides: HeroSlide[] = [
     title: "Premium Garments Accessories & Trims",
     subtitle: "Leading Manufacturer Since 2017",
     description:
-      "High-quality woven labels, heat transfers, and sustainable packaging solutions for the global fashion industry.",
+      "High-quality woven labels, printed labels, heat transfers, and sustainable packaging solutions for the global fashion industry.",
     backgroundImage:
-      "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2600", // Factory/Textile texture
+      "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2600",
     ctaText: "View Products",
     ctaLink: "/products",
     overlayColor: "from-red-900/80 via-red-600/40 to-transparent",
@@ -61,49 +61,49 @@ const heroSlides: HeroSlide[] = [
         icon: <CheckCircle className="h-4 w-4" />,
         text: "Oeko-Tex 100 Certified",
       },
-      { icon: <Clock className="h-4 w-4" />, text: "Automated Production" },
+      { icon: <Award className="h-4 w-4" />, text: "FSC & GRS Certified" },
       { icon: <Users className="h-4 w-4" />, text: "Serving 100+ Brands" },
       { icon: <Package className="h-4 w-4" />, text: "Export Worldwide" },
     ],
   },
   {
     id: 2,
-    title: "Eco-Friendly Packaging Solutions",
-    subtitle: "Sustainable Innovation",
+    title: "Eco-Friendly & Sustainable Packaging",
+    subtitle: "Green Manufacturing",
     description:
-      "Green packaging that tells your brand's story. From FSC-certified hang tags to biodegradable polybags.",
+      "FSC-certified hang tags, biodegradable polybags, and recycled packaging solutions. We believe in sustainability and care for our People, Place & Products.",
     backgroundImage:
-      "https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=2600", // Eco/Greenery/Fabric
-    ctaText: "Sustainability",
+      "https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=2600",
+    ctaText: "About Us",
     ctaLink: "/about",
     overlayColor: "from-green-900/80 via-green-600/40 to-transparent",
     textColor: "text-white",
     features: [
       { icon: <Factory className="h-4 w-4" />, text: "Recycled Materials" },
-      {
-        icon: <Globe className="h-4 w-4" />,
-        text: "Carbon Footprint Reduction",
-      },
-      { icon: <Award className="h-4 w-4" />, text: "Global Standards" },
+      { icon: <Globe className="h-4 w-4" />, text: "Global Recycled Standard" },
+      { icon: <Award className="h-4 w-4" />, text: "FSC Certified" },
       { icon: <Shield className="h-4 w-4" />, text: "100% Quality Check" },
     ],
   },
   {
     id: 3,
-    title: "Innovative Heat Transfer Labels",
-    subtitle: "Tag-less Comfort",
+    title: "Advanced Heat Transfer & Reflective Labels",
+    subtitle: "State-of-the-Art Technology",
     description:
-      "Next-generation heat transfers for activewear and intimate apparel. Durable, stretchable, and soft on skin.",
+      "Durable heat transfer labels and ReflexCut reflective vinyl for activewear and fashion. Long-lasting prints resistant to fading and cracking.",
     backgroundImage:
-      "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=2600", // Sportswear/Model
-    ctaText: "Explore Technology",
-    ctaLink: "/services/heat-transfers",
+      "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=2600",
+    ctaText: "Explore Products",
+    ctaLink: "/products/heat-transfer",
     overlayColor: "from-blue-900/80 via-blue-600/40 to-transparent",
     textColor: "text-white",
     features: [
-      { icon: <CheckCircle className="h-4 w-4" />, text: "High Elasticity" },
-      { icon: <Clock className="h-4 w-4" />, text: "Rapid Application" },
-      { icon: <Users className="h-4 w-4" />, text: "Anti-Migration" },
+      {
+        icon: <CheckCircle className="h-4 w-4" />,
+        text: "Heat & Vacuum Press",
+      },
+      { icon: <Clock className="h-4 w-4" />, text: "10,00,000 pcs/day" },
+      { icon: <Shield className="h-4 w-4" />, text: "EN471 Reflective Std." },
       { icon: <Package className="h-4 w-4" />, text: "Reflective Options" },
     ],
   },
