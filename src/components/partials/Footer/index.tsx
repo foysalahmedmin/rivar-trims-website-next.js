@@ -152,9 +152,23 @@ const Footer = () => {
               </div>
               <div className="text-muted-foreground space-y-1">
                 <p className="text-foreground font-semibold">Contact</p>
-                <p>+88 01923 205096</p>
-                <p>+88 01920 411806</p>
-                <p>info@rivartrims.com</p>
+                <div className="space-y-0.5">
+                  <p>+88 01923 205096</p>
+                  <p>+88 01920 411806</p>
+                  <p>+88 01901 921508</p>
+                  <p>+88 01901 921509</p>
+                </div>
+                <div className="pt-2">
+                  <p>info@rivartrims.com</p>
+                  <p>info@rivartrimsltd.com</p>
+                </div>
+              </div>
+              <div className="text-muted-foreground space-y-1">
+                <p className="text-foreground font-semibold">Factory</p>
+                <p>
+                  Holding-53, Block-A, Dharangartek, Nalvog, Nishatnagar, Turag,
+                  Dhaka-1230, Bangladesh
+                </p>
               </div>
             </div>
           </div>

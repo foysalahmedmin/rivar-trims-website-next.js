@@ -56,33 +56,40 @@ const ContactSection = () => {
                 <h4 className="text-muted-foreground mb-1 text-sm font-bold uppercase">
                   Head Office
                 </h4>
-                <p className="text-foreground font-semibold">
-                  House-08 (Lift-2), Road-04/A, Sector-15/G, Uttara, Dhaka-1230,
-                  Bangladesh.
+                <p className="text-foreground leading-relaxed font-semibold">
+                  Head Office: House-08 (Lift-2), Road-04/A, Sector-15/G,
+                  Uttara, Dhaka-1230, Bangladesh.
+                </p>
+                <p className="text-foreground/80 mt-2 text-sm">
+                  Factory: Holding -53, Block-A, Dharangartek (Main Road),
+                  Nalvog, Nishatnagar, Turag, Dhaka-1230.
                 </p>
               </div>
               <div>
                 <h4 className="text-muted-foreground mb-1 text-sm font-bold uppercase">
                   Phone (Sales)
                 </h4>
-                <div className="text-primary text-xl font-bold">
+                <div className="text-primary font-mono text-xl font-bold">
                   <p>+88 01923 205096</p>
                   <p>+88 01920 411806</p>
+                  <p>+88 01901 921508</p>
+                  <p>+88 01901 921509</p>
                 </div>
               </div>
               <div>
                 <h4 className="text-muted-foreground mb-1 text-sm font-bold uppercase">
                   Email
                 </h4>
-                <p className="text-foreground font-semibold">
-                  info@rivartrims.com
-                </p>
+                <div className="text-foreground font-semibold">
+                  <p>info@rivartrims.com</p>
+                  <p>info@rivartrimsltd.com</p>
+                </div>
               </div>
             </div>
           </div>
 
           {/* Contact Form Card */}
-          <div className="bg-card md:order-1 border-primary rounded-lg border-t-4 p-8 shadow-xl">
+          <div className="bg-card border-primary rounded-lg border-t-4 p-8 shadow-xl md:order-1">
             <h2 className="text-primary mb-6 text-3xl font-bold uppercase">
               Send Us A Message
             </h2>

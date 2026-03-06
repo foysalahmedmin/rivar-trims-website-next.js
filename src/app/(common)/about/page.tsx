@@ -15,7 +15,7 @@ const metrics = [
     description: "Global Brands Served",
   },
   {
-    title: "6+",
+    title: "8+",
     description: "Years of Excellence",
   },
   {
