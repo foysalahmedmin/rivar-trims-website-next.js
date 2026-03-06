@@ -1,9 +1,12 @@
 import BankingPartnersSection from "@/components/sections/BankingPartnersSection";
 import CertificationsSection from "@/components/sections/CertificationsSection";
+import CoreValuesSection from "@/components/sections/CoreValuesSection";
 import FollowUpSection from "@/components/sections/FollowUpSection";
+import GoalsSection from "@/components/sections/GoalsSection";
 import PageHeaderSection from "@/components/sections/PageHeaderSection";
 import PartnersSection from "@/components/sections/PartnersSection";
 import SplitSection from "@/components/sections/SplitSection";
+import WeCareSection from "@/components/sections/WeCareSection";
 import { SectionTitle, Subtitle, Title } from "@/components/ui/SectionTitle";
 
 const metrics = [
@@ -33,7 +36,7 @@ const AboutPage = () => {
       <PageHeaderSection
         subtitle="About Us"
         title="Weaving Quality into Every Thread"
-        description="Rivar Trims Limited, a concern of Mondol Group, combines decades of textile expertise with modern manufacturing technology. Established as a complete backward linkage solution, we are united by a common mission: to deliver exquisite detailing that defines your brand."
+        description="Rivar Trims Limited combines decades of textile expertise with modern manufacturing technology. Established as a complete backward linkage solution, we are united by a common mission: to deliver exquisite detailing that defines your brand."
         image="/images/(about-page)/page-header.png"
         metrics={metrics}
       />
@@ -114,7 +117,7 @@ const AboutPage = () => {
             </p>
           </div>
         </div>`}
-        image="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=800" // Placeholder for Chairman
+        image="/images/(about-page)/managing-director.jpg"
       />
 
       <SplitSection
@@ -177,6 +180,9 @@ const AboutPage = () => {
         image="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=800&fit=crop"
       />
 
+      <WeCareSection />
+      <CoreValuesSection />
+      <GoalsSection />
       <CertificationsSection />
       <PartnersSection />
       <BankingPartnersSection />

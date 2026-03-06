@@ -26,7 +26,7 @@ const NewsEventsSection = () => {
             </Description>
           </SectionTitle>
           <Link
-            href={"/products"}
+            href={"/news-events"}
             className="primary hover:text-primary underline-effect inline-block"
           >
             View All News & Events

@@ -5,7 +5,9 @@ import NewsEventsSection from "@/components/(common)/(home-page)/NewsEventsSecti
 import ProductsSection from "@/components/(common)/(home-page)/ProductsSection";
 import StatsSection from "@/components/(common)/(home-page)/StatsSection";
 import CertificationsSection from "@/components/sections/CertificationsSection";
+import CoreValuesSection from "@/components/sections/CoreValuesSection";
 import PartnersSection from "@/components/sections/PartnersSection";
+import WeCareSection from "@/components/sections/WeCareSection";
 
 export const metadata = {
   title: "Rivar Trims - Global Quality, Local Excellence",
@@ -23,6 +25,8 @@ const HomePage = () => {
       <ProductsSection />
       <AboutSection />
       <StatsSection />
+      <WeCareSection />
+      <CoreValuesSection />
       {/* <LeadershipsSection /> */}
       {/* <FeaturesSection /> */}
       {/* <ProjectsSection /> */}
