@@ -47,7 +47,7 @@ export const products: TProduct[] = [
     title: "Offset Printing",
     description:
       "Premium offset printing for hang tags, photo inlays, paper bands, and other quality printing solutions.",
-    thumbnail: "/images/products/offset-printing/thumbnail.jpg",
+    thumbnail: "/images/products/offset-printing/thumbnail.webp",
     link: "/products/offset-printing",
     images: [
       "/images/products/offset-printing/01.jpg",
@@ -62,7 +62,7 @@ export const products: TProduct[] = [
       "/images/products/offset-printing/10.jpg",
       "/images/products/offset-printing/11.jpg",
       "/images/products/offset-printing/12.jpg",
-      "/images/products/offset-printing/13.webp",
+      "/images/products/offset-printing/13.jpg",
     ],
     details: {
       title: "Offset Printing Services",
