@@ -1,273 +1,187 @@
 import { products } from "@/assets/data/products";
-import { Button } from "@/components/ui/Button";
-import { cn } from "@/lib/utils";
+import {
+  ArrowRight,
+  Facebook,
+  Factory,
+  Instagram,
+  Mail,
+  MapPin,
+  Phone,
+} from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
-const menu = [
-  {
-    type: "link",
-    text: "About Us",
-    href: "/about",
-  },
-  // {
-  //   type: "link",
-  //   text: "Leaderships",
-  //   href: "/leaderships",
-  // },
-  {
-    type: "link",
-    text: "Products",
-    href: "/products",
-  },
-  // {
-  //   type: "link",
-  //   text: "Projects",
-  //   href: "/projects",
-  // },
-  {
-    type: "link",
-    text: "News & Events",
-    href: "/news-events",
-  },
-  // {
-  //   type: "link",
-  //   text: "Blogs",
-  //   href: "/blogs",
-  // },
-  // {
-  //   type: "link",
-  //   text: "Career",
-  //   href: "/careers",
-  // },
-  // {
-  //   type: "link",
-  //   text: "History",
-  //   href: "/history",
-  // },
-  // {
-  //   type: "link",
-  //   text: "Vision",
-  //   href: "/visions",
-  // },
-  {
-    type: "link",
-    text: "Contact Us",
-    href: "/contact",
-  },
+const quickLinks = [
+  { text: "About Us", href: "/about" },
+  { text: "Products", href: "/products" },
+  { text: "News & Events", href: "/news-events" },
+  { text: "Contact Us", href: "/contact" },
 ];
-const links = [
-  {
-    type: "link",
-    text: "About",
-    href: "/about",
-  },
-  // {
-  //   type: "link",
-  //   text: "Leaderships",
-  //   href: "/leaderships",
-  // },
-  // {
-  //   type: "link",
-  //   text: "Services",
-  //   href: "/services",
-  // },
-  {
-    type: "link",
-    text: "Projects",
-    href: "/projects",
-  },
-  {
-    type: "link",
-    text: "News & Events",
-    href: "/news-events",
-  },
-  // {
-  //   type: "link",
-  //   text: "Blogs",
-  //   href: "/blogs",
-  // },
-  // {
-  //   type: "link",
-  //   text: "Career",
-  //   href: "/careers",
-  // },
-  // {
-  //   type: "link",
-  //   text: "History",
-  //   href: "/history",
-  // },
-  // {
-  //   type: "link",
-  //   text: "Vision",
-  //   href: "/visions",
-  // },
-  {
-    type: "link",
-    text: "Contact Us",
-    href: "/contact",
-  },
-];
+
 const socials = [
   {
-    text: "Facebook",
+    icon: Facebook,
     href: "https://www.facebook.com/rivar-trims",
-    target: "_blank",
+    label: "Facebook",
   },
-  // {
-  //   text: "Linkedin",
-  //   href: "https://www.linkedin.com/company/rivar-trims",
-  //   target: "_blank",
-  // },
   {
-    text: "Instagram",
+    icon: Instagram,
     href: "https://www.instagram.com/rivar-trims",
-    target: "_blank",
+    label: "Instagram",
   },
 ];
 
 const Footer = () => {
   return (
-    <footer className="intersection-fade-in py-16 md:py-24">
-      <div className="container space-y-16 md:space-y-24">
-        <div className="grid grid-cols-1 gap-6 md:gap-8 lg:grid-cols-3 xl:grid-cols-5">
-          <div className="space-y-4 lg:col-span-3 xl:col-span-2 xl:space-y-12">
-            <Link href="/" className="" aria-label="Home">
+    <footer className="bg-muted/30 border-border mt-auto border-t pb-8 pt-16">
+      <div className="container">
+
+        {/* Main Footer Grid — 4 columns on desktop, stacked on mobile */}
+        <div className="mb-16 grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
+
+          {/* ── Column 1: Brand ── */}
+          <div className="flex flex-col gap-6">
+            <Link href="/" className="inline-block transition-opacity hover:opacity-80">
               <Image
                 src="/logo.png"
-                alt="Logo"
-                width={80}
-                height={80}
-                className="size-20 object-contain object-left"
+                alt="Rivar Trims Logo"
+                width={120}
+                height={120}
+                className="h-20 w-auto object-contain"
                 priority
               />
             </Link>
-            <div className="flex flex-col gap-4">
-              <div className="text-muted-foreground space-y-1">
-                <p className="text-foreground font-semibold">Head Office</p>
-                <p>
-                  House-08 (Lift-2), Road-04/A, Sector-15/G, Uttara, Dhaka-1230,
-                  Bangladesh
-                </p>
-              </div>
-              <div className="text-muted-foreground space-y-1">
-                <p className="text-foreground font-semibold">Contact</p>
-                <div className="space-y-0.5">
-                  <p>+88 01923 205096</p>
-                  <p>+88 01920 411806</p>
-                  <p>+88 01901 921508</p>
-                  <p>+88 01901 921509</p>
-                </div>
-                <div className="pt-2">
-                  <p>info@rivartrims.com</p>
-                  <p>info@rivartrimsltd.com</p>
-                </div>
-              </div>
-              <div className="text-muted-foreground space-y-1">
-                <p className="text-foreground font-semibold">Factory</p>
-                <p>
-                  Holding-53, Block-A, Dharangartek, Nalvog, Nishatnagar, Turag,
-                  Dhaka-1230, Bangladesh
-                </p>
-              </div>
+            <p className="text-muted-foreground text-sm leading-relaxed">
+              <span className="text-foreground italic font-medium">"Perfect trims fashion looks perfect."</span>
+              <br />
+              We make you satisfied with our quality, commitment, and competitive price since 2017.
+            </p>
+            <div className="flex gap-3">
+              {socials.map((social, index) => (
+                <Link
+                  key={index}
+                  href={social.href}
+                  target="_blank"
+                  aria-label={social.label}
+                  className="bg-background border-border text-muted-foreground hover:text-primary hover:border-primary flex h-9 w-9 items-center justify-center rounded-full border transition-all duration-300"
+                >
+                  <social.icon size={16} />
+                </Link>
+              ))}
             </div>
           </div>
-          <div className="hidden lg:block">
-            <strong className="mb-4 block font-medium">Menu</strong>
-            <ul className={cn("space-y-2")}>
-              {menu.map((item, index) => (
-                <li className="font-light" key={index}>
-                  {item?.type === "link" ? (
-                    <Link
-                      className="underline-effect primary hover:text-primary"
-                      href={item?.href || "#"}
-                    >
-                      {item?.text}
-                    </Link>
-                  ) : (
-                    <p className="mb-4">{item?.text}</p>
-                  )}
+
+          {/* ── Column 2: Quick Links ── */}
+          <div className="flex flex-col gap-6">
+            <h4 className="text-foreground text-sm font-bold uppercase tracking-wider">
+              Company
+            </h4>
+            <ul className="flex flex-col gap-3">
+              {quickLinks.map((link, index) => (
+                <li key={index}>
+                  <Link
+                    href={link.href}
+                    className="text-muted-foreground hover:text-primary group flex items-center gap-2 text-sm transition-colors"
+                  >
+                    <ArrowRight
+                      size={12}
+                      className="opacity-0 transition-all duration-300 group-hover:opacity-100"
+                    />
+                    {link.text}
+                  </Link>
                 </li>
               ))}
             </ul>
           </div>
-          <div className="lg:col-span-2">
-            <strong className="mb-4 block font-medium">Products</strong>
-            <ul className={cn("grid space-y-2 lg:grid-cols-2")}>
-              {products
-                .map((product) => {
-                  return {
-                    type: "link",
-                    text: product?.title,
-                    href: `/services/${product?._id}`,
-                  };
-                })
-                .map((item, index) => (
-                  <li className="font-light" key={index}>
-                    {item?.type === "link" ? (
-                      <Link
-                        className="underline-effect primary hover:text-primary"
-                        href={item?.href || "#"}
-                      >
-                        {item?.text}
-                      </Link>
-                    ) : (
-                      <p className="mb-4">{item?.text}</p>
-                    )}
-                  </li>
-                ))}
+
+          {/* ── Column 3: Products ── */}
+          <div className="flex flex-col gap-6">
+            <h4 className="text-foreground text-sm font-bold uppercase tracking-wider">
+              Our Products
+            </h4>
+            <ul className="flex flex-col gap-3">
+              {products.map((product, index) => (
+                <li key={index}>
+                  <Link
+                    href={`/products/${product._id}`}
+                    className="text-muted-foreground hover:text-primary block text-sm transition-colors"
+                  >
+                    {product.title}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
-        </div>
-        <div className="grid grid-cols-1 gap-6 md:gap-8 lg:hidden lg:grid-cols-4">
-          {links.map((link, index) => (
-            <Link className="w-full" key={index} href={link?.href}>
-              <Button
-                className="border-b-foreground hover:text-primary hover:border-b-primary w-full items-start justify-start rounded-none border-b bg-transparent px-0 uppercase hover:bg-transparent"
-                size="lg"
-              >
-                <span>{link?.text}</span>
-              </Button>
-            </Link>
-          ))}
-        </div>
-        <div className="grid grid-cols-1 gap-6 md:gap-8 lg:grid-cols-3">
-          <div className="flex items-center gap-4">
-            ©2025
-            <Link
-              className="primary underline-effect hover:text-primary"
-              href="https://www.rivartrims.com"
-            >
-              Rivar Trims Limited
-            </Link>
+
+          {/* ── Column 4: Contact ── */}
+          <div className="flex flex-col gap-6">
+            <h4 className="text-foreground text-sm font-bold uppercase tracking-wider">
+              Get In Touch
+            </h4>
+            <div className="flex flex-col gap-5">
+
+              <div className="flex items-start gap-3">
+                <MapPin className="text-primary mt-0.5 shrink-0" size={16} />
+                <div className="flex flex-col gap-0.5">
+                  <p className="text-foreground text-xs font-semibold uppercase">Head Office</p>
+                  <p className="text-muted-foreground text-sm leading-relaxed">
+                    House-08 (Lift-2), Road-04/A, Sector-15/G, Uttara, Dhaka-1230, Bangladesh
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-3">
+                <Factory className="text-primary mt-0.5 shrink-0" size={16} />
+                <div className="flex flex-col gap-0.5">
+                  <p className="text-foreground text-xs font-semibold uppercase">Factory</p>
+                  <p className="text-muted-foreground text-sm leading-relaxed">
+                    Holding-53, Block-A, Dharangartek, Nalvog, Nishatnagar, Turag, Dhaka-1230
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-3">
+                <Phone className="text-primary mt-0.5 shrink-0" size={16} />
+                <div className="flex flex-col gap-0.5">
+                  <p className="text-foreground text-xs font-semibold uppercase">Phone</p>
+                  <p className="text-muted-foreground text-sm">+88 01923 205096</p>
+                  <p className="text-muted-foreground text-sm">+88 01920 411806</p>
+                  <p className="text-muted-foreground text-sm">+88 01901 921508</p>
+                  <p className="text-muted-foreground text-sm">+88 01901 921509</p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-3">
+                <Mail className="text-primary mt-0.5 shrink-0" size={16} />
+                <div className="flex flex-col gap-0.5">
+                  <p className="text-foreground text-xs font-semibold uppercase">Email</p>
+                  <p className="text-muted-foreground text-sm">info@rivartrims.com</p>
+                  <p className="text-muted-foreground text-sm">info@rivartrimsltd.com</p>
+                </div>
+              </div>
+
+            </div>
           </div>
-          <div className="flex flex-wrap items-center gap-4 lg:justify-center">
-            {socials?.map((social, index) => (
-              <Link
-                className="primary underline-effect hover:text-primary"
-                key={index}
-                href={social?.href}
-                target={social?.target}
-              >
-                {social?.text}
-              </Link>
-            ))}
-          </div>
-          <div className="flex flex-wrap items-center gap-4 lg:justify-center">
-            <Link
-              className="primary underline-effect hover:text-primary"
-              href="/terms-and-conditions"
-            >
-              Terms and Conditions
+
+        </div>
+
+        {/* ── Bottom Bar ── */}
+        <div className="border-border text-muted-foreground flex flex-col items-center justify-between gap-4 border-t pt-8 text-xs md:flex-row">
+          <p>
+            © {new Date().getFullYear()}{" "}
+            <span className="text-foreground font-semibold">Rivar Trims Limited.</span>{" "}
+            All rights reserved.
+          </p>
+          <div className="flex gap-6">
+            <Link href="/terms-and-conditions" className="hover:text-primary transition-colors">
+              Terms &amp; Conditions
             </Link>
-            <Link
-              className="primary underline-effect hover:text-primary"
-              href="/privacy-policy"
-            >
+            <Link href="/privacy-policy" className="hover:text-primary transition-colors">
               Privacy Policy
             </Link>
           </div>
         </div>
+
       </div>
     </footer>
   );
