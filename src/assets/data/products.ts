@@ -18,12 +18,15 @@ export const products: TProduct[] = [
     title: "Printed Label",
     description:
       "High-quality care labels with apparel composition and care instructions to extend product life.",
-    thumbnail:
-      "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?q=80&w=800",
+    thumbnail: "/images/products/printed-label/thumbnail.jpg",
     link: "/products/printed-label",
     images: [
-      "https://images.unsplash.com/photo-1629198720835-1c9c6d46e4c6?q=80&w=1200",
-      "https://images.unsplash.com/photo-1582555172866-f73bb13a2ad3?q=80&w=1200",
+      "/images/products/printed-label/01.jpg",
+      "/images/products/printed-label/02.jpg",
+      "/images/products/printed-label/03.jpg",
+      "/images/products/printed-label/04.jpg",
+      "/images/products/printed-label/05.jpg",
+      "/images/products/printed-label/06.jpg",
     ],
     details: {
       title: "Printed Care Labels",
@@ -44,12 +47,22 @@ export const products: TProduct[] = [
     title: "Offset Printing",
     description:
       "Premium offset printing for hang tags, photo inlays, paper bands, and other quality printing solutions.",
-    thumbnail:
-      "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?q=80&w=800",
+    thumbnail: "/images/products/offset-printing/thumbnail.jpg",
     link: "/products/offset-printing",
     images: [
-      "https://images.unsplash.com/photo-1606229365485-93a3b8ee0385?q=80&w=1200",
-      "https://images.unsplash.com/photo-1609081219090-a6d81d3085bf?q=80&w=1200",
+      "/images/products/offset-printing/01.jpg",
+      "/images/products/offset-printing/02.jpg",
+      "/images/products/offset-printing/03.jpg",
+      "/images/products/offset-printing/04.jpg",
+      "/images/products/offset-printing/05.jpg",
+      "/images/products/offset-printing/06.jpg",
+      "/images/products/offset-printing/07.jpg",
+      "/images/products/offset-printing/08.jpg",
+      "/images/products/offset-printing/09.jpg",
+      "/images/products/offset-printing/10.jpg",
+      "/images/products/offset-printing/11.jpg",
+      "/images/products/offset-printing/12.jpg",
+      "/images/products/offset-printing/13.webp",
     ],
     details: {
       title: "Offset Printing Services",
@@ -78,12 +91,14 @@ export const products: TProduct[] = [
     title: "Heat Transfer",
     description:
       "Durable, long-lasting heat transfer printing resistant to fading and cracking for various applications.",
-    thumbnail:
-      "https://images.unsplash.com/photo-1605721911519-3dfeb3be25e7?q=80&w=800",
+    thumbnail: "/images/products/heat-transfer/thumbnail.jpg",
     link: "/products/heat-transfer",
     images: [
-      "https://images.unsplash.com/photo-1559056199-641a0ac8b55e?q=80&w=1200",
-      "https://images.unsplash.com/photo-1561361513-2d000d50ff0c?q=80&w=1200",
+      "/images/products/heat-transfer/01.jpg",
+      "/images/products/heat-transfer/02.jpg",
+      "/images/products/heat-transfer/03.jpg",
+      "/images/products/heat-transfer/04.jpg",
+      "/images/products/heat-transfer/05.jpg",
     ],
     details: {
       title: "Heat Transfer Printing",
@@ -108,12 +123,17 @@ export const products: TProduct[] = [
     title: "Reflective Heat Seal",
     description:
       "Retro-reflective heat transfer vinyl for safety and fashion applications, meeting EN471 standards.",
-    thumbnail:
-      "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?q=80&w=800",
+    thumbnail: "/images/products/reflective-heat-seal/thumbnail.jpg",
     link: "/products/reflective-heat-seal",
     images: [
-      "https://images.unsplash.com/photo-1556305078-b9d678f7f5b5?q=80&w=1200",
-      "https://images.unsplash.com/photo-1582555172866-f73bb13a2ad3?q=80&w=1200",
+      "/images/products/reflective-heat-seal/01.jpg",
+      "/images/products/reflective-heat-seal/02.jpg",
+      "/images/products/reflective-heat-seal/03.jpg",
+      "/images/products/reflective-heat-seal/04.jpg",
+      "/images/products/reflective-heat-seal/05.jpg",
+      "/images/products/reflective-heat-seal/06.jpg",
+      "/images/products/reflective-heat-seal/07.jpg",
+      "/images/products/reflective-heat-seal/08.jpg",
     ],
     details: {
       title: "Reflective Heat Seal Vinyl",
@@ -135,12 +155,12 @@ export const products: TProduct[] = [
     title: "Woven Label",
     description:
       "High-quality computerized woven labels with laser ultrasonic cutting and various finishing options.",
-    thumbnail:
-      "https://images.unsplash.com/photo-1620799140408-ed5341cd2431?q=80&w=800",
+    thumbnail: "/images/products/woven-label/thumbnail.jpg",
     link: "/products/woven-label",
     images: [
-      "https://images.unsplash.com/photo-1594223274512-ad4803739b7c?q=80&w=1200",
-      "https://images.unsplash.com/photo-1605647540924-852290f6b0d5?q=80&w=1200",
+      "/images/products/woven-label/01.jpg",
+      "/images/products/woven-label/02.jpg",
+      "/images/products/woven-label/03.jpg",
     ],
     details: {
       title: "Premium Woven Labels",
@@ -161,12 +181,13 @@ export const products: TProduct[] = [
     title: "Satin & Cotton Ribbon",
     description:
       "World-class Megaba brand ribbon knitting with mini continuous dyeing and automatic calendering.",
-    thumbnail:
-      "https://images.unsplash.com/photo-1563178975-8965e4e8f8b3?q=80&w=800",
+    thumbnail: "/images/products/satin-cotton-ribbon/thumbnail.jpg",
     link: "/products/satin-cotton-ribbon",
     images: [
-      "https://images.unsplash.com/photo-1512428813834-c702c770a65f?q=80&w=1200",
-      "https://images.unsplash.com/photo-1526778548025-fa2f9a8754d8?q=80&w=1200",
+      "/images/products/satin-cotton-ribbon/01.jpg",
+      "/images/products/satin-cotton-ribbon/02.jpg",
+      "/images/products/satin-cotton-ribbon/03.jpg",
+      "/images/products/satin-cotton-ribbon/04.jpg",
     ],
     details: {
       title: "Satin & Cotton Ribbons",
@@ -186,12 +207,13 @@ export const products: TProduct[] = [
     title: "Twill Tape",
     description:
       "Essential narrow fabric tapes made from cotton, polyester, and synthetic yarns for fashion applications.",
-    thumbnail:
-      "https://images.unsplash.com/photo-1567401893416-a5dc5749c340?q=80&w=800",
+    thumbnail: "/images/products/twill-tape/thumbnail.jpg",
     link: "/products/twill-tape",
     images: [
-      "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?q=80&w=1200",
-      "https://images.unsplash.com/photo-1551488831-00ddcb929696?q=80&w=1200",
+      "/images/products/twill-tape/01.jpg",
+      "/images/products/twill-tape/02.jpg",
+      "/images/products/twill-tape/03.jpg",
+      "/images/products/twill-tape/04.jpg",
     ],
     details: {
       title: "Twill Tapes",
@@ -214,12 +236,13 @@ export const products: TProduct[] = [
     title: "PU & Leather Patch",
     description:
       "Genuine or faux leather patches for embellishing, reinforcing, or repairing clothing and accessories.",
-    thumbnail:
-      "https://images.unsplash.com/photo-1549648184-8c84d0f4c5c1?q=80&w=800",
+    thumbnail: "/images/products/pu-leather-patch/thumbnail.jpg",
     link: "/products/pu-leather-patch",
     images: [
-      "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?q=80&w=1200",
-      "https://images.unsplash.com/photo-1551488831-00ddcb929696?q=80&w=1200",
+      "/images/products/pu-leather-patch/01.jpeg",
+      "/images/products/pu-leather-patch/02.jpg",
+      "/images/products/pu-leather-patch/03.jpg",
+      "/images/products/pu-leather-patch/04.jpg",
     ],
     details: {
       title: "PU & Leather Patches",
@@ -241,12 +264,13 @@ export const products: TProduct[] = [
     title: "Thermal Print",
     description:
       "Digital thermal printing for adhesive labels, barcode labels, and tracking labels using thermal paper technology.",
-    thumbnail:
-      "https://images.unsplash.com/photo-1587825140708-dfcf72c8e7a8?q=80&w=800",
+    thumbnail: "/images/products/thermal-print/thumbnail.jpg",
     link: "/products/thermal-print",
     images: [
-      "https://images.unsplash.com/photo-1629198720835-1c9c6d46e4c6?q=80&w=1200",
-      "https://images.unsplash.com/photo-1606229365485-93a3b8ee0385?q=80&w=1200",
+      "/images/products/thermal-print/01.jpg",
+      "/images/products/thermal-print/02.jpg",
+      "/images/products/thermal-print/03.jpg",
+      "/images/products/thermal-print/04.jpg",
     ],
     details: {
       title: "Thermal Printing Services",
@@ -268,12 +292,12 @@ export const products: TProduct[] = [
     title: "Poly Bag",
     description:
       "High-quality poly bags and sheets with precise measurement and quality printing for various applications.",
-    thumbnail:
-      "https://images.unsplash.com/photo-1547949003-9792a18a2601?q=80&w=800",
+    thumbnail: "/images/products/poly-bag/thumbnail.jpg",
     link: "/products/poly-bag",
     images: [
-      "https://images.unsplash.com/photo-1606229365485-93a3b8ee0385?q=80&w=1200",
-      "https://images.unsplash.com/photo-1582555172866-f73bb13a2ad3?q=80&w=1200",
+      "/images/products/poly-bag/01.jpg",
+      "/images/products/poly-bag/02.jpg",
+      "/images/products/poly-bag/03.png",
     ],
     details: {
       title: "Poly Bags Manufacturing",
@@ -295,12 +319,12 @@ export const products: TProduct[] = [
     title: "Semi Auto Carton",
     description:
       "High-quality 7, 5 & 3 ply cartons using recycled and virgin paper from global sources with custom printing.",
-    thumbnail:
-      "https://images.unsplash.com/photo-1606851181061-bb7c81df91b1?q=80&w=800",
+    thumbnail: "/images/products/semi-auto-carton/thumbnail.jpg",
     link: "/products/semi-auto-carton",
     images: [
-      "https://images.unsplash.com/photo-1606229365485-93a3b8ee0385?q=80&w=1200",
-      "https://images.unsplash.com/photo-1606851181061-bb7c81df91b1?q=80&w=1200",
+      "/images/products/semi-auto-carton/01.jpg",
+      "/images/products/semi-auto-carton/02.jpg",
+      "/images/products/semi-auto-carton/03.jpg",
     ],
     details: {
       title: "Semi Automatic Carton Production",
@@ -314,6 +338,35 @@ export const products: TProduct[] = [
           <li>Quality Packaging Solutions</li>
         </ul>
         <p><strong>Daily Production Capacity:</strong> 10,000 pieces</p>
+      `,
+    },
+  },
+  {
+    _id: "pvc-screen-print",
+    title: "PVC & Screen Print",
+    description:
+      "Premium PVC labels and high-quality screen printing for branding, size stickers, and decorative apparel accents.",
+    thumbnail: "/images/products/pvc-screen-print/thumbnail.jpg",
+    link: "/products/pvc-screen-print",
+    images: [
+      "/images/products/pvc-screen-print/01.jpg",
+      "/images/products/pvc-screen-print/02.jpg",
+      "/images/products/pvc-screen-print/03.jpg",
+      "/images/products/pvc-screen-print/04.jpg",
+      "/images/products/pvc-screen-print/05.jpg",
+    ],
+    details: {
+      title: "PVC & Screen Printing",
+      description: `
+        <p>We provide versatile PVC and screen printing solutions suitable for a wide range of apparel and accessories. Our screen printing unit is equipped with advanced machinery to ensure precision and durability.</p>
+        <p>Our product range includes:</p>
+        <ul>
+          <li>PVC Soft Labels</li>
+          <li>High-Density Screen Prints</li>
+          <li>Size Stickers & Adhesive Labels</li>
+          <li>Silicon & Rubber Printing</li>
+        </ul>
+        <p><strong>Daily Production Capacity:</strong> 3,00,000 pieces</p>
       `,
     },
   },
