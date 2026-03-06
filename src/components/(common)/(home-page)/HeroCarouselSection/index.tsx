@@ -51,7 +51,7 @@ const heroSlides: HeroSlide[] = [
     description:
       "High-quality woven labels, printed labels, heat transfers, and sustainable packaging solutions for the global fashion industry.",
     backgroundImage:
-      "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2600",
+      "https://images.unsplash.com/photo-1675176785803-bffbbb0cd2f4?q=80&w=2600",
     ctaText: "View Products",
     ctaLink: "/products",
     overlayColor: "from-red-900/80 via-red-600/40 to-transparent",
@@ -73,7 +73,7 @@ const heroSlides: HeroSlide[] = [
     description:
       "FSC-certified hang tags, biodegradable polybags, and recycled packaging solutions. We believe in sustainability and care for our People, Place & Products.",
     backgroundImage:
-      "https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=2600",
+      "https://images.unsplash.com/photo-1624137308703-e1da1ca881df?q=80&w=2600",
     ctaText: "About Us",
     ctaLink: "/about",
     overlayColor: "from-green-900/80 via-green-600/40 to-transparent",
@@ -92,7 +92,7 @@ const heroSlides: HeroSlide[] = [
     description:
       "Durable heat transfer labels and ReflexCut reflective vinyl for activewear and fashion. Long-lasting prints resistant to fading and cracking.",
     backgroundImage:
-      "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=2600",
+      "https://images.unsplash.com/photo-1693031630157-7ecc8d06de63?q=80&w=2600",
     ctaText: "Explore Products",
     ctaLink: "/products/heat-transfer",
     overlayColor: "from-blue-900/80 via-blue-600/40 to-transparent",
