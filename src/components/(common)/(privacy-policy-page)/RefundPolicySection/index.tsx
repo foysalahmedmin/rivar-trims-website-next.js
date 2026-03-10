@@ -13,7 +13,7 @@ type TSection = {
 const sections: TSection[] = [
   {
     title: "1. Return Policy Overview",
-    description: `At Rivar Trims, we are committed to delivering high-quality garment accessories. Due to the custom nature of our products (branded labels, tags, etc.), we generally cannot accept returns for change of mind. However, we stand behind the quality of our manufacturing.`,
+    description: `At Rivar Trims Limited, we are committed to delivering high-quality garment accessories. Due to the custom nature of our products (branded labels, tags, etc.), we generally cannot accept returns for change of mind. However, we stand behind the quality of our manufacturing.`,
   },
   {
     title: "2. Defective or Damaged Goods",
@@ -54,7 +54,7 @@ const sections: TSection[] = [
   },
   {
     title: "6. Return Shipping",
-    description: `If a physical return of defective goods is required by us, Rivar Trims will cover the shipping costs. Do not return goods without prior authorization from our sales team.`,
+    description: `If a physical return of defective goods is required by us, Rivar Trims Limited will cover the shipping costs. Do not return goods without prior authorization from our sales team.`,
   },
   {
     title: "7. Contact Us",
@@ -86,8 +86,8 @@ const RefundPolicySection = () => {
               </li>
               <li>
                 <strong>Website: </strong>
-                <a href="https://rivartrims.com/" target="_blank">
-                  https://rivartrims.com/
+                <a href="https://rivartrimsltd.com/" target="_blank">
+                  https://rivartrimsltd.com/
                 </a>
               </li>
             </ul>

@@ -19,9 +19,9 @@ const metrics = [
 ];
 
 export const metadata = {
-  title: "Leaderships | Rivar Trims",
+  title: "Leaderships | Rivar Trims Limited",
   description:
-    "Rivar Trims | Rivar Trims's leadership team combines decades of technology expertise with visionary digital strategy.",
+    "Rivar Trims Limited | Rivar Trims Limited's leadership team combines decades of technology expertise with visionary digital strategy.",
 };
 
 const LeadershipsPage = () => {
@@ -30,7 +30,7 @@ const LeadershipsPage = () => {
       <PageHeaderSection
         subtitle="Leaderships"
         title="The champions of a construction revolution"
-        description="Rivar Trims's leadership team combines decades of technology expertise with visionary digital strategy."
+        description="Rivar Trims Limited's leadership team combines decades of technology expertise with visionary digital strategy."
         image="https://images.unsplash.com/photo-1573164713988-8665fc963095?ixlib=rb-4.0.3&auto=format&fit=crop&w=12000&q=80"
         metrics={metrics}
       />
@@ -39,7 +39,7 @@ const LeadershipsPage = () => {
         subtitle="Co-Founder & Project Manager"
         title="Foysal Ahmed"
         description={`<div class="text-xl">
-            Visionary co-founder driving Rivar Trims's mission to deliver human-centric technology solutions through ethical innovation and strategic leadership.
+            Visionary co-founder driving Rivar Trims Limited's mission to deliver human-centric technology solutions through ethical innovation and strategic leadership.
           </div>`}
         image="/images/leaderships/foysalahmedmin.png"
         links={[

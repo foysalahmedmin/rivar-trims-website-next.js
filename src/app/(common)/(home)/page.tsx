@@ -10,9 +10,9 @@ import PartnersSection from "@/components/sections/PartnersSection";
 import WeCareSection from "@/components/sections/WeCareSection";
 
 export const metadata = {
-  title: "Rivar Trims - Global Quality, Local Excellence",
+  title: "Rivar Trims Limited - Global Quality, Local Excellence",
   description:
-    "Rivar Trims is a leading manufacturer of high-quality garment accessories and packaging solutions. We supply woven labels, heat transfers, and sustainable trims to global fashion brands.",
+    "Rivar Trims Limited is a leading manufacturer of high-quality garment accessories and packaging solutions. We supply woven labels, heat transfers, and sustainable trims to global fashion brands.",
 };
 
 const HomePage = () => {

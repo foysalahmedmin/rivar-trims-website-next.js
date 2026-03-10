@@ -100,9 +100,9 @@ const terms = [
 ];
 
 export const metadata = {
-  title: "Vendor Registration | Rivar Trims",
+  title: "Vendor Registration | Rivar Trims Limited",
   description:
-    "Rivar Trims | Rivar Trims's leadership team combines decades of technology expertise with visionary digital strategy.",
+    "Rivar Trims Limited | Rivar Trims Limited's leadership team combines decades of technology expertise with visionary digital strategy.",
 };
 
 const VendorRegistrationPage = () => {
@@ -111,7 +111,7 @@ const VendorRegistrationPage = () => {
       <PageHeaderSection
         subtitle="Vendor Registration"
         title="Vendor Agreement Form"
-        description="Rivar Trims. works with bank owned or mortgage owned properties that are foreclosed or occupied. Our main objective is to make sure the
+        description="Rivar Trims Limited. works with bank owned or mortgage owned properties that are foreclosed or occupied. Our main objective is to make sure the
 client demands are met and the service quality is maintained on the highest level
 possible."
       />

@@ -30,11 +30,11 @@ const HeroSection = () => {
           </h1>
 
           <p className="text-muted-foreground max-w-lg lg:text-xl">
-            Rivar Trims is a leading digital solutions company specializing in web
-            development, mobile applications, and cloud technologies.{" "}
-            <strong>We&apos;ve</strong> helped businesses of all sizes transform
-            their digital presence and achieve their goals through innovative
-            technology solutions.
+            Rivar Trims Limited is a leading digital solutions company
+            specializing in web development, mobile applications, and cloud
+            technologies. <strong>We&apos;ve</strong> helped businesses of all
+            sizes transform their digital presence and achieve their goals
+            through innovative technology solutions.
           </p>
 
           <div className="flex flex-wrap gap-4">

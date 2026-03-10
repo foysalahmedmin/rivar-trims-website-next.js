@@ -3,9 +3,9 @@ import RefundPolicySection from "@/components/(common)/(privacy-policy-page)/Ref
 import FollowUpSection from "@/components/sections/FollowUpSection";
 
 export const metadata = {
-  title: "Privacy Policy | Rivar Trims",
+  title: "Privacy Policy | Rivar Trims Limited",
   description:
-    "Rivar Trims | We are committed to protecting your business data and intellectual property. Learn how we handle your information and designs.",
+    "Rivar Trims Limited | We are committed to protecting your business data and intellectual property. Learn how we handle your information and designs.",
 };
 
 const PrivacyPolicyPage = () => {

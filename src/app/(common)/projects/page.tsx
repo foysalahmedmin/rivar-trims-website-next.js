@@ -2,23 +2,23 @@ import { projects } from "@/assets/data/projects";
 import { sectors } from "@/assets/data/sectors";
 import ProjectsTabSection from "@/components/(common)/(projects-page)/ProjectsTabSection";
 import {
-    Description,
-    SectionTitle,
-    Subtitle,
-    Title,
+  Description,
+  SectionTitle,
+  Subtitle,
+  Title,
 } from "@/components/ui/SectionTitle";
 import {
-    Tabs,
-    TabsContent,
-    TabsItem,
-    TabsList,
-    TabsTrigger,
+  Tabs,
+  TabsContent,
+  TabsItem,
+  TabsList,
+  TabsTrigger,
 } from "@/components/ui/Tabs";
 
 export const metadata = {
-  title: "Projects | Rivar Trims",
+  title: "Projects | Rivar Trims Limited",
   description:
-    "Rivar Trims | Our projects range from small-scale renovations to large-scale construction projects. We're dedicated to delivering exceptional results that make a difference in the digital world.",
+    "Rivar Trims Limited | Our projects range from small-scale renovations to large-scale construction projects. We're dedicated to delivering exceptional results that make a difference in the digital world.",
 };
 
 const ProjectsPage = () => {
@@ -55,7 +55,8 @@ const ProjectsPage = () => {
                 {sectors?.map((sector) => {
                   const filtered_projects =
                     projects?.filter(
-                      (project) => project?.category.toLowerCase() === sector._id,
+                      (project) =>
+                        project?.category.toLowerCase() === sector._id,
                     ) || [];
                   return (
                     <TabsItem key={sector._id} value={sector._id}>

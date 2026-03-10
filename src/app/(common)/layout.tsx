@@ -5,7 +5,7 @@ import type { Metadata } from "next";
 import React from "react";
 
 export const metadata: Metadata = {
-  title: "Rivar Trims",
+  title: "Rivar Trims Limited",
   description: "Digital solutions.",
 };
 

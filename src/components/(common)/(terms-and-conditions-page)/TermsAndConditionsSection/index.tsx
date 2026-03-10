@@ -13,7 +13,7 @@ type TSection = {
 const sections: TSection[] = [
   {
     title: "1. Introduction",
-    description: `These Terms and Conditions (“Terms”) govern your purchase of products and use of services from Rivar Trims. By placing an order with us, you agree to comply with and be bound by these Terms. If you do not agree, strictly do not proceed with any orders.`,
+    description: `These Terms and Conditions (“Terms”) govern your purchase of products and use of services from Rivar Trims Limited. By placing an order with us, you agree to comply with and be bound by these Terms. If you do not agree, strictly do not proceed with any orders.`,
   },
   {
     title: "2. Definitions",
@@ -38,7 +38,7 @@ const sections: TSection[] = [
   },
   {
     title: "4. Quotations and Orders",
-    description: `All quotations are valid for 30 days unless otherwise stated. An order is only binding once confirmed in writing by Rivar Trims. We reserve the right to correct any accidental errors in pricing or specifications on quotations and invoices.`,
+    description: `All quotations are valid for 30 days unless otherwise stated. An order is only binding once confirmed in writing by Rivar Trims Limited. We reserve the right to correct any accidental errors in pricing or specifications on quotations and invoices.`,
   },
   {
     title: "5. Pricing and Payment",
@@ -83,7 +83,7 @@ const sections: TSection[] = [
   },
   {
     title: "9. Intellectual Property",
-    description: `The Buyer warrants that they hold the necessary intellectual property rights (trademarks, copyrights) for all designs and logos submitted for production. Rivar Trims assumes no liability for IP infringement claims arising from the production of goods as per Buyer's specifications.`,
+    description: `The Buyer warrants that they hold the necessary intellectual property rights (trademarks, copyrights) for all designs and logos submitted for production. Rivar Trims Limited assumes no liability for IP infringement claims arising from the production of goods as per Buyer's specifications.`,
   },
   {
     title: "10. Inspection and Claims",
@@ -102,7 +102,7 @@ const sections: TSection[] = [
   },
   {
     title: "12. Limitation of Liability",
-    description: `Rivar Trims shall not be liable for any indirect, incidental, or consequential damages (including loss of profit) arising from the use or inability to use our products. Our total liability shall not exceed the invoice value of the defective goods.`,
+    description: `Rivar Trims Limited shall not be liable for any indirect, incidental, or consequential damages (including loss of profit) arising from the use or inability to use our products. Our total liability shall not exceed the invoice value of the defective goods.`,
   },
   {
     title: "13. Force Majeure",
@@ -135,8 +135,8 @@ const TermsAndConditionsSection = () => {
               </li>
               <li>
                 <strong>Website: </strong>
-                <a href="https://rivartrims.com/" target="_blank">
-                  https://rivartrims.com/
+                <a href="https://rivartrimsltd.com/" target="_blank">
+                  https://rivartrimsltd.com/
                 </a>
               </li>
             </ul>

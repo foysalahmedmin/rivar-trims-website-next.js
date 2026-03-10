@@ -25,12 +25,12 @@ export async function generateMetadata({ params }: NewsEventDetailsPageProps) {
 
   if (!item) {
     return {
-      title: "News Not Found | Rivar Trims",
+      title: "News Not Found | Rivar Trims Limited",
     };
   }
 
   return {
-    title: `${item.title} | News & Events | Rivar Trims`,
+    title: `${item.title} | News & Events | Rivar Trims Limited`,
     description: item.description,
   };
 }

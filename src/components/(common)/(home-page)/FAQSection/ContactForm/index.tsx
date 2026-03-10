@@ -20,8 +20,8 @@ export default function ContactForm() {
   const { submit } = useWeb3Forms({
     access_key: "f3794615-5d69-4289-8663-11a81102ed74", //foysalahmedmin@gmail.com;
     settings: {
-      from_name: "Rivar Trims",
-      subject: "Rivar Trims Contact Message",
+      from_name: "Rivar Trims Limited",
+      subject: "Rivar Trims Limited Contact Message",
     },
     onSuccess: (msg) => {
       setIsSuccess(true);
@@ -35,7 +35,7 @@ export default function ContactForm() {
   });
 
   const onSubmit = (data) => {
-    const dynamicSubject = `New Contact Message from ${data.name} - Rivar Trims`;
+    const dynamicSubject = `New Contact Message from ${data.name} - Rivar Trims Limited`;
     const formDataWithSubject = {
       ...data,
       subject: dynamicSubject,

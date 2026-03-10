@@ -1,5 +1,11 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Jost, Outfit, Rubik_Glitch } from "next/font/google";
+import {
+  Geist,
+  Geist_Mono,
+  Jost,
+  Outfit,
+  Rubik_Glitch,
+} from "next/font/google";
 import React from "react";
 import "./globals.css";
 
@@ -36,7 +42,7 @@ const jost = Jost({
 });
 
 export const metadata: Metadata = {
-  title: "Rivar Trims - Global Quality, Local Excellence",
+  title: "Rivar Trims Limited - Global Quality, Local Excellence",
   description: "Premier Manufacturer of Garment Trims & Accessories.",
 };
 

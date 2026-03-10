@@ -14,7 +14,7 @@ export const testimonials: TTestimonial[] = [
     designation: "Sourcing Manager",
     company: "Nordic Wear",
     review:
-      "Rivar Trims has been our go-to partner for sustainable accessories. Their recycled woven labels are top-notch, and they perfectly matched our brand's eco-conscious values.",
+      "Rivar Trims Limited has been our go-to partner for sustainable accessories. Their recycled woven labels are top-notch, and they perfectly matched our brand's eco-conscious values.",
   },
   {
     _id: "t2",
@@ -22,7 +22,7 @@ export const testimonials: TTestimonial[] = [
     designation: "Production Head",
     company: "Urban Denim Co.",
     review:
-      "Reliability is everything in this industry. Rivar Trims delivers on time, every time. Their leather patches added the perfect premium finish to our latest jeans collection.",
+      "Reliability is everything in this industry. Rivar Trims Limited delivers on time, every time. Their leather patches added the perfect premium finish to our latest jeans collection.",
   },
   {
     _id: "t3",

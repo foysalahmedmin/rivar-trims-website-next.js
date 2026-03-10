@@ -42,7 +42,7 @@ const WeCareSection = () => {
         <div className="mx-auto max-w-6xl text-center">
           <SectionTitle className="mb-16">
             <Subtitle>Our Commitment</Subtitle>
-            <Title>Rivar Trims We-Care</Title>
+            <Title>We-Care</Title>
             <Description>
               We believe in sustainability and by inspiring this core
               philosophy, we do best care of our People, Place & Products.

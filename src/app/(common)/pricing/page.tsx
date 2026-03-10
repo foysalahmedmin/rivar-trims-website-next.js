@@ -3,9 +3,9 @@ import PageHeaderSection from "@/components/sections/PageHeaderSection";
 import SplitSection from "@/components/sections/SplitSection";
 
 export const metadata = {
-  title: "Pricing | Rivar Trims",
+  title: "Pricing | Rivar Trims Limited",
   description:
-    "Rivar Trims offers flexible, value-driven pricing tailored to your unique project needs. We prioritize transparency, quality, and results—without locking you into one-size-fits-all packages.",
+    "Rivar Trims Limited offers flexible, value-driven pricing tailored to your unique project needs. We prioritize transparency, quality, and results—without locking you into one-size-fits-all packages.",
 };
 
 const PricingPage = () => {
@@ -14,7 +14,7 @@ const PricingPage = () => {
       <PageHeaderSection
         subtitle="Pricing"
         title="Flexible, Transparent & Value-Focused"
-        description="At Rivar Trims, we don’t believe in one-size-fits-all pricing. Every business is unique, and so are its digital needs. Whether you're launching a startup MVP or scaling a full enterprise platform, our pricing adapts to your goals, scope, and timeline."
+        description="At Rivar Trims Limited, we don’t believe in one-size-fits-all pricing. Every business is unique, and so are its digital needs. Whether you're launching a startup MVP or scaling a full enterprise platform, our pricing adapts to your goals, scope, and timeline."
         image="/images/(pricing-page)/page-header.png"
       />
 
@@ -26,7 +26,7 @@ const PricingPage = () => {
     <h2 class="text-xl font-bold">💸 Pricing That Works Around You</h2>
     <p class="text-lg font-semibold">No Packages. No Guesswork. Just What You Need.</p>
     <p>
-      At Rivar Trims, we do pricing differently. Forget bloated packages
+      At Rivar Trims Limited, we do pricing differently. Forget bloated packages
       and locked-in rates — we customise every project based on your
       exact goals, scope, and budget.
     </p>
@@ -75,7 +75,7 @@ const PricingPage = () => {
   <div>
     <h2 class="text-xl font-bold">🤝 Pay for What Matters. Not for What You Don’t.</h2>
     <p>
-      With Rivar Trims, you’re in control — no surprise fees, no fluff,
+      With Rivar Trims Limited, you’re in control — no surprise fees, no fluff,
       no paying for extras you didn’t ask for.
     </p>
   </div>

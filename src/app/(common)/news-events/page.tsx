@@ -3,9 +3,9 @@ import FollowUpSection from "@/components/sections/FollowUpSection";
 import PageHeaderSection from "@/components/sections/PageHeaderSection";
 
 export const metadata = {
-  title: "News & Events | Rivar Trims",
+  title: "News & Events | Rivar Trims Limited",
   description:
-    "Stay updated with the latest news, events, and media features from Rivar Trims. Discover our sustainable innovations and global exhibitions.",
+    "Stay updated with the latest news, events, and media features from Rivar Trims Limited. Discover our sustainable innovations and global exhibitions.",
 };
 
 const NewsEventsPage = () => {

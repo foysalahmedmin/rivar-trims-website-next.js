@@ -3,12 +3,11 @@ import ValuesSection from "@/components/(common)/(visions-page)/ValuesSection";
 import FollowUpSection from "@/components/sections/FollowUpSection";
 import PageHeaderSection from "@/components/sections/PageHeaderSection";
 import { SectionTitle, Subtitle, Title } from "@/components/ui/SectionTitle";
-import { cn } from "@/lib/utils";
 
 export const metadata = {
-  title: "Visions | Rivar Trims",
+  title: "Visions | Rivar Trims Limited",
   description:
-    "Rivar Trims | Unifying strategy, creativity, and sustainability to deliver exceptional garment accessories.",
+    "Rivar Trims Limited | Unifying strategy, creativity, and sustainability to deliver exceptional garment accessories.",
 };
 
 const VisionsPage = async () => {
@@ -25,7 +24,8 @@ const VisionsPage = async () => {
           <SectionTitle>
             <Subtitle>Our Vision</Subtitle>
             <Title>
-              To lead the global trims industry with sustainable innovation and uncompromising quality.
+              To lead the global trims industry with sustainable innovation and
+              uncompromising quality.
             </Title>
           </SectionTitle>
         </div>
@@ -38,12 +38,17 @@ const VisionsPage = async () => {
             {visions.map((vision) => {
               const Icon = vision.icon;
               return (
-                <div key={vision._id} className="bg-card hover:border-primary border-border group rounded-xl border p-8 transition-colors duration-300">
+                <div
+                  key={vision._id}
+                  className="bg-card hover:border-primary border-border group rounded-xl border p-8 transition-colors duration-300"
+                >
                   <div className="bg-primary/10 group-hover:bg-primary text-primary group-hover:text-primary-foreground mb-6 flex h-14 w-14 items-center justify-center rounded-lg transition-colors duration-300">
-                     <Icon className="h-7 w-7" />
+                    <Icon className="h-7 w-7" />
                   </div>
                   <h3 className="mb-3 text-xl font-bold">{vision.title}</h3>
-                  <p className="text-muted-foreground leading-relaxed">{vision.description}</p>
+                  <p className="text-muted-foreground leading-relaxed">
+                    {vision.description}
+                  </p>
                 </div>
               );
             })}
@@ -52,7 +57,7 @@ const VisionsPage = async () => {
       </section>
 
       <ValuesSection />
-      
+
       {/* <LeadershipsSection /> */}
       <FollowUpSection />
     </main>

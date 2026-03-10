@@ -44,7 +44,7 @@ const Footer = () => {
             >
               <Image
                 src="/logo.png"
-                alt="Rivar Trims Logo"
+                alt="Rivar Trims Limited Logo"
                 width={120}
                 height={120}
                 className="h-20 w-auto object-contain"

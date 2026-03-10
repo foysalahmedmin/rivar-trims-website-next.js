@@ -1,9 +1,8 @@
-
 import {
-    Description,
-    SectionTitle,
-    Subtitle,
-    Title,
+  Description,
+  SectionTitle,
+  Subtitle,
+  Title,
 } from "@/components/ui/SectionTitle";
 
 type TSection = {
@@ -14,7 +13,7 @@ type TSection = {
 const sections: TSection[] = [
   {
     title: "1. Policy Overview",
-    description: `Rivar Trims complies with all international industrial standards regarding data protection. This policy outlines how we handle information collected from our clients, suppliers, and website visitors.`,
+    description: `Rivar Trims Limited complies with all international industrial standards regarding data protection. This policy outlines how we handle information collected from our clients, suppliers, and website visitors.`,
   },
   {
     title: "2. Information We Collect",
@@ -97,8 +96,8 @@ const PrivacyPolicySection = () => {
               </li>
               <li>
                 <strong>Website: </strong>
-                <a href="https://rivartrims.com/" target="_blank">
-                  https://rivartrims.com/
+                <a href="https://rivartrimsltd.com/" target="_blank">
+                  https://rivartrimsltd.com/
                 </a>
               </li>
             </ul>

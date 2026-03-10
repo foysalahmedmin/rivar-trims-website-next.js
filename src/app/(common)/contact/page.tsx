@@ -3,9 +3,9 @@ import FollowUpSection from "@/components/sections/FollowUpSection";
 import PageHeaderSection from "@/components/sections/PageHeaderSection";
 
 export const metadata = {
-  title: "Contact | Rivar Trims",
+  title: "Contact | Rivar Trims Limited",
   description:
-    "Rivar Trims | Contact Us | We'd love to hear from you! Reach out to our team of industry professionals today and let's work together on your garment accessories needs.",
+    "Rivar Trims Limited | Contact Us | We'd love to hear from you! Reach out to our team of industry professionals today and let's work together on your garment accessories needs.",
 };
 
 const ContactPage = () => {

@@ -2,9 +2,9 @@ import TermsAndConditionsSection from "@/components/(common)/(terms-and-conditio
 import FollowUpSection from "@/components/sections/FollowUpSection";
 
 export const metadata = {
-  title: "Terms and Conditions | Rivar Trims",
+  title: "Terms and Conditions | Rivar Trims Limited",
   description:
-    "Rivar Trims | Official terms and conditions governing the purchase of garment accessories and trims. Please read carefully before placing an order.",
+    "Rivar Trims Limited | Official terms and conditions governing the purchase of garment accessories and trims. Please read carefully before placing an order.",
 };
 
 const TermsAndConditionsPage = () => {

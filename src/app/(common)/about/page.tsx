@@ -25,9 +25,9 @@ const metrics = [
 ];
 
 export const metadata = {
-  title: "About | Rivar Trims",
+  title: "About | Rivar Trims Limited",
   description:
-    "Learn about Rivar Trims, a premier garments accessories manufacturer. Discover our journey, our commitment to sustainability, and our state-of-the-art manufacturing capabilities in Dhaka.",
+    "Learn about Rivar Trims Limited, a premier garments accessories manufacturer. Discover our journey, our commitment to sustainability, and our state-of-the-art manufacturing capabilities in Dhaka.",
 };
 
 const AboutPage = () => {
@@ -121,10 +121,10 @@ const AboutPage = () => {
       />
 
       <SplitSection
-        title="The Rivar Trims Difference"
+        title="The Rivar Trims Limited Difference"
         description={`<div>
           <p>
-            In a competitive global market, Rivar Trims stands out by blending local manufacturing cost-efficiencies 
+            In a competitive global market, Rivar Trims Limited stands out by blending local manufacturing cost-efficiencies 
             with world-class quality standards. We don't just supply trims; we deliver reliability, innovation, and compliance.
           </p>
 
@@ -172,9 +172,9 @@ const AboutPage = () => {
           </div>
 
           <p>
-            At Rivar Trims, our commitment goes beyond the product. We strive to build
+            At Rivar Trims Limited, our commitment goes beyond the product. We strive to build
             long-term partnerships rooted in trust, performance, and mutual growth. That’s
-            the Rivar Trims difference.
+            the Rivar Trims Limited difference.
           </p>
         </div>`}
         image="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=800&fit=crop"

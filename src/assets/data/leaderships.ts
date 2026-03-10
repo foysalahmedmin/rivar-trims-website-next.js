@@ -18,14 +18,14 @@ export const leaderships: TLeadership[] = [
     excerpt:
       "“We favorably impact people, families, and communities through intentional technological innovation.”",
     short_description:
-      "Visionary co-founder driving Rivar Trims's mission to deliver human-centric technology solutions through ethical innovation and strategic leadership.",
+      "Visionary co-founder driving Rivar Trims Limited's mission to deliver human-centric technology solutions through ethical innovation and strategic leadership.",
     description: `
 <section class="space-y-12">
   <article>
     <h1>Professional Leadership Journey</h1>
     <p>
-      As Co-Founder and Project Manager at Rivar Trims, Foysal Ahmed combines technical expertise with strategic vision to lead digital transformation initiatives. 
-      Under his stewardship, Rivar Trims has delivered 50+ projects with a 98% client satisfaction rate while maintaining ISO 27001 compliance across all operations.
+      As Co-Founder and Project Manager at Rivar Trims Limited, Foysal Ahmed combines technical expertise with strategic vision to lead digital transformation initiatives. 
+      Under his stewardship, Rivar Trims Limited has delivered 50+ projects with a 98% client satisfaction rate while maintaining ISO 27001 compliance across all operations.
     </p>
     
     <h3>Core Responsibilities</h3>
@@ -58,7 +58,7 @@ export const leaderships: TLeadership[] = [
     <div class="values-grid">
       <div>
         <h3>Integrity Engineering</h3>
-        <p>Architected Rivar Trims's Zero-Trust Security Framework adopted by healthcare and financial institutions</p>
+        <p>Architected Rivar Trims Limited's Zero-Trust Security Framework adopted by healthcare and financial institutions</p>
       </div>
       <div>
         <h3>Human-Centric Design</h3>
@@ -106,7 +106,7 @@ export const leaderships: TLeadership[] = [
     <h1>Connect & Collaborate</h1>
     <p>
       <a href="https://www.linkedin.com/in/foysalahmedmin" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a> |
-      <a href="/leaderships/foysalahmedmin">Rivar Trims Portfolio</a>
+      <a href="/leaderships/foysalahmedmin">Rivar Trims Limited Portfolio</a>
     </p>
   </div>
 </section>

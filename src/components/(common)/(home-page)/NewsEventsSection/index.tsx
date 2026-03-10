@@ -21,8 +21,8 @@ const NewsEventsSection = () => {
             <Title isAnimation={true}>News & Events</Title>
             <Description>
               Stay updated with the latest news, events, and media features from
-              Rivar Trims. Discover our sustainable innovations and global
-              exhibitions.
+              Rivar Trims Limited. Discover our sustainable innovations and
+              global exhibitions.
             </Description>
           </SectionTitle>
           <Link

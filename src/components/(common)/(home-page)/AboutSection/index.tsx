@@ -32,12 +32,12 @@ const AboutSection = () => {
               </Title>
               <Description>
                 <p>
-                  Rivar Trims Limited is a proud concern of Mondol Group, one of
-                  the leading conglomerates in the Bangladesh Garment Industry.
-                  Established to serve as a complete backward linkage solution,
-                  we specialize in high-quality garment accessories including
-                  woven labels, printed labels, heat transfers, and packaging
-                  solutions.
+                  Rivar Trims Limited Limited is a proud concern of Mondol
+                  Group, one of the leading conglomerates in the Bangladesh
+                  Garment Industry. Established to serve as a complete backward
+                  linkage solution, we specialize in high-quality garment
+                  accessories including woven labels, printed labels, heat
+                  transfers, and packaging solutions.
                 </p>
                 <p className="mt-4">
                   With a commitment to integrity, teamwork, and excellence, we
