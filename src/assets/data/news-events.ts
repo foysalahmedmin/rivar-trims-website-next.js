@@ -17,7 +17,7 @@ export const newsEvents: TNewsEvent[] = [
     _id: "yarn-fabric-show-2024",
     title: "15th Dhaka Int'l Yarn & Fabric Show 2024",
     description:
-      "Mondol Group & Rivar Trims Limited participated in the Winter Edition of this prestigious event.",
+      "Rivar Trims Limited participated in the Winter Edition of this prestigious event.",
     date: "January 15, 2024",
     thumbnail:
       "https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=1200", // Generic event image
@@ -25,7 +25,7 @@ export const newsEvents: TNewsEvent[] = [
     details: {
       title: "Showcasing Excellence at Dhaka Int'l Yarn & Fabric Show 2024",
       description: `
-        <p>Rivar Trims Limited joined industry leaders at the 15th Dhaka International Yarn & Fabric Show 2024 (Winter Edition). As a key concern of Mondol Group, we showcased our latest innovations in sustainable trims and accessories.</p>
+        <p>Rivar Trims Limited joined industry leaders at the 15th Dhaka International Yarn & Fabric Show 2024 (Winter Edition). We showcased our latest innovations in sustainable trims and accessories.</p>
         <p>The event provided an excellent platform to connect with international buyers and demonstrate our capacity for high-volume, high-quality production.</p>
       `,
       images: [],
