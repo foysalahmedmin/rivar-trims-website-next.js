@@ -54,15 +54,11 @@ const ContactSection = () => {
             <div className="space-y-6 text-lg">
               <div>
                 <h4 className="text-muted-foreground mb-1 text-sm font-bold uppercase">
-                  Head Office
+                  Factory
                 </h4>
                 <p className="text-foreground leading-relaxed font-semibold">
-                  Head Office: House-08 (Lift-2), Road-04/A, Sector-15/G,
-                  Uttara, Dhaka-1230, Bangladesh.
-                </p>
-                <p className="text-foreground/80 mt-2 text-sm">
-                  Factory: Holding -53, Block-A, Dharangartek (Main Road),
-                  Nalvog, Nishatnagar, Turag, Dhaka-1230.
+                  Holding-53, Block-A, Dharangartek, Nalvog, Nishatnagar, Turag,
+                  Dhaka-1230
                 </p>
               </div>
               <div>
@@ -70,8 +66,6 @@ const ContactSection = () => {
                   Phone (Sales)
                 </h4>
                 <div className="text-primary font-mono text-xl font-bold">
-                  <p>+88 01923 205096</p>
-                  <p>+88 01920 411806</p>
                   <p>+88 01901 921508</p>
                   <p>+88 01901 921509</p>
                 </div>
@@ -81,7 +75,6 @@ const ContactSection = () => {
                   Email
                 </h4>
                 <div className="text-foreground font-semibold">
-                  <p>info@rivartrims.com</p>
                   <p>info@rivartrimsltd.com</p>
                 </div>
               </div>

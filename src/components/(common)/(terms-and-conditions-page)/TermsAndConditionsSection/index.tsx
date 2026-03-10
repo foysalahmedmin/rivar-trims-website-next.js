@@ -1,9 +1,8 @@
-
 import {
-    Description,
-    SectionTitle,
-    Subtitle,
-    Title,
+  Description,
+  SectionTitle,
+  Subtitle,
+  Title,
 } from "@/components/ui/SectionTitle";
 
 type TSection = {
@@ -115,7 +114,7 @@ const sections: TSection[] = [
   },
   {
     title: "15. Contact Information",
-    description: `Questions about the Terms and Conditions should be sent to us at info@rivartrims.com.`,
+    description: `Questions about the Terms and Conditions should be sent to us at info@rivartrimsltd.com.`,
   },
 ];
 

@@ -27,12 +27,12 @@ const ProductDetailsClient = ({
       {/* Hero Banner */}
       <section className="relative h-[400px] w-full">
         <Image
-          src="https://images.unsplash.com/photo-1520986606214-8b456906c813?q=80&w=2070"
-          alt="Hero Banner"
+          src={product?.thumbnail || ""}
+          alt={product?.title || ""}
           fill
           className="object-cover"
         />
-        <div className="absolute inset-0 bg-black/50" />
+        <div className="absolute inset-0 bg-black/50 backdrop-blur-xs" />
       </section>
 
       {/* Floating Card Container */}

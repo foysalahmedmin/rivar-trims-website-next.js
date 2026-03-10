@@ -76,7 +76,7 @@ const sections: TSection[] = [
   },
   {
     title: "10. Contact Us",
-    description: `For any privacy-related concerns, please contact us at info@rivartrims.com or visit our office in Dhaka, Bangladesh.`,
+    description: `For any privacy-related concerns, please contact us at info@rivartrimsltd.com or visit our office in Dhaka, Bangladesh.`,
   },
 ];
 

@@ -1,9 +1,8 @@
-
 import {
-    Description,
-    SectionTitle,
-    Subtitle,
-    Title,
+  Description,
+  SectionTitle,
+  Subtitle,
+  Title,
 } from "@/components/ui/SectionTitle";
 
 type TSection = {
@@ -60,13 +59,14 @@ const sections: TSection[] = [
   {
     title: "7. Contact Us",
     description: `
-      <p>For any claims regarding quality or refunds, please contact your account manager directly or email us at info@rivartrims.com.</p>
+      <p>For any claims regarding quality or refunds, please contact your account manager directly or email us at info@rivartrimsltd.com.</p>
     `,
   },
   {
-     title: "Shipping Policy", // Keeping a section for Shipping if it was previously mixed or relevant, though title is Refund/Return
-     description: "Please note that all shipping timelines are estimates. We are not responsible for delays caused by customs clearance or third-party logistics providers."
-  }
+    title: "Shipping Policy", // Keeping a section for Shipping if it was previously mixed or relevant, though title is Refund/Return
+    description:
+      "Please note that all shipping timelines are estimates. We are not responsible for delays caused by customs clearance or third-party logistics providers.",
+  },
 ];
 
 const RefundPolicySection = () => {

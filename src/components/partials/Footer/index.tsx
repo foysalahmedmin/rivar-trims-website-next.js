@@ -5,7 +5,6 @@ import {
   Factory,
   Instagram,
   Mail,
-  MapPin,
   Phone,
 } from "lucide-react";
 import Image from "next/image";
@@ -33,15 +32,16 @@ const socials = [
 
 const Footer = () => {
   return (
-    <footer className="bg-muted/30 border-border mt-auto border-t pb-8 pt-16">
+    <footer className="bg-muted/30 border-border mt-auto border-t pt-16 pb-8">
       <div className="container">
-
         {/* Main Footer Grid — 4 columns on desktop, stacked on mobile */}
         <div className="mb-16 grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
-
           {/* ── Column 1: Brand ── */}
           <div className="flex flex-col gap-6">
-            <Link href="/" className="inline-block transition-opacity hover:opacity-80">
+            <Link
+              href="/"
+              className="inline-block transition-opacity hover:opacity-80"
+            >
               <Image
                 src="/logo.png"
                 alt="Rivar Trims Logo"
@@ -52,9 +52,12 @@ const Footer = () => {
               />
             </Link>
             <p className="text-muted-foreground text-sm leading-relaxed">
-              <span className="text-foreground italic font-medium">"Perfect trims fashion looks perfect."</span>
+              <span className="text-foreground font-medium italic">
+                "Perfect trims fashion looks perfect."
+              </span>
               <br />
-              We make you satisfied with our quality, commitment, and competitive price since 2017.
+              We make you satisfied with our quality, commitment, and
+              competitive price since 2017.
             </p>
             <div className="flex gap-3">
               {socials.map((social, index) => (
@@ -73,7 +76,7 @@ const Footer = () => {
 
           {/* ── Column 2: Quick Links ── */}
           <div className="flex flex-col gap-6">
-            <h4 className="text-foreground text-sm font-bold uppercase tracking-wider">
+            <h4 className="text-foreground text-sm font-bold tracking-wider uppercase">
               Company
             </h4>
             <ul className="flex flex-col gap-3">
@@ -96,7 +99,7 @@ const Footer = () => {
 
           {/* ── Column 3: Products ── */}
           <div className="flex flex-col gap-6">
-            <h4 className="text-foreground text-sm font-bold uppercase tracking-wider">
+            <h4 className="text-foreground text-sm font-bold tracking-wider uppercase">
               Our Products
             </h4>
             <ul className="flex flex-col gap-3">
@@ -115,27 +118,19 @@ const Footer = () => {
 
           {/* ── Column 4: Contact ── */}
           <div className="flex flex-col gap-6">
-            <h4 className="text-foreground text-sm font-bold uppercase tracking-wider">
+            <h4 className="text-foreground text-sm font-bold tracking-wider uppercase">
               Get In Touch
             </h4>
             <div className="flex flex-col gap-5">
-
-              <div className="flex items-start gap-3">
-                <MapPin className="text-primary mt-0.5 shrink-0" size={16} />
-                <div className="flex flex-col gap-0.5">
-                  <p className="text-foreground text-xs font-semibold uppercase">Head Office</p>
-                  <p className="text-muted-foreground text-sm leading-relaxed">
-                    House-08 (Lift-2), Road-04/A, Sector-15/G, Uttara, Dhaka-1230, Bangladesh
-                  </p>
-                </div>
-              </div>
-
               <div className="flex items-start gap-3">
                 <Factory className="text-primary mt-0.5 shrink-0" size={16} />
                 <div className="flex flex-col gap-0.5">
-                  <p className="text-foreground text-xs font-semibold uppercase">Factory</p>
+                  <p className="text-foreground text-xs font-semibold uppercase">
+                    Factory
+                  </p>
                   <p className="text-muted-foreground text-sm leading-relaxed">
-                    Holding-53, Block-A, Dharangartek, Nalvog, Nishatnagar, Turag, Dhaka-1230
+                    Holding-53, Block-A, Dharangartek, Nalvog, Nishatnagar,
+                    Turag, Dhaka-1230
                   </p>
                 </div>
               </div>
@@ -143,45 +138,57 @@ const Footer = () => {
               <div className="flex items-start gap-3">
                 <Phone className="text-primary mt-0.5 shrink-0" size={16} />
                 <div className="flex flex-col gap-0.5">
-                  <p className="text-foreground text-xs font-semibold uppercase">Phone</p>
-                  <p className="text-muted-foreground text-sm">+88 01923 205096</p>
-                  <p className="text-muted-foreground text-sm">+88 01920 411806</p>
-                  <p className="text-muted-foreground text-sm">+88 01901 921508</p>
-                  <p className="text-muted-foreground text-sm">+88 01901 921509</p>
+                  <p className="text-foreground text-xs font-semibold uppercase">
+                    Phone
+                  </p>
+                  <p className="text-muted-foreground text-sm">
+                    +88 01901 921508
+                  </p>
+                  <p className="text-muted-foreground text-sm">
+                    +88 01901 921509
+                  </p>
                 </div>
               </div>
 
               <div className="flex items-start gap-3">
                 <Mail className="text-primary mt-0.5 shrink-0" size={16} />
                 <div className="flex flex-col gap-0.5">
-                  <p className="text-foreground text-xs font-semibold uppercase">Email</p>
-                  <p className="text-muted-foreground text-sm">info@rivartrims.com</p>
-                  <p className="text-muted-foreground text-sm">info@rivartrimsltd.com</p>
+                  <p className="text-foreground text-xs font-semibold uppercase">
+                    Email
+                  </p>
+                  <p className="text-muted-foreground text-sm">
+                    info@rivartrimsltd.com
+                  </p>
                 </div>
               </div>
-
             </div>
           </div>
-
         </div>
 
         {/* ── Bottom Bar ── */}
         <div className="border-border text-muted-foreground flex flex-col items-center justify-between gap-4 border-t pt-8 text-xs md:flex-row">
           <p>
             © {new Date().getFullYear()}{" "}
-            <span className="text-foreground font-semibold">Rivar Trims Limited.</span>{" "}
+            <span className="text-foreground font-semibold">
+              Rivar Trims Limited.
+            </span>{" "}
             All rights reserved.
           </p>
           <div className="flex gap-6">
-            <Link href="/terms-and-conditions" className="hover:text-primary transition-colors">
+            <Link
+              href="/terms-and-conditions"
+              className="hover:text-primary transition-colors"
+            >
               Terms &amp; Conditions
             </Link>
-            <Link href="/privacy-policy" className="hover:text-primary transition-colors">
+            <Link
+              href="/privacy-policy"
+              className="hover:text-primary transition-colors"
+            >
               Privacy Policy
             </Link>
           </div>
         </div>
-
       </div>
     </footer>
   );
