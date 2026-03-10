@@ -54,7 +54,7 @@ const heroSlides: HeroSlide[] = [
       "https://images.unsplash.com/photo-1675176785803-bffbbb0cd2f4?q=80&w=2600",
     ctaText: "View Products",
     ctaLink: "/products",
-    overlayColor: "from-red-900/80 via-red-600/40 to-transparent",
+    overlayColor: "from-blue-950/80 via-blue-500/40 to-transparent",
     textColor: "text-white",
     features: [
       {
@@ -76,7 +76,7 @@ const heroSlides: HeroSlide[] = [
       "https://images.unsplash.com/photo-1624137308703-e1da1ca881df?q=80&w=2600",
     ctaText: "About Us",
     ctaLink: "/about",
-    overlayColor: "from-green-900/80 via-green-600/40 to-transparent",
+    overlayColor: "from-green-950/80 via-green-500/40 to-transparent",
     textColor: "text-white",
     features: [
       { icon: <Factory className="h-4 w-4" />, text: "Recycled Materials" },
@@ -95,7 +95,7 @@ const heroSlides: HeroSlide[] = [
       "https://images.unsplash.com/photo-1693031630157-7ecc8d06de63?q=80&w=2600",
     ctaText: "Explore Products",
     ctaLink: "/products/heat-transfer",
-    overlayColor: "from-blue-900/80 via-blue-600/40 to-transparent",
+    overlayColor: "from-red-950/80 via-red-500/40 to-transparent",
     textColor: "text-white",
     features: [
       {
