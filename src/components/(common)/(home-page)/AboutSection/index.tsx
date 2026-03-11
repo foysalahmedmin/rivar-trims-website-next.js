@@ -41,9 +41,8 @@ const AboutSection = () => {
                 <p className="mt-4">
                   With a commitment to integrity, teamwork, and excellence, we
                   strive to satisfy our valued clients with superior quality,
-                  competitive pricing, and on-time delivery. As a sister concern
-                  of Montrims Ltd., we leverage decades of industry expertise to
-                  meet global standards.
+                  competitive pricing, and on-time delivery. We leverage decades
+                  of industry expertise to meet global standards.
                 </p>
               </Description>
             </SectionTitle>
